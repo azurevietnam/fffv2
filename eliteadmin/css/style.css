@@ -15680,3 +15680,6 @@ ul.pro-amenities li span i {
     padding: 2px 0 10px 15px;
   }
 }
+#side-menu ul > li > a.active{
+	background:#f4f4f4;
+}
