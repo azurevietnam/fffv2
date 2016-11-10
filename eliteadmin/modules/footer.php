@@ -1,4 +1,4 @@
-        
+
         <!-- Bootstrap Core JavaScript -->
         <script src="bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- Menu Plugin JavaScript -->
@@ -18,6 +18,9 @@
         <script src="../plugins/bower_components/jquery.easy-pie-chart/easy-pie-chart.init.js"></script>
         <!-- Custom Theme JavaScript -->
 
+		<script src="../plugins/bower_components/moment/moment.js"></script>
+		<script src="../plugins/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+
 
 		<!--EChart JavaScript -->
 		<script type="text/javascript" src="../plugins/echarts/echarts.js"></script>
@@ -29,6 +32,18 @@
         <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 <!--Style Switcher -->
 	<script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+	
+
+
+<script>
+
+$('.input-daterange-datepicker').daterangepicker({
+          buttonClasses: ['btn', 'btn-sm'],
+                applyClass: 'btn-info',
+                cancelClass: 'btn-inverse'
+        });
+
+</script>
 
 </body>
 

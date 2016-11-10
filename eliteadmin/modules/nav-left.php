@@ -27,15 +27,14 @@
                     <li> <a href="ip-click-ao.php" class="active">Ip click ảo</a> </li>
                     <li> <a href="ip-khu-vuc.php">Khu Vực</a> </li>
                     <li> <a href="ip-thiet-bi.php">Thiết Bị</a> </li>
-                    <li> <a href="property-list.html">Lịch sử click</a> </li>
                    
                 </ul>
             </li>
 			
 				<li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="B"></i> <span class="hide-menu"> Khách hàng của bạn<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
-                    <li> <a href="real-estate-dashboard.html">Chưa định danh</a> </li>
-                    <li> <a href="property-list.html">Định danh</a> </li>
+                    <li> <a href="khachhang-chuadinhdanh.php">Chưa định danh</a> </li>
+                    <li> <a href="khachhang-dinhdanh.php">Định danh</a> </li>
                     <li> <a href="property-3-column.html">Quan tâm</a> </li>
                     <li> <a href="property-4-column.html">Mua hàng</a> </li>
                     <li> <a href="property-detail.html">Khách cũ</a> </li>
@@ -57,27 +56,7 @@
                            
                         </ul>
                     </li>
-                    <li> <a href="forms.html" class="waves-effect"><i data-icon="&#xe00b;" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Hệ thống điểm<span class="fa arrow"></span></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="form-basic.html">Basic Forms</a></li>
-                            <li><a href="form-layout.html">Form Layout</a></li>
-                            <li><a href="form-advanced.html">Form Addons</a></li>
-                            <li><a href="form-material-elements.html">Form Material</a></li>
-                            <li><a href="form-float-input.html">Form Float Input</a></li>
-                            <li><a href="form-upload.html">File Upload</a></li>
-                            <li><a href="form-mask.html">Form Mask</a></li>
-                            <li><a href="form-img-cropper.html">Image Cropping</a></li>
-                            <li><a href="form-validation.html">Form Validation</a></li>
-                            <li><a href="form-dropzone.html">File Dropzone</a></li>
-                            <li><a href="form-pickers.html">Form-pickers</a></li>
-                            <li><a href="form-wizard.html">Form-wizards</a></li>
-                            <li><a href="form-typehead.html">Typehead</a></li>
-                            <li><a href="form-xeditable.html">X-editable</a></li>
-                            <li><a href="form-summernote.html">Summernote</a></li>
-                            <li><a href="form-bootstrap-wysihtml5.html">Bootstrap wysihtml5</a></li>
-                            <li><a href="form-tinymce-wysihtml5.html">Tinymce wysihtml5</a></li>
-                        </ul>
-                    </li>
+                   
                     
                     <li class="nav-small-cap">--- HỖ TRỢ</li>
                     <li><a href="documentation.html" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span class="hide-menu">Documentation</span></a></li>

@@ -150,7 +150,11 @@ $(document).ready(function() {
             sparkResize = setTimeout(sparklineLogin, 500);
         });
         sparklineLogin();
+	
+	
+	
 	//echart
+	
 	
 	
     require.config({

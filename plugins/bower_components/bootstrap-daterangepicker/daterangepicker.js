@@ -56,7 +56,7 @@
         this.autoUpdateInput = true;
         this.ranges = {};
 
-        this.opens = 'right';
+        this.opens = 'left';
         if (this.element.hasClass('pull-right'))
             this.opens = 'left';
 
@@ -69,7 +69,7 @@
         this.cancelClass = 'btn-default';
 
         this.locale = {
-            format: 'MM/DD/YYYY',
+            format: 'DD/MM/YYYY',
             separator: ' - ',
             applyLabel: 'Apply',
             cancelLabel: 'Cancel',

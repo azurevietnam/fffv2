@@ -31,11 +31,7 @@
                     <div class="col-sm-12 col-md-12 col-xs-12">
                         <div class="white-box">
                             <h3 class="box-title">KHU THIẾT BỊ</h3>
-                            <div class="row">
-                                <div class="col-sm-12 col-md-12 col-xs-12">
-                                    <div id="world-map-marker" style="height: 490px; margin-bottom:25px;"></div>
-                                </div>
-							</div>
+                           
 							 <div class="row">
                             <div class="col-sm-12 col-md-12 col-xs-12">
                                     <div class="table-responsive">
@@ -44,69 +40,40 @@
 												<tr>
 													<th>#</th>
 													<th>Tỉnh</th>
-													<th>Lượng click</th>
+													<th>Lượng click thật</th>
+													<th>Tỉ lệ</th>
+													
+													<th>Lượng click ảo</th>
+													<th>Tỉ lệ</th>
 													
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
 													<td>1</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
+													<td>Apple Iphone</td>
+													<td><strong>92.850</strong></td>
+													<td>66,03%</td>
+													<td><strong>84.880</strong></td>
+													<td>22,96%</td>
 												
 												</tr>
 												<tr>
 													<td>2</td>
-													<td>Hồ Chí Minh</td>
-													<td>12.000</td>
+													<td>Apple iPad</td>
+													<td><strong>92.850</strong></td>
+													<td>66,03%</td>
+													<td><strong>84.880</strong></td>
+													<td>22,96%</td>
 												
 												</tr>
 												<tr>
 													<td>3</td>
-													<td>Hậu Giang</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>4</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>5</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>6</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>7</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>8</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>10</td>
-													<td>Hà Nội</td>
-													<td>12.000</td>
+													<td>OPPO A33w Neo 7</td>
+													<td><strong>92.850</strong></td>
+													<td>66,03%</td>
+													<td><strong>84.880</strong></td>
+													<td>22,96%</td>
 												
 												</tr>
 											</tbody>

@@ -20,6 +20,9 @@
     <!-- Daterange picker plugins css -->
     <link href="../plugins/bower_components/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
     <link href="../plugins/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+	
+
+
 	<!-- MAP -->
 	<link href="../plugins/bower_components/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <!-- animation CSS -->
@@ -36,5 +39,6 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	
 <![endif]-->
+
 </head>
  

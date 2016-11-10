@@ -39,84 +39,72 @@
 							 <div class="row">
                             <div class="col-sm-12 col-md-12 col-xs-12">
                                     <div class="table-responsive">
-										<table class="table color-bordered-table info-bordered-table">
+										<table class="table color-bordered-table info-bordered-table ">
 											<thead>
 												<tr>
 													<th>#</th>
 													<th>Tỉnh</th>
 													<th>Lượng click thật</th>
-													<th>Lượng click ảo</th>
+													<th>Tỉ lệ</th>
 													
+													<th>Lượng click ảo</th>
+													<th>Tỉ lệ</th>
 												</tr>
 											</thead>
 											<tbody>
-												<tr>
+												<tr role="row" class="odd">
 													<td>1</td>
 													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
 												
 												</tr>
-												<tr>
-													<td>2</td>
-													<td>Hồ Chí Minh</td>
-													<td>2.000</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>3</td>
-													<td>Hậu Giang</td>
-													<td>2.000</td>
-													<td>12.000</td>
-												
-												</tr>
-												<tr>
-													<td>4</td>
+												<tr role="row" class="even">
+													<td>1</td>
 													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
 												
 												</tr>
-												<tr>
-													<td>5</td>
+												<tr role="row" class="odd">
+													<td>1</td>
 													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
 												
 												</tr>
-												<tr>
-													<td>6</td>
+												<tr role="row" class="even">
+													<td>1</td>
 													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
 												
 												</tr>
-												<tr>
-													<td>7</td>
+												<tr role="row" class="odd">
+													<td>1</td>
 													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
 												
 												</tr>
-												<tr>
-													<td>8</td>
+												<tr role="row" class="even">
+													<td>1</td>
 													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
-												</tr>
-												<tr>
-													<td>9</td>
-													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
+													<td><strong>2.000</strong></td>
+													<td>30%</td>
 												
-												</tr>
-												<tr>
-													<td>10</td>
-													<td>Hà Nội</td>
-													<td>2.000</td>
-													<td>12.000</td>
 												</tr>
 											</tbody>
 										</table>
