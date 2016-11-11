@@ -4,8 +4,17 @@
 		<ul class="nav navbar-top-links navbar-left hidden-xs">
 			<li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
 			<li> 
-				<form role="search" class="app-search hidden-xs">
-					<input type="text" placeholder="Search..." class="form-control"> <a href="#"><i class="fa fa-search"></i></a> </form>
+			<div class="input-group">
+				<div class="top-select-domain">
+					<button type="button" class="btn waves-effect waves-light btn-info">dantri.com.vn</button>
+					<button type="button" class="btn waves-effect waves-light btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					  <li><a href="javascript:void(0)">dantri.com.vn</a></li>
+					  <li class="divider"></li>
+					  <li><a href="javascript:void(0)">Thêm mới</a></li>
+					</ul>
+				</div>
+			</div>
 			</li>
 		</ul>
 		<ul class="nav navbar-top-links navbar-right pull-right">
@@ -14,7 +23,7 @@
 	</a>
 				<ul class="dropdown-menu mailbox animated bounceInDown">
 					<li>
-						<div class="drop-title">You have 4 new messages</div>
+						<div class="drop-title">Bạn có 4 tin nhắn từ hệ thống</div>
 					</li>
 					<li>
 						<div class="message-center">
@@ -50,11 +59,11 @@
 			<li class="dropdown"> <a class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#"><i class="icon-note"></i>
 	<div class="notify"><span class="heartbit"></span><span class="point"></span></div>
 	</a>
-				<ul class="dropdown-menu dropdown-tasks animated slideInUp">
+				<ul class="dropdown-menu dropdown-tasks animated bounceInDown">
 					<li>
 						<a href="#">
 							<div>
-								<p> <strong>Task 1</strong> <span class="pull-right text-muted">40% Complete</span> </p>
+								<p> <strong>Gắn mã theo dõi</strong> <span class="pull-right text-muted">40% Complete</span> </p>
 								<div class="progress progress-striped active">
 									<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
 								</div>
@@ -65,7 +74,7 @@
 					<li>
 						<a href="#">
 							<div>
-								<p> <strong>Task 2</strong> <span class="pull-right text-muted">20% Complete</span> </p>
+								<p> <strong>Thu thập số điện thoại</strong> <span class="pull-right text-muted">20% Complete</span> </p>
 								<div class="progress progress-striped active">
 									<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
 								</div>
@@ -76,7 +85,7 @@
 					<li>
 						<a href="#">
 							<div>
-								<p> <strong>Task 3</strong> <span class="pull-right text-muted">60% Complete</span> </p>
+								<p> <strong>Thu thập email</strong> <span class="pull-right text-muted">60% Complete</span> </p>
 								<div class="progress progress-striped active">
 									<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
 								</div>
@@ -87,7 +96,7 @@
 					<li>
 						<a href="#">
 							<div>
-								<p> <strong>Task 4</strong> <span class="pull-right text-muted">80% Complete</span> </p>
+								<p> <strong>Bật tính năng chat online</strong> <span class="pull-right text-muted">80% Complete</span> </p>
 								<div class="progress progress-striped active">
 									<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
 								</div>

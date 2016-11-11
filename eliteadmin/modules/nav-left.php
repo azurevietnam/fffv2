@@ -40,17 +40,18 @@
                     <li> <a href="property-detail.html">Khách cũ</a> </li>
                 </ul>
             </li>
-                    <li><a href="inbox.html" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Công Cụ <span class="fa arrow"></span><span class="label label-rouded label-danger pull-right">New</span></span></a>
+                    <li><a href="inbox.html" class="waves-effect"><i data-icon=")" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Công Cụ<span class="fa arrow"></span><span class="label label-rouded label-danger pull-right">New</span></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="chat.html">Chat-message</a></li>
+                            <li><a href="khachhang-chat.php">Chat-message</a></li>
                             <li><a href="chat.html">Push Notifications</a></li>
                             <li><a href="chat.html">SMS</a></li>
                             <li><a href="chat.html">Email Marketing</a></li>
                             <li><a href="chat.html">Facebook Chat</a></li>
                         </ul>
                     </li>
-                    <li> <a href="#" class="waves-effect"><i data-icon="/" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Tự động hóa<span class="fa arrow"></span> <span class="label label-rouded label-info pull-right">13</span> </span></a>
+                    <li> <a href="#" class="waves-effect"><i data-icon="/" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Tùy Chỉnh<span class="fa arrow"></span> <span class="label label-rouded label-info pull-right">13</span> </span></a>
                         <ul class="nav nav-second-level">
+							<li><a href="cauhinh-chat.php">Cấu hình chat box</a></li>
                             <li ><a href="panels-wells.html" >Chặn click tặc</a></li>
                             <li><a href="panel-ui-block.html">Phản hồi realtime</a></li>
                            
@@ -59,9 +60,8 @@
                    
                     
                     <li class="nav-small-cap">--- HỖ TRỢ</li>
-                    <li><a href="documentation.html" class="waves-effect"><i class="fa fa-circle-o text-danger"></i> <span class="hide-menu">Documentation</span></a></li>
-                    <li><a href="gallery.html" class="waves-effect"><i class="fa fa-circle-o text-info"></i> <span class="hide-menu">Gallery</span></a></li>
-                    <li><a href="faq.html" class="waves-effect"><i class="fa fa-circle-o text-success"></i> <span class="hide-menu">Faqs</span></a></li>
+                    <li><a href="documentation.html" class="waves-effect"><i class="fa fa-empire"></i> <span class="hide-menu">Hướng dẫn sử dụng</span></a></li>
+                    
                 </ul>
             </div>
         </div>
