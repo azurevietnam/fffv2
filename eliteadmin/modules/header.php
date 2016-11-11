@@ -29,6 +29,9 @@
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/fff.css" rel="stylesheet">
+    <!-- color CSS -->
+
     <!-- color CSS -->
     <link href="css/colors/blue.css" id="theme" rel="stylesheet">
 	<script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>

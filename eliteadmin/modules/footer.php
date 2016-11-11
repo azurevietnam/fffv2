@@ -26,7 +26,12 @@
 		<script type="text/javascript" src="../plugins/echarts/echarts.js"></script>
 		
 	
-        <script src="js/custom.min.js"></script>
+        
+		<? if ($left_menu == "small"){?>
+			<script src="js/slider-bar.min.js"></script>
+		<?}else{?>
+			<script src="js/custom.min.js"></script>
+		<?}?>
         <script src="js/dashboard2.js"></script>
         <!--Style Switcher -->
         <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>

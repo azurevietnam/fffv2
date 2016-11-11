@@ -162,7 +162,7 @@
                     <!-- row -->
                     <!-- /.row -->
                     <!-- .right-sidebar -->
-                    <? include("modules/nav-right.php");?>
+                   
                     <!-- /.right-sidebar -->
                 </div>
                 <!-- /.container-fluid -->

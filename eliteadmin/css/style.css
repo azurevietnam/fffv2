@@ -67,9 +67,9 @@ h4,
 h5,
 h6 {
   color: #2b2b2b;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 10px 0;
-  font-weight: 300;
+  font-weight: bold;
 }
 h1 {
   line-height: 48px;
@@ -1520,7 +1520,7 @@ table.dataTable thead .sorting:after {
 }
 .white-box .box-title {
   margin: 0px 0px 12px;
-  font-weight: 500;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -1558,7 +1558,7 @@ table.dataTable thead .sorting:after {
 .panel .panel-body:first-child h3 {
   margin-top: 0px;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -4346,7 +4346,7 @@ ul#themecolors li:first-child {
 .two-part li span {
   font-size: 50px;
   font-weight: 100;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
 }
 /*News Slides*/
 .news-slide {
@@ -13278,7 +13278,7 @@ ul.list-icons li i {
   display: flex;
   margin: 0 auto;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
   list-style: none;
   -ms-box-orient: horizontal;
   -ms-box-pack: center;
@@ -13314,7 +13314,7 @@ ul.list-icons li i {
   vertical-align: middle;
   font-wight: 500;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
 }
 .sttabs nav a:focus {
   outline: none;
@@ -13341,7 +13341,7 @@ ul.list-icons li i {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 14px;
-  font-family: 'Poppins', sans-serif;
+  font-family: Arial, sans-serif;
 }
 .tabs-style-bar nav ul li.tab-current a {
   background: #fb9678;

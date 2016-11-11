@@ -71,9 +71,9 @@
                                             <td><i class="fa fa-circle-o text-info"></i> KH_0001</td>
                                             <td>192.168.1.1</td>
                                             <td>
-												<button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
+												<a href="khachhang-chat.php"><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
 												<i class="fa fa-comments-o m-r-5"></i> Chat 
-												</button>
+												</button></a>
 											</td>
 											 <td>1 phút trước</td>
 											 <td>18h00 - 20/10</td>
@@ -89,9 +89,9 @@
                                            <td><i class="fa fa-circle-o text-danger"></i> KH_0002</td>
                                             <td> 192.168.1.1</td>
                                             <td>
-												<button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
+												<a href="khachhang-chat.php"><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
 												<i class="fa fa-comments-o m-r-5"></i> Chat 
-												</button>
+												</button></a>
 											</td>
 											 <td>1 phút trước</td>
 											 <td>18h00 - 20/10</td>
@@ -107,9 +107,9 @@
                                            <td><i class="fa fa-circle-o text-danger"></i> KH_0002</td>
                                             <td> 192.168.1.1</td>
                                             <td>
-												<button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
+												<a href="khachhang-chat.php"><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
 												<i class="fa fa-comments-o m-r-5"></i> Chat 
-												</button>
+												</button></a>
 											</td>
 											 <td>1 phút trước</td>
 											 <td>18h00 - 20/10</td>
