@@ -26,7 +26,7 @@
                 <div class="open-panel"><i class="ti-angle-right"></i></div>
                 <div class="chat-left-inner">
 
-                  <div class="form-material"><input class="form-control p-20" type="text" placeholder="Search Contact"></div>
+                  <div class="form-material"><input class="form-control p-20" type="text" placeholder="Tìm kiếm khách hàng"></div>
                   <ul class="chatonline style-none ">
                       <li><a href="javascript:void(0)"><img src="../plugins/images/users/varun.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a></li>
                       <li><a href="javascript:void(0)" class="active"><img src="../plugins/images/users/genu.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a></li>
