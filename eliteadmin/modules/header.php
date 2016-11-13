@@ -21,6 +21,10 @@
     <link href="../plugins/bower_components/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
     <link href="../plugins/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 	
+	
+    <!-- Color picker plugins css -->
+    <link href="../plugins/bower_components/jquery-asColorPicker-master/css/asColorPicker.css" rel="stylesheet">
+	
 
 
 	<!-- MAP -->
@@ -29,12 +33,13 @@
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/fff.css" rel="stylesheet">
+    
     <!-- color CSS -->
 
     <!-- color CSS -->
     <link href="css/colors/blue.css" id="theme" rel="stylesheet">
 	<script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+	<link href="css/fff.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

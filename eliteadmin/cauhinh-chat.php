@@ -17,118 +17,130 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">IP Click Ảo</h4> </div>
+                        <h4 class="page-title">Cấu hình chat box</h4> </div>
 						<div class="col-lg-6 col-sm-4 col-md-4 col-xs-12"> </div>
 						<div class="col-lg-3 col-sm-4 col-md-4 col-xs-12"> 
-							<div class="input-group"><input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span> </div>
+						
 						</div>
                     <!-- /.col-lg-12 -->
                 </div>
                
-                <!-- .row -->
+               <!-- .row -->
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-sm-8">
                         <div class="white-box">
-                            <h3 class="box-title m-b-0">KHÁCH HÀNG ĐỊNH DANH</h3>
-                            <p class="text-muted m-b-20">Khách hàng định danh là khách hàng bạn có thể liên hệ để cung cấp thông tin hoặc bán sản phẩm cho khách hàng. <br>
-							Chúng tôi hỗ trợ 4 phương pháp liên lạc với khách hàng: Gửi SMS tới khách hàng, Gửi email marketing, Gửi tin nhắn Zalo, Gửi tin nhắn Facebook cho khách hàng của bạn
-							</p>
-							
-							 <!-- Nav tabs -->
-							<ul class="nav customtab2 nav-tabs" role="tablist">
-							  <li role="presentation" class="active"><a href="#home6" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-home"></i></span><span class="hidden-xs"> Toàn bộ (100)</span></a></li>
-							  <li role="presentation" class=""><a href="#profile6" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-user"></i></span> <span class="hidden-xs">Trả tiền (10)</span></a></li>
-							  <li role="presentation" class=""><a href="#messages6" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="true"><span class="visible-xs"><i class="ti-email"></i></span> <span class="hidden-xs">Trực tiếp (3)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Giới thiệu (30)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">PC (30)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Mobile (30)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Tablet (30)</span></a></li>
-							  
-							</ul>
-							<!-- Tab panes -->
-							
-                            <div class="table-responsive dataTables_wrapper ">
-                                <table class="table color-table inverse-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Stt</th>
-                                            
-                                            <th>Họ & Tên</th>
-                                            <th>Phone</th>
-                                            <th>Facebook</th>
-                                            <th>Zalo</th>
-                                            <th>Email</th>
-											<th>Lần xem cuối</th>
-											<th>Lần xem đầu</th>
-                                            <th>Số trang xem</th>
-                                            <th>Thiết bị</th>
-                                            <th>Trình duyệt</th>
-                                            <th>Tỉnh thành</th>
-                                            <th>Quốc gia</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="javascript:void(0)">1</a></td>
-                                           
-                                            <td><a href=""><img src="../plugins/images/users/salman.jpg" alt="user" class="img-circle" style="width:30px"> Nguyễn Văn A</a></td>
-                                            <td><strong>0987 778 778</strong></td>
-                                            <td><a href="facebook.com/gaucho"><button class="btn btn-outline btn-info waves-effect waves-light" type="button">
-											<i class="fa fa-facebook"></i> </button></a></td>
-                                            <td><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
-												<i class="fa fa-comments-o m-r-5"></i> Zalo 
-												</button></td>
-                                            <td><button class="btn btn-outline btn-info waves-effect waves-light" type="button"> <i class="fa fa-envelope"></i> </button></td>
-                                          
-											 <td>1 phút trước</td>
-											 <td>18h00 - 20/10</td>
-                                            <td>3 trang</td>
-											
-                                            <td>IPHONE</td>
-                                            <td>Safari</td>
-                                            <td>Hà Nội</td>
-                                            <td>Việt Nam</td>
-                                        </tr>
-                                         <tr>
-                                            <td><a href="javascript:void(0)">1</a></td>
-                                           
-                                            <td><a href=""><img src="../plugins/images/users/salman.jpg" alt="user" class="img-circle" style="width:30px"> Nguyễn Văn A</a></td>
-                                            <td><strong>0987 778 778</strong></td>
-                                            <td><a href="facebook.com/gaucho"><button class="btn btn-outline btn-info waves-effect waves-light" type="button">
-											<i class="fa fa-facebook"></i> </button></a></td>
-                                            <td><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
-												<i class="fa fa-comments-o m-r-5"></i> Zalo 
-												</button></td>
-                                            <td><button class="btn btn-outline btn-info waves-effect waves-light" type="button"> <i class="fa fa-envelope"></i> </button></td>
-                                          
-											 <td>1 phút trước</td>
-											 <td>18h00 - 20/10</td>
-                                            <td>3 trang</td>
-											
-                                            <td>IPHONE</td>
-                                            <td>Safari</td>
-                                            <td>Hà Nội</td>
-                                            <td>Việt Nam</td>
-                                        </tr>
-                                        
-                                    </tbody>
-                                </table>
-									<div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate">
-									<a class="paginate_button previous disabled" aria-controls="myTable" data-dt-idx="0" tabindex="0" id="myTable_previous">Trước</a>
-									<span>
-										<a class="paginate_button current" aria-controls="myTable" data-dt-idx="1" tabindex="0">1</a>
-										<a class="paginate_button " aria-controls="myTable" data-dt-idx="2" tabindex="0">2</a>
-										<a class="paginate_button " aria-controls="myTable" data-dt-idx="3" tabindex="0">3</a>
-										<a class="paginate_button " aria-controls="myTable" data-dt-idx="4" tabindex="0">4</a>
-										<a class="paginate_button " aria-controls="myTable" data-dt-idx="5" tabindex="0">5</a>
-										<a class="paginate_button " aria-controls="myTable" data-dt-idx="6" tabindex="0">6</a>
-									</span>
-									<a class="paginate_button next" aria-controls="myTable" data-dt-idx="7" tabindex="0" id="myTable_next">Sau</a></div>
-                            </div>
-							
-                            </div>
+                            <h3 class="box-title m-b-0">Thông tin cần khách hàng cung cấp</h3>
+                            <p class="text-muted m-b-30 font-13"> Thông tin cần thiết để bắt đầu Chat </p>
+                            <form class="form-horizontal">
+                                <div class="form-group border-1px-ccc">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox33" type="checkbox">
+                                            <label for="checkbox33">Họ & Tên khách hàng</label>
+                                        </div>
+                                    </div>
+									<div class="col-sm-4">
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox34" type="checkbox">
+                                            <label for="checkbox34">Bắt buộc cung cấp</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group border-1px-ccc">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox35" type="checkbox">
+                                            <label for="checkbox35">Email khách hàng</label>
+                                        </div>
+                                    </div>
+									<div class="col-sm-4">
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox36" type="checkbox">
+                                            <label for="checkbox36">Bắt buộc cung cấp</label>
+                                        </div>
+                                    </div>
+                                </div>
+								 <div class="form-group border-1px-ccc">
+                                    <div class="col-sm-4">
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox37" type="checkbox">
+                                            <label for="checkbox37">Số điện thoại</label>
+                                        </div>
+                                    </div>
+									<div class="col-sm-4">
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox38" type="checkbox">
+                                            <label for="checkbox38">Bắt buộc cung cấp</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+						 <div class="white-box">
+                            <h3 class="box-title m-b-0">Chuẩn bị chat với khách hàng</h3>
+                            <p class="text-muted m-b-30 font-13"> Nội dung mặc định khi chuẩn bị chat với khách hàng</p>
+                            <form class="form-horizontal">
+                                <div class="form-group">
+									<div class="col-sm-6 col-xs-12">
+										<label class="col-md-12">Trước khi chat</label>
+										<div class="col-md-12">
+											<textarea class="form-control" rows="5" placeholder="Ví dụ: Vui lòng cung cấp thông tin của bạn"></textarea>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="col-md-12">Sau khi khách hàng cung cấp thông tin</label>
+										<div class="col-md-12">
+											<textarea class="form-control" rows="5" placeholder="Ví dụ: Cảm ơn bạn. Tôi có thể giúp gì cho bạn"></textarea>
+										</div>
+									</div>
+                                </div>
+								 <div class="form-group">
+									<div class="col-sm-6 col-xs-12">
+										<label class="col-md-12">Khi bạn không online</label>
+										<div class="col-md-12">
+											<textarea class="form-control" rows="5" placeholder="Ví dụ: Xin lỗi tôi không online, tôi sẽ liên hệ qua email của bạn nhé"></textarea>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12">
+										<label class="col-md-12">Khi bạn đang bận (60s sau khi khách hàng hỏi)</label>
+										<div class="col-md-12">
+											<textarea class="form-control" rows="5" placeholder="Ví dụ: Xin bạn chờ trong giây lát, các hỗ trợ viên đều đang bận"></textarea>
+										</div>
+									</div>
+                                </div>
+                            </form>
                         </div>
                     </div>
+					<div class="col-sm-4">
+					<div class="panel panel-inverse">
+                            <div class="panel-heading"> Tùy Chỉnh Cửa Sổ Chat</div>
+                            <div class="panel-wrapper collapse in" aria-expanded="true">
+                                <div class="panel-body">
+                                    <div class="example">
+                                        <h5 class="box-title m-t-30">Chọn màu cửa sổ chat</h5>
+                                         <input type="text" class="colorpicker form-control" value="#fbfafd" /> </div>
+
+                                </div>
+                            </div>
+                        </div>
+						<div class="panel panel-default pannel-chatbox">
+                            <div class="panel-heading pannel-chatbox-heading"><input type="text" value="Bạn cần hỗ trợ - Chat ngay" class="pannel-chatbox-input">
+							<div class="panel-action"><a href="#" data-perform="panel-dismiss"><i class="ti-close"></i></a></div>
+							</div>
+                            <div class="panel-wrapper collapse in">
+                                <div class="panel-body pannel-chatbox-body">
+                                    <img src="./images/chat-agent.png" alt="alert" class="chat-agent-image" id="sa-image">
+									<textarea class="pannel-chatbox-body-textarea">Vui lòng nhập nội dung vào ô bên dưới</textarea>
+                                </div>
+                                <div class="panel-footer pannel-chatbox-footer">
+									<div class="chat-input-box">Message ...</div>
+								</div>
+                            </div>
+                        </div>
+					</div>
+                </div>
+                <!-- /.row -->
+                
                 </div>
                     <!-- row -->
                     <!-- /.row -->

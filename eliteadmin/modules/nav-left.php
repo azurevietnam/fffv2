@@ -51,6 +51,7 @@
                     </li>
                     <li> <a href="#" class="waves-effect"><i data-icon="/" class="linea-icon linea-basic fa-fw"></i> <span class="hide-menu">Tùy Chỉnh<span class="fa arrow"></span> <span class="label label-rouded label-info pull-right">13</span> </span></a>
                         <ul class="nav nav-second-level">
+							<li><a href="cauhinh-matheodoi.php">Mã theo dõi</a></li>
 							<li><a href="cauhinh-chat.php">Cấu hình chat box</a></li>
                             <li ><a href="panels-wells.html" >Chặn click tặc</a></li>
                             <li><a href="panel-ui-block.html">Phản hồi realtime</a></li>

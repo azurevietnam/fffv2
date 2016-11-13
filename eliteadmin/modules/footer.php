@@ -38,7 +38,10 @@
 <!--Style Switcher -->
 	<script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 	
-
+    <!-- Color Picker Plugin JavaScript -->
+    <script src="../plugins/bower_components/jquery-asColorPicker-master/libs/jquery-asColor.js"></script>
+    <script src="../plugins/bower_components/jquery-asColorPicker-master/libs/jquery-asGradient.js"></script>
+    <script src="../plugins/bower_components/jquery-asColorPicker-master/dist/jquery-asColorPicker.min.js"></script>
 
 <script>
 
@@ -47,6 +50,22 @@ $('.input-daterange-datepicker').daterangepicker({
                 applyClass: 'btn-info',
                 cancelClass: 'btn-inverse'
         });
+// Colorpicker
+        $(".colorpicker").asColorPicker({
+			 onChange: function(hsb, hex, rgb){
+				$(".pannel-chatbox-heading").attr("style", "background-color: "+ hsb +" !important");
+				$(".pannel-chatbox-input").attr("style", "background-color: "+ hsb +" ; border:1px "+ hsb +" solid");
+				
+				
+			  }
+		});
+        $(".complex-colorpicker").asColorPicker({
+            mode: 'complex'
+        });
+		function showcolor(){
+			console.log($(this).val());
+		}
+		
 
 </script>
 
