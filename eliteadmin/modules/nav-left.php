@@ -45,7 +45,7 @@
                             <li><a href="khachhang-chat.php">Chat-message</a></li>
                             <li><a href="chat.html">Push Notifications</a></li>
                             <li><a href="chat.html">SMS</a></li>
-                            <li><a href="chat.html">Email Marketing</a></li>
+                            <li><a href="email-1.php">Email Marketing</a></li>
                             <li><a href="chat.html">Facebook Chat</a></li>
                         </ul>
                     </li>
@@ -54,7 +54,7 @@
 							<li><a href="cauhinh-matheodoi.php">Mã theo dõi</a></li>
 							<li><a href="cauhinh-chat.php">Cấu hình chat box</a></li>
                             <li ><a href="cauhinh-chanclicktac.php" >Chặn click tặc</a></li>
-                            <li><a href="panel-ui-block.html">Phản hồi realtime</a></li>
+                            <li><a href="cauhinh-hopthoai-1.php">Phản hồi realtime</a></li>
                            
                         </ul>
                     </li>

@@ -112,20 +112,13 @@
                         </div>
                     </div>
 					<div class="col-sm-4">
-					<div class="panel panel-inverse">
-                            <div class="panel-heading"> Tùy Chỉnh Cửa Sổ Chat</div>
-                            <div class="panel-wrapper collapse in" aria-expanded="true">
-                                <div class="panel-body">
-                                    <div class="example">
-                                        <h5 class="box-title m-t-30">Chọn màu cửa sổ chat</h5>
-                                         <input type="text" class="colorpicker form-control" value="#fbfafd" /> </div>
-
-                                </div>
-                            </div>
-                        </div>
+					
 						<div class="panel panel-default pannel-chatbox">
-                            <div class="panel-heading pannel-chatbox-heading"><input type="text" value="Bạn cần hỗ trợ - Chat ngay" class="pannel-chatbox-input">
-							<div class="panel-action"><a href="#" data-perform="panel-dismiss"><i class="ti-close"></i></a></div>
+                            <div class="panel-heading pannel-chatbox-heading">
+								<i class="fa fa-sliders colorpicker change-color" value="#fbfafd"></i>
+
+								<input type="text" value="Bạn cần hỗ trợ - Chat ngay" class="pannel-chatbox-input">
+								<div class="panel-action"><a href="#" data-perform="panel-dismiss"><i class="ti-close"></i></a></div>
 							</div>
                             <div class="panel-wrapper collapse in">
                                 <div class="panel-body pannel-chatbox-body">

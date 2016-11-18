@@ -54,7 +54,11 @@ $('.input-daterange-datepicker').daterangepicker({
                 cancelClass: 'btn-inverse'
         });
 // Colorpicker
+
+
         $(".colorpicker").asColorPicker({
+			hideInput: true,
+			hideFireChange: false,
 			 onChange: function(hsb, hex, rgb){
 				$(".pannel-chatbox-heading").attr("style", "background-color: "+ hsb +" !important");
 				$(".pannel-chatbox-input").attr("style", "background-color: "+ hsb +" ; border:1px "+ hsb +" solid");
@@ -62,9 +66,8 @@ $('.input-daterange-datepicker').daterangepicker({
 				
 			  }
 		});
-        $(".complex-colorpicker").asColorPicker({
-            mode: 'complex'
-        });
+
+        
 		function showcolor(){
 			console.log($(this).val());
 		}

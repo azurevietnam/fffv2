@@ -27,15 +27,34 @@
                
                <!-- .row -->
                 <div class="row">
-                    <div class="col-sm-8">
-                        <div class="white-box">
-                            <h3 class="box-title m-b-0">Bước 1: Copy mã theo dõi</h3>
-                            <p>Elite Admin is a popular open source WebApp template for admin dashboards and control panels. It is a responsive HTML template that is based on the CSS framework Bootstrap 3.3.6 It utilizes all of the Bootstrap components in its design and re-styles many commonly used plugins to create a consistent design that can be used as a user interface for backend applications. Elite Admin is based on a modular design, which allows it to be easily customized and built upon. This documentation will guide you through installing the template and exploring the various components that are bundled with the template.</p>
-                            <hr>
+                    <div class="col-sm-12">
+                         <div class="white-box">
+                            <h3 class="box-title m-b-0">Mã Tracking</h3>
+                            <p class="text-muted m-b-30 font-13">Để có thể tracking và chặn click tặc tốt nhất, bạn vui lòng thực hiện 2 bước gắn mã theo dõi sau.</p>
+                            <form class="form-horizontal">
+                               <div class="form-group">
+									<label class="col-sm-3" for="example-input-normal">Bước 1: Adwords Tracking URL</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" onclick="this.focus();this.select()" value="http://tracking.fff.com.vn?keycode=7kXT5cyAAeFmh&amp;lpurl={lpurl}">
+									</div>
+								</div>
+                               <div class="form-group">
+									<label class="col-sm-3">Bước 2: Mã theo dõi <br><p class="content-group-lg">Bạn cần copy đoạn mã và dán vào trước thẻ <span class="text-warning"><strong>&lt;/head&gt;</strong></span> của website.</p></label>
+									<div class="col-sm-9">
+<textarea rows="8" cols="5" class="form-control" onclick="this.focus();this.select()">&lt;script type='text/javascript'&gt;
+var _cgk = '7kXT5cyAAeFmh'; 
+(function () {
+	var cg = document.createElement('script'); cg.type = 'text/javascript'; cg.async = true;
+	cg.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'admin.fff.com.vn/aui.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cg, s);
+})();
+&lt;/script&gt;</textarea>
+									</div>
+								</div>
+                            </form>
                         </div>
                     </div>
-					<div class="col-sm-4">
-					</div>
+					
                 </div>
                 <!-- /.row -->
                 
