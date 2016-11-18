@@ -24,6 +24,7 @@
 	
     <!-- Color picker plugins css -->
     <link href="../plugins/bower_components/jquery-asColorPicker-master/css/asColorPicker.css" rel="stylesheet">
+<link rel="stylesheet" href="../plugins/bower_components/html5-editor/bootstrap-wysihtml5.css" />
 	
 
 

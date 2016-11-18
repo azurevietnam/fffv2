@@ -31,7 +31,7 @@
                 </ul>
             </li>
 			
-				<li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="B"></i> <span class="hide-menu"> Khách hàng của bạn<span class="fa arrow"></span> </span></a>
+				<li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="B"></i> <span class="hide-menu"> Khách hàng<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
                     <li> <a href="khachhang-chuadinhdanh.php">Chưa định danh</a> </li>
                     <li> <a href="khachhang-dinhdanh.php">Định danh</a> </li>

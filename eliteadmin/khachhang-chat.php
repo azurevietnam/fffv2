@@ -43,47 +43,52 @@
             <!-- .chat-left-panel -->
             <!-- .chat-right-panel -->
               <div class="chat-right-aside">
-                 <div class="chat-main-header">
-                      <div class="p-20 b-b">
-                          <h3 class="box-title">Chat Message</h3>
-                      </div>
-                  </div> 
+                  
                  <div class="chat-box">
                       <ul class="chat-list slimscroll p-t-30">
                         <li>
                           <div class="chat-image"> <img alt="male" src="../plugins/images/users/ritesh.jpg"> </div>
                           <div class="chat-body">
                             <div class="chat-text">
-                              <h4>Ritesh</h4>
+                              <h4>Ritesh  <b>10.00 am</b></h4>
                               <p> Hi, Genelia how are you and my son? </p>
-                              <b>10.00 am</b> </div>
+                             </div>
+                          </div>
+                        </li>
+						 <li>
+                          <div class="chat-image"> <img alt="male" src="../plugins/images/users/ritesh.jpg"> </div>
+                          <div class="chat-body">
+                            <div class="chat-text">
+                              <h4>Ritesh  <b>10.00 am</b></h4>
+                              <p> View a website </p>
+                             </div>
                           </div>
                         </li>
                         <li class="odd">
                           <div class="chat-image"> <img alt="Female" src="../plugins/images/users/genu.jpg"> </div>
                           <div class="chat-body">
                             <div class="chat-text">
-                              <h4>Genelia</h4>
+                              <h4>Genelia <b>10.00 am</b></h4>
                               <p> Hi, How are you Ritesh!!! We both are fine sweetu. </p>
-                              <b>10.03 am</b> </div>
+							</div>
                           </div>
                         </li>
                         <li>
                           <div class="chat-image"> <img alt="male" src="../plugins/images/users/ritesh.jpg"> </div>
                           <div class="chat-body">
                             <div class="chat-text">
-                              <h4>Ritesh</h4>
+                              <h4>Ritesh  <b>10.00 am</b></h4>
                               <p> Oh great!!! just enjoy you all day and keep rocking</p>
-                              <b>10.05 am</b> </div>
+                              </div>
                           </div>
                         </li>
                         <li class="odd">
                           <div class="chat-image"> <img alt="Female" src="../plugins/images/users/genu.jpg"> </div>
                           <div class="chat-body">
                             <div class="chat-text">
-                              <h4>Genelia</h4>
+                              <h4>Genelia <b>10.00 am</b></h4>
                               <p> Your movei was superb and your acting is mindblowing </p>
-                              <b>10.07 am</b> </div>
+                             </div>
                           </div>
                         </li>
                         

@@ -2740,7 +2740,7 @@ Basic List
 /*User-box*/
 .user-bg {
   margin: -25px;
-  height: 230px;
+  
   overflow: hidden;
   position: relative;
 }
@@ -2839,7 +2839,6 @@ Basic List
 .chat-list .chat-text {
   background: #f7fafc;
   border-radius: 0px;
-  display: inline-block;
   padding: 15px;
   position: relative;
 }

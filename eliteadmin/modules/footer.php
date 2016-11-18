@@ -25,6 +25,9 @@
 		<!--EChart JavaScript -->
 		<script type="text/javascript" src="../plugins/echarts/echarts.js"></script>
 		
+<script src="../plugins/bower_components/html5-editor/wysihtml5-0.3.0.js"></script>
+<script src="../plugins/bower_components/html5-editor/bootstrap-wysihtml5.js"></script>
+
 	
         
 		<? if ($left_menu == "small"){?>
@@ -66,7 +69,12 @@ $('.input-daterange-datepicker').daterangepicker({
 			console.log($(this).val());
 		}
 		
+$(document).ready(function () {
 
+  $('.textarea_editor').wysihtml5();
+
+
+});
 </script>
 
 </body>

@@ -68,7 +68,7 @@
                                         <tr>
                                             <td><a href="javascript:void(0)">1</a></td>
                                            
-                                            <td><i class="fa fa-circle-o text-info"></i> KH_0001</td>
+                                            <td><a href="khachhang-contact.php"><i class="fa fa-circle-o text-info"></i> KH_0001</a></td>
                                             <td>192.168.1.1</td>
                                             <td>
 												<a href="khachhang-chat.php"><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">

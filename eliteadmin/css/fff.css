@@ -2,6 +2,9 @@
 .chat-right-bar{
 	margin-right:300px!important;	
 }
+.p-10-20{
+	padding:10px 20px;
+}
 .shw-rside{
 	width:300px;
 }
@@ -159,4 +162,31 @@
 .pannel-chatbox-footer{
 	
 	border-top: 1px dashed #e0e0e0!important;
+}
+.chat-bg-color{
+	background:#4c5667;
+}
+.chat-bg-color input{
+	background:#4c5667;
+	border:1px #4c5667 solid;
+	color:#fff;
+	padding:5px;
+	font-size:14px;
+	width:80%;
+}
+.chat-bg-color h3:hover input{
+	background:#fff;
+	border:1px #4c5667 solid;
+	color:#4c5667;
+}
+.chat-bg-color h3{
+	line-height:20px;
+}
+.chat-kh-province{
+	color:#fff;
+}
+
+.steamline .sl-item{
+	border-bottom:1px #eee dashed;
+	padding-bottom:20px;
 }
