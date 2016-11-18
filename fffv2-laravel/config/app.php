@@ -184,7 +184,8 @@ return [
         Illuminate\Filesystem\FilesystemServiceProvider::class,
         Illuminate\Foundation\Providers\FoundationServiceProvider::class,
         Illuminate\Hashing\HashServiceProvider::class,
-        Illuminate\Mail\MailServiceProvider::class,
+        //Illuminate\Mail\MailServiceProvider::class,
+        Sboo\Laravel5Mailjet\MailjetServiceProvider::class,
         Illuminate\Notifications\NotificationServiceProvider::class,
         Illuminate\Pagination\PaginationServiceProvider::class,
         Illuminate\Pipeline\PipelineServiceProvider::class,
@@ -261,6 +262,7 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'HTML' => Collective\Html\HtmlFacade::class,
         'Lipsum' => Magyarjeti\LaravelLipsum\LipsumFacade::class,
+        'Mailjet'   => Sboo\Laravel5Mailjet\Facades\Mailjet::class,
     ],
 
 ];
