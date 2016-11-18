@@ -8,6 +8,15 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Home
     Route::get('/', 'HomeController')->name('home');
+    Route::get('/click/ip-click-ao', 'VirtualClickController@ip_click_ao');
+    Route::get('/click/ip-khu-vuc', 'VirtualClickController@ip_khu_vuc');
+    Route::get('/click/ip-thiet-bi', 'VirtualClickController@ip_thiet_bi');
+
+
+
+
+
+
 
 
     // Language

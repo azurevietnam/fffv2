@@ -29,9 +29,9 @@
                     <li> <a href="index.php" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a></li>
 			<li class="active"> <a href="javascript:void(0);" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="R"></i> <span class="hide-menu"> Chặn click ảo <span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level collapse in">
-                    <li> <a href="ip-click-ao.php" class="active">Ip click ảo</a> </li>
-                    <li> <a href="ip-khu-vuc.php">Khu Vực</a> </li>
-                    <li> <a href="ip-thiet-bi.php">Thiết Bị</a> </li>
+                    <li> <a href="/click/ip-click-ao">Ip click ảo</a> </li>
+                    <li> <a href="/click/ip-khu-vuc">Khu Vực</a> </li>
+                    <li> <a href="/click/ip-thiet-bi">Thiết Bị</a> </li>
                    
                 </ul>
             </li>

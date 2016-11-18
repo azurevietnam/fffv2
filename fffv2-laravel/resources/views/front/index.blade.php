@@ -1,10 +1,6 @@
 @extends('front.template')
 
 @section('main')
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="cssload-speeding-wheel"></div>
-    </div>
     <div id="wrapper">
         <!-- Navigation - Top -->
     @include('front/modules/nav-top')

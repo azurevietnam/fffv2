@@ -108,9 +108,15 @@ class RegisterController extends Controller
                 'created' => date('Y-m-d H:i:s', time())
             );
 
-            DB::table('users')->insert($dataIns);
+            $id =DB::table('users')->insertGetId($dataIns);
+            $user = $userRepository->getById($id);
 
-            //$this->notifyUser($user);
+                //$user = $userRepository->store(
+            //    $dataIns,
+            //    str_random(10)
+            //);
+
+            $this->notifyUser($user);
 
             return redirect('/login')->with('ok', trans('front/verify.message') . $email);
         }
