@@ -1,62 +1,58 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('/')}}/plugins/images/favicon.png">
+    <title>FFF - This is title</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{{url('/')}}/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="{{url('/')}}/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
 
-    <head>
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{url('/')}}/plugins/images/favicon.png">
-        <title>FFF - This is title</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="{{url('/')}}/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Menu CSS -->
-        <link href="{{url('/')}}/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
-        <link href="{{url('/')}}/plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-        <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{url('/')}}/plugins/bower_components/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 
-
-        <link href="{{url('/')}}/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
-        <!-- Daterange picker plugins css -->
-        <link href="{{url('/')}}/plugins/bower_components/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
-        <link href="{{url('/')}}/plugins/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.2.2/css/buttons.dataTables.min.css" rel="stylesheet" type="text/css" />
 
 
-        <!-- Color picker plugins css -->
-        <link href="{{url('/')}}/plugins/bower_components/jquery-asColorPicker-master/css/asColorPicker.css" rel="stylesheet">
+    <link href="{{url('/')}}/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+    <!-- Daterange picker plugins css -->
+    <link href="{{url('/')}}/plugins/bower_components/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+    <link href="{{url('/')}}/plugins/bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
 
+    <!-- Color picker plugins css -->
+    <link href="{{url('/')}}/plugins/bower_components/jquery-asColorPicker-master/css/asColorPicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url('/')}}/plugins/bower_components/html5-editor/bootstrap-wysihtml5.css" />
 
-        <!-- MAP -->
-        <link href="{{url('/')}}/plugins/bower_components/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
-        <!-- animation CSS -->
-        <link href="{{url('/')}}/css/animate.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="{{url('/')}}/css/style.css" rel="stylesheet">
+    <link href="{{url('/')}}/plugins/bower_components/summernote/dist/summernote.css" rel="stylesheet" />
 
-        <!-- color CSS -->
 
-        <!-- color CSS -->
-        <link href="{{url('/')}}/css/colors/blue.css" id="theme" rel="stylesheet">
-        <script src="{{url('/')}}/plugins/bower_components/jquery/dist/jquery.min.js"></script>
-        <link href="{{url('/')}}/css/fff.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- MAP -->
+    <link href="{{url('/')}}/plugins/bower_components/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <!-- animation CSS -->
+    <link href="{{url('/')}}/css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{url('/')}}/css/style.css" rel="stylesheet">
 
-        <![endif]-->
+    <!-- color CSS -->
 
-        <!--
-        {!! HTML::style('css/front.css') !!}
-        {!! HTML::script('https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js') !!}
-        {!! HTML::script('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js') !!}
-            -->
+    <!-- color CSS -->
+    <link href="{{url('/')}}/css/colors/blue.css" id="theme" rel="stylesheet">
+    <script src="{{url('/')}}/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <link href="{{url('/')}}/css/fff.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
-    </head>
+    <![endif]-->
+
+</head>
 
   <body>
 
@@ -93,8 +89,7 @@
             <!--Wave Effects -->
             <script src="{{url('/')}}/js/waves.js"></script>
             <!-- Flot Charts JavaScript -->
-            <script src="{{url('/')}}/plugins/bower_components/flot/jquery.flot.js"></script>
-            <script src="{{url('/')}}/plugins/bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+
             <!-- google maps api -->
             <!-- Sparkline charts -->
             <script src="{{url('/')}}/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -106,13 +101,17 @@
             <script src="{{url('/')}}/plugins/bower_components/moment/moment.js"></script>
             <script src="{{url('/')}}/plugins/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 
+            <script src="{{url('/')}}/plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
 
             <!--EChart JavaScript -->
             <script type="text/javascript" src="{{url('/')}}/plugins/echarts/echarts.js"></script>
 
+            <script src="{{url('/')}}/plugins/bower_components/html5-editor/wysihtml5-0.3.0.js"></script>
+            <script src="{{url('/')}}/plugins/bower_components/html5-editor/bootstrap-wysihtml5.js"></script>
 
 
-            <? if ($left_menu == "small"){?>
+
+            <? if (@$left_menu == "small"){?>
             <script src="{{url('/')}}/js/slider-bar.min.js"></script>
             <?}else{?>
             <script src="{{url('/')}}/js/custom.min.js"></script>
@@ -136,7 +135,11 @@
                     cancelClass: 'btn-inverse'
                 });
                 // Colorpicker
+
+
                 $(".colorpicker").asColorPicker({
+                    hideInput: true,
+                    hideFireChange: false,
                     onChange: function(hsb, hex, rgb){
                         $(".pannel-chatbox-heading").attr("style", "background-color: "+ hsb +" !important");
                         $(".pannel-chatbox-input").attr("style", "background-color: "+ hsb +" ; border:1px "+ hsb +" solid");
@@ -144,14 +147,18 @@
 
                     }
                 });
-                $(".complex-colorpicker").asColorPicker({
-                    mode: 'complex'
-                });
+
+
                 function showcolor(){
                     console.log($(this).val());
                 }
 
+                $(document).ready(function () {
 
+                    $('.textarea_editor').wysihtml5();
+
+
+                });
             </script>
     </footer>
 
