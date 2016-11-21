@@ -59,45 +59,11 @@ $(':checkbox:checked').prop('checked',false);
             }
         });
 
-        var plot = $.plot("#placeholder", [ getRandomData() ], {
-            series: {
-                shadowSize: 0   // Drawing is faster without shadows
-            },
-            yaxis: {
-                min: 0,
-                max: 100
-            },
-            xaxis: {
-                show: false
-            },
-            colors: ["#01c0c8"],
-            grid: {
-                color: "#AFAFAF",
-                hoverable: true,
-                borderWidth: 0,
-                backgroundColor: '#FFF'
-            },
-            tooltip: true,
-              resize:true,
-            tooltipOpts: {
-                content: "Y: %y",
-                defaultTheme: false
-            }
-        
 
-        });
 
-        function update() {
 
-            plot.setData([getRandomData()]);
 
-            // Since the axes don't change, we don't need to call plot.setupGrid()
-
-            plot.draw();
-            setTimeout(update, updateInterval);
-        }
-
-        update();
+   
          $('.vcarousel').carousel({
             interval: 3000
          })
@@ -153,8 +119,7 @@ $(document).ready(function() {
 	
 	
 	
-	//echart
-	
+	//echart only for homepage
 	
 	
     require.config({

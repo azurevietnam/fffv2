@@ -238,3 +238,7 @@
 .note-editor .btn-default{
 	background:#fff!important;
 }
+
+.fix-300px{
+	width:300px;	
+}

@@ -8,8 +8,7 @@
         <!--Wave Effects -->
         <script src="js/waves.js"></script>
         <!-- Flot Charts JavaScript -->
-        <script src="../plugins/bower_components/flot/jquery.flot.js"></script>
-        <script src="../plugins/bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+      
         <!-- google maps api -->
         <!-- Sparkline charts -->
         <script src="../plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
@@ -21,6 +20,7 @@
 		<script src="../plugins/bower_components/moment/moment.js"></script>
 		<script src="../plugins/bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 
+    <script src="../plugins/bower_components/datatables/jquery.dataTables.min.js"></script>
 
 		<!--EChart JavaScript -->
 		<script type="text/javascript" src="../plugins/echarts/echarts.js"></script>
