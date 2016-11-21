@@ -30,7 +30,7 @@
 
 	
         
-		<? if ($left_menu == "small"){?>
+		<? if (@$left_menu == "small"){?>
 			<script src="js/slider-bar.min.js"></script>
 		<?}else{?>
 			<script src="js/custom.min.js"></script>

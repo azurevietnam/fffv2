@@ -242,3 +242,18 @@
 .fix-300px{
 	width:300px;	
 }
+.valign-middle td{
+	vertical-align: middle!important;
+}
+.color-blue{
+	border:1px #03a9f3 solid;
+}
+.box-cauhinh-popup .panel-body{
+	padding:0px!important;
+}
+.inline-editor:active,
+.inline-editor:focus{
+	border:1px #03a9f3 solid;
+
+	
+}

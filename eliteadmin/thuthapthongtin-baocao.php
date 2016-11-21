@@ -31,35 +31,35 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="white-box">
-                            <h3 class="box-title m-b-0">KHÁCH HÀNG ĐỊNH DANH</h3>
-                            <p class="text-muted m-b-20">Khách hàng định danh là khách hàng bạn có thể liên hệ để cung cấp thông tin hoặc bán sản phẩm cho khách hàng. <br>
-							Chúng tôi hỗ trợ 4 phương pháp liên lạc với khách hàng: Gửi SMS tới khách hàng, Gửi email marketing, Gửi tin nhắn Zalo, Gửi tin nhắn Facebook cho khách hàng của bạn
+                            <h3 class="box-title m-b-0">BÁO CÁO THU THẬP KHÁCH HÀNG</h3>
+                            <p class="text-muted m-b-20">Thông tin thu thập từ các popup nhận thông tin khách hàng. Mở tính năng <a href="thuthapthongtin-cauhinh.php">Cấu hình Popup</a> để thu thập nhiều khách hàng hơn
 							</p>
 							
 							 <!-- Nav tabs -->
 							<ul class="nav customtab2 nav-tabs" role="tablist">
 							  <li role="presentation" class="active"><a href="#home6" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-home"></i></span><span class="hidden-xs"> Toàn bộ (100)</span></a></li>
-							  <li role="presentation" class=""><a href="#profile6" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-user"></i></span> <span class="hidden-xs">Trả tiền (10)</span></a></li>
-							  <li role="presentation" class=""><a href="#messages6" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="true"><span class="visible-xs"><i class="ti-email"></i></span> <span class="hidden-xs">Trực tiếp (3)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Giới thiệu (30)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">PC (30)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Mobile (30)</span></a></li>
-							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Tablet (30)</span></a></li>
+							  <li role="presentation" class=""><a href="#profile6" aria-controls="profile" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-user"></i></span> <span class="hidden-xs">Trang chủ (10)</span></a></li>
+							  <li role="presentation" class=""><a href="#messages6" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="true"><span class="visible-xs"><i class="ti-email"></i></span> <span class="hidden-xs">Trang con 1 (3)</span></a></li>
+							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Trang con 2 (30)</span></a></li>
+							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Trang con 3 (30)</span></a></li>
+							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Trang con 4 (30)</span></a></li>
+							  <li role="presentation" class=""><a href="#settings6" aria-controls="settings" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-settings"></i></span> <span class="hidden-xs">Trang con 5 (30)</span></a></li>
 							  
 							</ul>
 							<!-- Tab panes -->
 							
                             <div class="table-responsive dataTables_wrapper ">
-                                <table class="table color-table inverse-table">
+                                <table class="table color-table inverse-table valign-middle">
                                     <thead>
                                         <tr>
                                             <th>Stt</th>
                                             
                                             <th>Họ & Tên</th>
                                             <th>Phone</th>
+											<th>Email</th>
                                             <th>Facebook</th>
                                             <th>Zalo</th>
-                                            <th>Email</th>
+                                            
 											<th>Lần xem cuối</th>
 											<th>Lần xem đầu</th>
                                             <th>Số trang xem</th>
@@ -75,12 +75,11 @@
                                            
                                             <td><a href="">Nguyễn Văn A</a></td>
                                             <td><strong>0987 778 778</strong></td>
+											 <td><button class="btn btn-outline btn-info waves-effect waves-light" type="button"> <i class="fa fa-envelope"></i> </button></td>
                                             <td><a href="facebook.com/gaucho"><button class="btn btn-outline btn-info waves-effect waves-light" type="button">
 											<i class="fa fa-facebook"></i> </button></a></td>
-                                            <td><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
-												<i class="fa fa-comments-o m-r-5"></i> Zalo 
-												</button></td>
-                                            <td><button class="btn btn-outline btn-info waves-effect waves-light" type="button"> <i class="fa fa-envelope"></i> </button></td>
+                                            <td><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng"><i class="fa fa-comments-o m-r-5"></i> </button></td>
+                                           
                                           
 											 <td>1 phút trước</td>
 											 <td>18h00 - 20/10</td>
@@ -91,17 +90,16 @@
                                             <td>Hà Nội</td>
                                             <td>Việt Nam</td>
                                         </tr>
-                                         <tr>
+                                          <tr>
                                             <td><a href="javascript:void(0)">1</a></td>
                                            
-                                            <td><a href=""> Nguyễn Văn A</a></td>
+                                            <td><a href="">Nguyễn Văn A</a></td>
                                             <td><strong>0987 778 778</strong></td>
+											 <td><button class="btn btn-outline btn-info waves-effect waves-light" type="button"> <i class="fa fa-envelope"></i> </button></td>
                                             <td><a href="facebook.com/gaucho"><button class="btn btn-outline btn-info waves-effect waves-light" type="button">
 											<i class="fa fa-facebook"></i> </button></a></td>
-                                            <td><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng">
-												<i class="fa fa-comments-o m-r-5"></i> Zalo 
-												</button></td>
-                                            <td><button class="btn btn-outline btn-info waves-effect waves-light" type="button"> <i class="fa fa-envelope"></i> </button></td>
+                                            <td><button type="button" class="btn btn-outline btn-info waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="" data-original-title="Chat với khách hàng"><i class="fa fa-comments-o m-r-5"></i> </button></td>
+                                           
                                           
 											 <td>1 phút trước</td>
 											 <td>18h00 - 20/10</td>
