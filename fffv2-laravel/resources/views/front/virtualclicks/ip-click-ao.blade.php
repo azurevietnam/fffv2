@@ -17,7 +17,6 @@
                     <h4 class="page-title">IP Click Ảo</h4> </div>
                 <div class="col-lg-6 col-sm-4 col-md-4 col-xs-12"> </div>
                 <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
-                    <div class="input-group"><input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span> </div>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -26,8 +25,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="white-box">
-                        <h3 class="box-title m-b-0">Danh sách IP</h3>
-                        <p class="text-muted m-b-20">Danh sách IP click và truy cập website của bạn</p>
+                        <h3 class="box-title m-b-0">Danh sách IP click và truy cập website của bạn</h3>
                         <div class="table-responsive dataTables_wrapper ">
                             <table class="table">
                                 <thead>

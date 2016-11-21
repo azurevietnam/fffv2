@@ -116,6 +116,18 @@
 	border:1px #fff solid;
 	margin-top:10px;
 }
+.top-select-domain .btn {
+	text-align: left;
+}
+.top-select-date{
+	margin-top:10px;
+	margin-left: 10px;
+	width: 240px;
+	display: table;
+}
+.top-select-date .form-control {
+	height: 36px;
+}
 .border-1px-ccc{
 	padding-bottom:10px;
 	margin-bottom:10px!important;
@@ -159,4 +171,10 @@
 .pannel-chatbox-footer{
 	
 	border-top: 1px dashed #e0e0e0!important;
+}
+.btn-info-domain {
+	width: 200px;
+}
+.dropdown-menu-domain {
+	min-width: 240px;
 }

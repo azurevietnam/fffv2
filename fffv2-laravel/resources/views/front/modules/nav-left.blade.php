@@ -26,7 +26,7 @@
                         </ul>
                     </li>
                     <li class="nav-small-cap m-t-10">--- CHỨC NĂNG</li>
-                    <li> <a href="index.php" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a></li>
+                    <li> <a href="/" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a></li>
 			<li class="active"> <a href="javascript:void(0);" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="R"></i> <span class="hide-menu"> Chặn click ảo <span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level collapse in">
                     <li> <a href="/click/ip-click-ao">Ip click ảo</a> </li>
@@ -58,7 +58,7 @@
                         <ul class="nav nav-second-level">
 							<li><a href="cauhinh-matheodoi.php">Mã theo dõi</a></li>
 							<li><a href="cauhinh-chat.php">Cấu hình chat box</a></li>
-                            <li ><a href="panels-wells.html" >Chặn click tặc</a></li>
+                            <li ><a href="/config/cauhinh-chanclicktac" >Chặn click tặc</a></li>
                             <li><a href="panel-ui-block.html">Phản hồi realtime</a></li>
                            
                         </ul>

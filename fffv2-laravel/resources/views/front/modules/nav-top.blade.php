@@ -3,18 +3,27 @@
 		<div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/eliteadmin-logo.png" alt="home" /></b><span class="hidden-xs"><img src="../plugins/images/eliteadmin-text.png" alt="home" /></span></a></div>
 		<ul class="nav navbar-top-links navbar-left hidden-xs">
 			<li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
-			<li> 
-			<div class="input-group">
-				<div class="top-select-domain">
-					<button type="button" class="btn waves-effect waves-light btn-info">dantri.com.vn</button>
-					<button type="button" class="btn waves-effect waves-light btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-					<ul class="dropdown-menu">
-					  <li><a href="javascript:void(0)">dantri.com.vn</a></li>
-					  <li class="divider"></li>
-					  <li><a href="javascript:void(0)">Thêm mới</a></li>
-					</ul>
+			<li>
+				<div class="input-group">
+					<div class="top-select-domain">
+						<button type="button" class="btn waves-effect waves-light btn-info btn-info-domain">{{ count($domains) > 0? $domains->first()->domain_name : "<không tìm thấy domain>" }}</button>
+						<button type="button" class="btn waves-effect waves-light btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+						<ul class="dropdown-menu dropdown-menu-domain">
+							@foreach($domains as $domain)
+								<li><a href="javascript:void(0)">{{ $domain->domain_name }}</a></li>
+							@endforeach
+						  <li class="divider"></li>
+						  <li><a href="javascript:void(0)">Thêm mới</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
+			</li>
+			<li>
+
+					<div class="top-select-date">
+						<input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span>
+					</div>
+
 			</li>
 		</ul>
 		<ul class="nav navbar-top-links navbar-right pull-right">

@@ -57,9 +57,9 @@ class FormBuilder
             'errors',
             'placeholder' => '',
             'group_class',
+            'value' => null,
             'columns' => 0,
             'label' => null,
-            'value' => null,
             'pop' => null,
         ]);
     }

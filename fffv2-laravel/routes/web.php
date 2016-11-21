@@ -11,6 +11,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/click/ip-click-ao', 'VirtualClickController@ip_click_ao');
     Route::get('/click/ip-khu-vuc', 'VirtualClickController@ip_khu_vuc');
     Route::get('/click/ip-thiet-bi', 'VirtualClickController@ip_thiet_bi');
+    Route::get('/config/cauhinh-chanclicktac', 'ConfigurationController@cauhinh_chanclicktac');
 
 
 
@@ -74,8 +75,6 @@ Auth::routes();
 Route::get('resend', 'Auth\RegisterController@resend');
 Route::get('confirm/{token}', 'Auth\RegisterController@confirm');
 
-
-
-
+Route::get('/error-message', 'HomeController@error');
 
 
