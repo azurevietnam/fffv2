@@ -41,6 +41,10 @@ class App
                     $current_domain = $domains->where('id', Session::get('domain_id_choose'))->first();
                 }
             }
+        } else {
+            if (Session::has('domain_id_choose')) {
+                Session::forget('domain_id_choose');
+            }
         }
         View::share(['domains' => $domains,  'current_domain' => $current_domain]);
 
