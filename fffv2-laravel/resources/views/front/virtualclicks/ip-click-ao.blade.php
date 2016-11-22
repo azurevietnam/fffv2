@@ -17,6 +17,7 @@
                     <h4 class="page-title">IP Click Ảo</h4> </div>
                 <div class="col-lg-6 col-sm-4 col-md-4 col-xs-12"> </div>
                 <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
+                    <div class="input-group"><input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span> </div>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>

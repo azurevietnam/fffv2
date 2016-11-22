@@ -1,29 +1,33 @@
 <nav class="navbar navbar-default navbar-static-top m-b-0">
 	<div class="navbar-header"> <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
-		<div class="top-left-part"><a class="logo" href="index.html"><b><img src="../plugins/images/eliteadmin-logo.png" alt="home" /></b><span class="hidden-xs"><img src="../plugins/images/eliteadmin-text.png" alt="home" /></span></a></div>
+		<div class="top-left-part"><a class="logo" href="index.html"><b><img src="{{url('/')}}/plugins/images/eliteadmin-logo.png" alt="home" /></b><span class="hidden-xs"><img src="{{url('/')}}/plugins/images/eliteadmin-text.png" alt="home" /></span></a></div>
 		<ul class="nav navbar-top-links navbar-left hidden-xs">
 			<li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
 			<li>
-				<div class="input-group">
-					<div class="top-select-domain">
-						<button type="button" class="btn waves-effect waves-light btn-info btn-info-domain">{{ count($domains) > 0? $domains->first()->domain_name : "<không tìm thấy domain>" }}</button>
-						<button type="button" class="btn waves-effect waves-light btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-						<ul class="dropdown-menu dropdown-menu-domain">
-							@foreach($domains as $domain)
-								<li><a href="javascript:void(0)">{{ $domain->domain_name }}</a></li>
-							@endforeach
-						  <li class="divider"></li>
-						  <li><a href="javascript:void(0)">Thêm mới</a></li>
-						</ul>
+				<form id="form_change_domain" class="form-horizontal" method="post" action="/change-domain" accept-charset="utf-8">
+					<input type="hidden" name="_token" value="{{ csrf_token() }}">
+					<input type="hidden" name="domain_id_choose" id="domain_id_choose" value="{{ session('domain_choose') }}">
+					<div class="input-group">
+						<div class="top-select-domain">
+							<button data-value="" id="display_domain" type="button" class="btn waves-effect waves-light btn-info btn-info-domain">{{ empty($current_domain)? "<không tìm thấy domain>" : $current_domain->domain_name  }}</button>
+							<button type="button" class="btn waves-effect waves-light btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+							<ul id="domain_dropdown" class="dropdown-menu dropdown-menu-domain">
+								@foreach($domains as $domain)
+									<li><a data-value="{{ $domain->id }}" href="javascript:void(0)">{{ $domain->domain_name }}</a></li>
+								@endforeach
+							  <li class="divider"></li>
+							  <li><a onclick="return;" href="javascript:void(0)">Thêm mới</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
+				</form>
 			</li>
 			<li>
-
-					<div class="top-select-date">
-						<input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span>
-					</div>
-
+				<!--
+				<div class="top-select-date">
+					<input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span>
+				</div>
+				-->
 			</li>
 		</ul>
 		<ul class="nav navbar-top-links navbar-right pull-right">
@@ -37,22 +41,22 @@
 					<li>
 						<div class="message-center">
 							<a href="#">
-								<div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+								<div class="user-img"> <img src="{{url('/')}}/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
 								<div class="mail-contnet">
 									<h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
 							</a>
 							<a href="#">
-								<div class="user-img"> <img src="../plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+								<div class="user-img"> <img src="{{url('/')}}/plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
 								<div class="mail-contnet">
 									<h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
 							</a>
 							<a href="#">
-								<div class="user-img"> <img src="../plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+								<div class="user-img"> <img src="{{url('/')}}/plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
 								<div class="mail-contnet">
 									<h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
 							</a>
 							<a href="#">
-								<div class="user-img"> <img src="../plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+								<div class="user-img"> <img src="{{url('/')}}/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
 								<div class="mail-contnet">
 									<h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
 							</a>
@@ -122,7 +126,7 @@
 			<!-- /.dropdown -->
 			<li class="dropdown">
 				<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#">
-					<img src="../plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ str_limit(auth()->user()->fullname, 16, '...') }}</b>
+					<img src="{{url('/')}}/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ str_limit(auth()->user()->fullname, 16, '...') }}</b>
 				</a>
 				<ul class="dropdown-menu dropdown-user animated flipInY">
 					<li><a href="#"><i class="ti-user"></i> My Profile</a></li>
@@ -225,3 +229,14 @@
 	<!-- /.navbar-top-links -->
 	<!-- /.navbar-static-side -->
 	</nav>
+
+
+<script>
+	$(function () {
+		$("#domain_dropdown li a").click(function(){
+			$("#display_domain").html($(this).html());
+			$("#domain_id_choose").val($(this).attr("data-value"));
+			$("#form_change_domain").submit();
+		});
+	});
+</script>

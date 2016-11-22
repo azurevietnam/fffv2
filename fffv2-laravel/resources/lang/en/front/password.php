@@ -15,4 +15,5 @@ return [
     'email-click' => 'Click the button below to reset your password:',
     'email-button' => 'Reset Password',
     'email-end' => 'If you did not request a password reset, no further action is required.',
+    'email-send' => 'Link reset password is sent to email: ',
 ];

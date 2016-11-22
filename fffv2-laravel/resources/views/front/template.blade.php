@@ -128,6 +128,15 @@
             <script src="{{url('/')}}/plugins/bower_components/jquery-asColorPicker-master/dist/jquery-asColorPicker.min.js"></script>
 
             <script>
+                setTimeout(function(){
+                    try {
+                        $('#partial_display').slideUp("slow");
+                        //$('#partial_close_button').trigger('click');
+                    }
+                    catch(err) {
+
+                    }
+                }, 3000);
 
                 $('.input-daterange-datepicker').daterangepicker({
                     buttonClasses: ['btn', 'btn-sm'],

@@ -8,10 +8,12 @@ Route::group(['middleware' => 'auth'], function () {
 
     // Home
     Route::get('/', 'HomeController')->name('home');
+    Route::post('/change-domain', 'HomeController@change_domain');
     Route::get('/click/ip-click-ao', 'VirtualClickController@ip_click_ao');
     Route::get('/click/ip-khu-vuc', 'VirtualClickController@ip_khu_vuc');
     Route::get('/click/ip-thiet-bi', 'VirtualClickController@ip_thiet_bi');
-    Route::get('/config/cauhinh-chanclicktac', 'ConfigurationController@cauhinh_chanclicktac');
+    Route::get('/config/cauhinh-chanclicktac/{domain_id?}', 'ConfigurationController@get_cauhinh_chanclicktac');
+    Route::post('/config/cauhinh-chanclicktac', 'ConfigurationController@post_cauhinh_chanclicktac');
 
 
 

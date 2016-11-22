@@ -89,7 +89,6 @@ class RegisterController extends Controller
                 return back()->withInput()->withErrors($validator);
             }
 
-            $time = time();
             $dataIns = array(
                 'email' => $email,
                 'password' => bcrypt($password),
@@ -103,7 +102,6 @@ class RegisterController extends Controller
                 'utm_source' => $utm_source,
                 'utm_medium' => $utm_medium,
                 'referer' => strtolower($referer),
-                'created' => $time,
                 'status' => 0,
                 'created' => date('Y-m-d H:i:s', time())
             );
@@ -177,25 +175,30 @@ class RegisterController extends Controller
     protected function notifyUser(User $user)
     {
         //$user->notify(new ConfirmEmail($user->confirmation_code));
+        $view = view('emails.resend-active-account',
+            ['title'=>trans('front/verify.email-title'),
+                'body' => trans('front/verify.email-intro') . ". " . trans('front/verify.email-button') . ". " . url('confirm/' . $user->confirmation_code)
+            ]);
         $params = [
             "method" => "POST",
-            "from" => "phat.nguyen@maxcom.vn",
+            "from" => "FFF.com.vn <noreply@fff.com.vn>",
             "to" => "hiepphatnguyen@gmail.com",
             "subject" => trans('front/verify.email-title'),
-            "text" => trans('front/verify.email-title') . "<br/>" . trans('front/verify.email-intro') . "<br/>" . trans('front/verify.email-button') . "<br/>" . url('confirm/' . $user->confirmation_code)
+            //"txt" => trans('front/verify.email-title') . "<br/>" . trans('front/verify.email-intro') . "<br/>" . trans('front/verify.email-button') . "<br/>" . url('confirm/' . $user->confirmation_code)
+            //"html" => $view
+            "html" => trans('front/verify.email-title') . "<br/>" . trans('front/verify.email-intro') . "<br/>" . trans('front/verify.email-button') . "<br/>" . url('confirm/' . $user->confirmation_code)
         ];
-
-var_dump($params);
 
         $result = Mailjet::sendEmail($params);
 
-        if (Mailjet::getResponseCode() == 200)
-            echo "success - email sent";
-        else
-            echo "error - " . Mailjet::getResponseCode();
 
 
-
-        die;
+//        return (new MailMessage)
+//            ->line([
+//                trans('front/password.email-intro'),
+//                trans('front/password.email-click'),
+//            ])
+//            ->action(trans('front/password.email-button'), url('password/reset', $this->token))
+//            ->line(trans('front/password.email-end'));
     }
 }
