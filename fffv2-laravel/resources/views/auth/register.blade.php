@@ -1,6 +1,4 @@
 @extends('front.template')
-<?php $left_menu = "small 111111"; ?>
-
 @section('main')
     <section id="wrapper" class="login-register">
         <div class="login-box login-sidebar">
