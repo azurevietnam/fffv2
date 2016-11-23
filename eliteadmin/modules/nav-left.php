@@ -91,8 +91,8 @@
             </li>
 
 
-            <li class="nav-small-cap">--- HỖ TRỢ</li>
-            <li><a href="documentation.html" class="waves-effect"><i class="fa fa-empire"></i> <span class="hide-menu">Hướng dẫn sử dụng</span></a></li>
+            <li class="nav-small-cap">--- QUẢN TRỊ</li>
+            <li><a href="quantri-quanlykhachhang.php" class="waves-effect"><i class="fa fa-empire"></i> <span class="hide-menu">Quản lý khách hàng</span></a></li>
 
         </ul>
     </div>
