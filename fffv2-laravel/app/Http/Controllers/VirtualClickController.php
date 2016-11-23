@@ -41,7 +41,7 @@ class VirtualClickController extends Controller
         $query = DB::table("domain_logs")
             ->where("domain_key", $domain->keycode);
         if(!empty($search_ip)) {
-            $query = $query->where('ip', 'like', "%" . $search_ip . "%");
+           $query->where('ip', 'like', "%" . $search_ip . "%");
         }
         $domain_logs = $query->paginate($row);
         $domain_logs->appends(["row" => $row, "search_ip" => $search_ip, "sfield" => $sfield, "sdir" => $sdir])->links();

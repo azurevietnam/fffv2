@@ -79,7 +79,7 @@
                             <p class="text-muted m-b-20">Danh sách IP click và truy cập website của bạn. Bạn có thể chặn ngay IP click ảo hoặc <a href="">Cấu Hình Chặn Tự Động</a></p>
                             <div class="row padding-bottom-10px">
                                 <div class="col-sm-6" style="padding-top:10px">
-                                    <label class="form-inline">Hiển thị 
+                                    <label class="form-inline">Hiển thị
                                         <select id="select_num_row" name="row" class="form-control input-sm">
                                             <option value="50" {{ $row == 50 ? 'selected' : '' }}>50</option>
                                             <option value="100" {{ $row == 100 ? 'selected' : '' }}>100</option>
@@ -98,9 +98,11 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive dataTables_wrapper ">
-                                    <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                        {{$domain_logs->render()}}
-                                    </div>
+                                    @if($domain_logs->total() > 0)
+                                        <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
+                                            {{$domain_logs->render()}}
+                                        </div>
+                                    @endif
                                     <table class="table table-striped color-table inverse-table ">
                                         <thead>
                                         <tr>
@@ -140,9 +142,11 @@
                                             @endforeach
                                         </tbody>
                                     </table>
-                                    <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                        {{$domain_logs->render()}}
-                                    </div>
+                                    @if($domain_logs->lastPage() > 0)
+                                        <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
+                                            {{$domain_logs->render()}}
+                                        </div>
+                                    @endif
                                 </div>
 
                             </div>
