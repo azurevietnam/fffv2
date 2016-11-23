@@ -13,7 +13,7 @@
                 <a href="#" class="waves-effect"><img src="../plugins/images/users/agent.jpg" alt="user-img" class="img-circle"> <span class="hide-menu"> Nguyễn Hiệp Phat<span class="fa arrow"></span></span>
                 </a>
                 <ul class="nav nav-second-level">
-                    <li><a href="javascript:void(0)"><i class="ti-user"></i> Tài khoản</a></li>
+                    <li><a href="taikhoan.php"><i class="ti-user"></i> Tài khoản</a></li>
                     <li><a href="javascript:void(0)"><i class="ti-email"></i> Hộp thư</a></li>
                     <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Thoát</a></li>
                 </ul>
