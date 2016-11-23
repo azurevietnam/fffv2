@@ -3059,49 +3059,41 @@ Basic List
   background: #ff6849;
   color: #ffffff;
   border-color: #ff6849;
-  text-align: right;
 }
 .alert-inverse {
   background: #4c5667;
   color: #ffffff;
   border-color: #4c5667;
-  text-align: right;
 }
 .alert-success {
   background: #00c292;
   color: #ffffff;
   border-color: #00c292;
-  text-align: right;
 }
 .alert-dark {
   background: #686868;
   color: #ffffff;
   border-color: #686868;
-  text-align: right;
 }
 .alert-warning {
   background: #fec107;
   color: #ffffff;
   border-color: #fec107;
-  text-align: right;
 }
 .alert-danger {
   background: #fb9678;
   color: #ffffff;
   border-color: #fb9678;
-  text-align: right;
 }
 .alert-primary {
   background: #9675ce;
   color: #ffffff;
   border-color: #9675ce;
-  text-align: right;
 }
 .alert-info {
   background: #03a9f3;
   color: #ffffff;
   border-color: #03a9f3;
-  text-align: right;
 }
 .alert-info .closed {
   color: inherit;

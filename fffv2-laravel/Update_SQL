@@ -1,0 +1,5 @@
+ALTER TABLE `fff_crm`.`domains`
+  ADD COLUMN `config_viewpage` SMALLINT DEFAULT 3  NULL AFTER `email_report`,
+  ADD COLUMN `device_pc` TINYINT DEFAULT 0  NULL AFTER `config_viewpage`,
+  ADD COLUMN `device_tablet` TINYINT DEFAULT 0  NULL AFTER `device_pc`,
+  ADD COLUMN `device_phone` TINYINT DEFAULT 0  NULL AFTER `device_tablet`;

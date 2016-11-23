@@ -9,11 +9,11 @@
 					<input type="hidden" name="domain_id_choose" id="domain_id_choose" value="{{ session('domain_choose') }}">
 					<div class="input-group">
 						<div class="top-select-domain">
-							<button data-value="" id="display_domain" type="button" class="btn waves-effect waves-light btn-info btn-info-domain">{{ empty($current_domain)? "<không tìm thấy domain>" : $current_domain->domain_name  }}</button>
+							<button data-value="" id="display_domain" type="button" class="btn waves-effect waves-light btn-info btn-info-domain">{{ empty($current_domain)? "<không tìm thấy domain>" : $current_domain->domain  }}</button>
 							<button type="button" class="btn waves-effect waves-light btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
 							<ul id="domain_dropdown" class="dropdown-menu dropdown-menu-domain">
 								@foreach($domains as $domain)
-									<li><a data-value="{{ $domain->id }}" href="javascript:void(0)">{{ $domain->domain_name }}</a></li>
+									<li><a data-value="{{ $domain->id }}" href="javascript:void(0)">{{ $domain->domain }}</a></li>
 								@endforeach
 							  <li class="divider"></li>
 							  <li><a onclick="return;" href="javascript:void(0)">Thêm mới</a></li>
@@ -126,7 +126,7 @@
 			<!-- /.dropdown -->
 			<li class="dropdown">
 				<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#">
-					<img src="{{url('/')}}/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ str_limit(auth()->user()->fullname, 16, '...') }}</b>
+					<img src="{{url('/')}}/plugins/images/users/agent.jpg" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">{{ str_limit(auth()->user()->fullname, 16, '...') }}</b>
 				</a>
 				<ul class="dropdown-menu dropdown-user animated flipInY">
 					<li><a href="#"><i class="ti-user"></i> My Profile</a></li>

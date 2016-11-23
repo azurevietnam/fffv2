@@ -80,6 +80,29 @@ $(document).ready(function () {
 });
 </script>
 
+ <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Thêm mới domain</h4> </div>
+			<div class="modal-body">
+				<p>Gói dịch vụ của bạn được phép thêm tối da: 3 domain. Nếu bạn có số lượng domain lớn hơn vui lòng nâng cấp gói dịch vụ</p>
+				<form>
+					<div class="form-group">
+						<label for="recipient-name" class="control-label">Domain:</label>
+						<input type="text" class="form-control" id="recipient-name"> </div>
+					<div class="form-group">
+						<button type="button" class="btn btn-info waves-effect">Thêm Mới</button>
+					</div>
+				</form>
+			</div>
+			
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
 </body>
 
 

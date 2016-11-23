@@ -11,7 +11,7 @@
 					<ul class="dropdown-menu">
 					  <li><a href="javascript:void(0)">dantri.com.vn</a></li>
 					  <li class="divider"></li>
-					  <li><a href="javascript:void(0)">Thêm mới</a></li>
+					  <li><a href="#" alt="default" data-toggle="modal" data-target="#myModal" class="model_img img-responsive">Thêm mới</a></li>
 					</ul>
 				</div>
 			</div>

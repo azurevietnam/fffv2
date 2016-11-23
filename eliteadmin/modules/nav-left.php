@@ -30,7 +30,7 @@
 		  <li class="active"> <a href="" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe019;"></i> <span class="hide-menu"> Chặn click ảo theo IP<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level collapse in">
                     <li> <a href="ip-click-ao.php" class="active">Báo cáo IP truy cập</a> </li>
-                    <li> <a href="ip-khu-vuc.php">Cấu hình chặn click ảo</a> </li>
+                    <li> <a href="cauhinh-chanclicktac.php">Cấu hình chặn click ảo</a> </li>
                 </ul>
             </li>
             <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe026;"></i> <span class="hide-menu"> Thu thập khách hàng bằng Popup<span class="fa arrow"></span> </span></a>

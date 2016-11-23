@@ -190,6 +190,90 @@
 	border-bottom:1px #eee dashed;
 	padding-bottom:20px;
 }
+
+/* bloom */
+.et_bloom_premade_grid {
+	clear: both;
+	margin-bottom: 50px;
+}
+
+.et_bloom_premade_item {
+	width: 22%;
+	height: auto;
+	float: left;
+	margin: 0 1% 1% 0;
+	cursor: pointer;
+	padding: 1%;
+	border: 3px solid #FFF;
+	border-radius: 3px;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom:30px;
+	margin-right:25px;
+}
+.et_bloom_premade_item:hover{
+	border-color: #4fd1cd;
+}
+.et_bloom_premade_item_inner {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.et_bloom_premade_item_inner img {
+	width: 100%;
+	margin-bottom: -6px;
+}
+.asColorPicker-trigger{display:none;}
+.change-color{
+	cursor:pointer;
+	border:1px #ccc solid;
+	padding:5px;
+}
+
+.note-editor .btn-default{
+	background:#fff!important;
+}
+
+.fix-300px{
+	width:300px;
+}
+.valign-middle td{
+	vertical-align: middle!important;
+}
+.color-blue{
+	border:1px #03a9f3 solid;
+}
+.box-cauhinh-popup .panel-body{
+	padding:0px!important;
+}
+.inline-editor:active,
+.inline-editor:focus{
+	border:1px #03a9f3 solid;
+}
+.white-box-full {
+	background:#fff!important;
+	margin:0px 0px 15px 0px;
+}
+.white-box-full .box-title {
+	margin: 0px 0px 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	padding:25px 25px 10px 25px;
+}
+.white-box-full table{
+	background:#fff!important;
+	margin-bottom:0px!important;
+}
+.white-box-full .white-box{
+	padding:0px 25px;
+}
+/********************Phat Add***************/
 .top-select-domain{
 	border:1px #fff solid;
 	margin-top:10px;
@@ -211,4 +295,10 @@
 }
 .dropdown-menu-domain {
 	min-width: 240px;
+}
+.error-message {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #c7340b;
 }

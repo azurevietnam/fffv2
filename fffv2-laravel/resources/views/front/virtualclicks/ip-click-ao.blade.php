@@ -24,76 +24,136 @@
 
             <!-- .row -->
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="white-box">
-                        <h3 class="box-title m-b-0">Danh sách IP click và truy cập website của bạn</h3>
-                        <div class="table-responsive dataTables_wrapper ">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Stt</th>
-                                    <th>Lần click đầu</th>
-                                    <th>IP</th>
-                                    <th>Số click</th>
-                                    <th>Xem trang</th>
-                                    <th>Chi phí</th>
-                                    <th>Phá hoại</th>
-                                    <th>Thiết bị</th>
-                                    <th>Trình duyệt</th>
-                                    <th>Tỉnh thành</th>
-                                    <th>Quốc gia</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><a href="javascript:void(0)">1</a></td>
-                                    <td>18:00:00 20/10/2016</td>
-                                    <td><div class="label label-table label-success">192.168.1.1</div></td>
-                                    <td>1</td>
-                                    <td>3</td>
-                                    <td>310.000 vnd</td>
-                                    <td>
-                                        <div class="label label-table label-success">KHÔNG</div>
-                                    </td>
-                                    <td>IPHONE</td>
-                                    <td>Safari</td>
-                                    <td>Hà Nội</td>
-                                    <td>Việt Nam</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="javascript:void(0)">2</a></td>
-                                    <td>19:00:00 20/10/2016</td>
-                                    <td><div class="label label-table label-danger">192.168.1.2</div></td>
-                                    <td>3</td>
-                                    <td>3</td>
-                                    <td>310.000 vnd</td>
-                                    <td>
-                                        <div class="label label-table label-danger">CÓ</div>
-                                    </td>
-                                    <td>IPHONE</td>
-                                    <td>Safari</td>
-                                    <td>Hà Nội</td>
-                                    <td>Việt Nam</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <div class="dataTables_paginate paging_simple_numbers" id="myTable_paginate">
-                                <a class="paginate_button previous disabled" aria-controls="myTable" data-dt-idx="0" tabindex="0" id="myTable_previous">Trước</a>
-                                <span>
-                                    <a class="paginate_button current" aria-controls="myTable" data-dt-idx="1" tabindex="0">1</a>
-                                    <a class="paginate_button " aria-controls="myTable" data-dt-idx="2" tabindex="0">2</a>
-                                    <a class="paginate_button " aria-controls="myTable" data-dt-idx="3" tabindex="0">3</a>
-                                    <a class="paginate_button " aria-controls="myTable" data-dt-idx="4" tabindex="0">4</a>
-                                    <a class="paginate_button " aria-controls="myTable" data-dt-idx="5" tabindex="0">5</a>
-                                    <a class="paginate_button " aria-controls="myTable" data-dt-idx="6" tabindex="0">6</a>
-                                </span>
-                                <a class="paginate_button next" aria-controls="myTable" data-dt-idx="7" tabindex="0" id="myTable_next">Sau</a></div>
+                        <h3 class="box-title"><small class="pull-right m-t-10 text-success"><i class="fa fa-sort-asc"></i> Tăng 18% so với hôm qua</small> WEBSITE TRAFFIC</h3>
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <h6>PC</h6> <b>80.40%</b></div>
+                            <div class="stat-item">
+                                <h6>Mobile</h6> <b>15.40%</b></div>
+                            <div class="stat-item">
+                                <h6>Tablet</h6> <b>5.50%</b></div>
                         </div>
-
+                        <div id="sparkline8"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="white-box">
+                        <h3 class="box-title"><small class="pull-right m-t-10 text-danger"><i class="fa fa-sort-desc"></i> Giảm 19% so với hôm qua</small>CLICK ẢO</h3>
+                        <div class="stats-row">
+                            <div class="stat-item">
+                                <h6>PC</h6> <b>80.40%</b></div>
+                            <div class="stat-item">
+                                <h6>Mobile</h6> <b>15.40%</b></div>
+                            <div class="stat-item">
+                                <h6>Tablet</h6> <b>5.50%</b></div>
+                        </div>
+                        <div id="sparkline9"></div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="white-box" style="min-height:215px">
+                        <h3 class="box-title"><i class="ti-cut text-danger"></i> TIẾT KIỆM ƯỚC TÍNH</h3>
+                        <div class="text-right"> <span class="text-muted">Tiết kiệm từ đầu tháng</span>
+                            <h1><sup><i class="ti-arrow-down text-danger"></i></sup> $5,000</h1>
+                        </div>
+                        <span class="text-danger">Tiết kiệm 50%</span>
+                        <div class="progress m-b-0">
+                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"> <span class="sr-only">230% Complete</span> </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!-- /.row -->
+            <!-- .row -->
+            <!-- .row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="form-horizontal" id="form_display_ip" method="get" action="/click/ip-click-ao" accept-charset="utf-8">
+                        <div class="white-box">
+                            <h3 class="box-title m-b-0">Danh sách IP</h3>
+                            <p class="text-muted m-b-20">Danh sách IP click và truy cập website của bạn. Bạn có thể chặn ngay IP click ảo hoặc <a href="">Cấu Hình Chặn Tự Động</a></p>
+                            <div class="row padding-bottom-10px">
+                                <div class="col-sm-6" style="padding-top:10px">
+                                    <label class="form-inline">HIỂN THỊ
+                                        <select id="select_num_row" name="num_row" class="form-control input-sm">
+                                            <option value="50" {{ $num_row == 50 ? 'selected' : '' }}>50</option>
+                                            <option value="100" {{ $num_row == 100 ? 'selected' : '' }}>100</option>
+                                            <option value="150" {{ $num_row == 150 ? 'selected' : '' }}>150</option>
+                                            <option value="200" {{ $num_row == 200 ? 'selected' : '' }}>200</option>
+                                        </select> KẾT QUẢ </label>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <div class="form-group">
+                                        <div class="input-group fix-300px pull-right">
+
+                                            <input type="text" id="search_text" name="search_text" value="{{$search_text}}" class="form-control" placeholder="TÌM KIẾM">
+                                            <span class="input-group-btn">
+                                                <button type="submit" id="btn_search" class="btn waves-effect waves-light btn-default"><i class="fa fa-search"></i></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive dataTables_wrapper ">
+
+
+                                    <table class="table table-striped color-table inverse-table ">
+                                        <thead>
+                                        <tr>
+                                            <th>Stt</th>
+                                            <th>Lần click đầu</th>
+                                            <th>IP</th>
+                                            <th>Action</th>
+                                            <th><a data-value="{{$sort_click}}" id="sort_click" name="sort_click">Số click</a></th>
+                                            <th><a data-value="{{$sort_view}}" id="sort_view" name="sort_view">Xem trang</a></th>
+                                            <th>Chi phí</th>
+
+                                            <th>Thiết bị</th>
+                                            <th>Trình duyệt</th>
+                                            <th>Tỉnh thành</th>
+                                            <th>Quốc gia</th>
+                                            <th>Tình Trạng</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach ($domain_logs as $log)
+                                                <tr>
+                                                    <td>{{($num_page - 1) * $num_row + $loop->index + 1}}</td>
+                                                    <td>{{ date('H:i:s d/m/Y', strtotime($log->created))}}</td>
+                                                    <td><button class="btn btn-block btn-outline btn-info  btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xem lịch sử IP">{{$log->ip}}</button></td>
+                                                    <td><button class="btn btn-block btn-outline btn-success btn-sm " data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn ngay IP này">Chặn Ngay</button></td>
+
+                                                    <td>1</td>
+                                                    <td>3</td>
+                                                    <td>310.000 vnd</td>
+
+                                                    <td>{{ $log->device == "Computer" ? "Computer" : $log->device_name}}</td>
+                                                    <td>{{$log->browser}}</td>
+                                                    <td>{{$log->city}}</td>
+                                                    <td>{{$log->country}}</td>
+                                                    <td><div class="label label-table label-success">Click Ảo</div></td>
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                    <div class="dataTables_paginate paging_simple_numbers" id="div_paging">
+                                        <input type="hidden" id="num_page" name="num_page" value="{{ $num_page }}">
+                                        <a class="paginate_button previous" id="paging_previous">Trước</a>
+                                        <span>
+                                            @for ($x = 1; $x <= $max_page; $x++)
+                                                <a class="paginate_button {{ $num_page == $x ? 'current' : '' }}" data-value="{{$x}}">{{$x}}</a>
+                                            @endfor
+                                        </span>
+                                        <a class="paginate_button next" id="paging_next">Sau</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         <!-- row -->
         <!-- /.row -->
         <!-- .right-sidebar -->
@@ -108,4 +168,24 @@
     <!-- /#wrapper -->
     <!-- jQuery -->
 
+@endsection
+
+@section('scripts')
+<script>
+    $(function () {
+        $("#div_paging span a").click(function(){
+            $("#num_page").val($(this).attr("data-value"));
+            $("#form_display_ip").submit();
+        });
+        $("#select_num_row").change(function(){
+            $("#form_display_ip").submit();
+        });
+        $("#sort_click").click(function(){
+            $("#form_display_ip").submit();
+        });
+        $("#sort_view").click(function(){
+            $("#form_display_ip").submit();
+        });
+    });
+</script>
 @endsection
