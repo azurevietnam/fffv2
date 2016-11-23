@@ -62,7 +62,7 @@
     </header>
 
     <main>
-        <?php $left_menu = ""; ?>
+        <?php $left_menu = "small"; ?>
 
         <!-- Preloader -->
         <div class="preloader">
