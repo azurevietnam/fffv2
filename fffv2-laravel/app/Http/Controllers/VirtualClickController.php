@@ -4,7 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Repositories\UserRepository;
+use Validator;
 use DB;
+use Auth;
+use Redirect;
+use Session;
 
 
 class VirtualClickController extends Controller
@@ -23,19 +27,28 @@ class VirtualClickController extends Controller
         //return view('front.virtualclicks.virtualclicks');
     }
 
-    public function ip_click_ao(Request $request, UserRepository $userRepository){
-        $date = date('Y-m-d');
-        $user = $request->user();
-        $domains = DB::table("domains")
-            ->where('uid', '=', $user->id)
-            ->where('status', '=', 1)
-            ->where('expired_date', '>=', $date)
+    public function ip_click_ao(Request $request)
+    {
+        $num_row = $request->get("num_row", 50);
+        $search_text = $request->get("search_text", '');
+        $num_page = $request->get("num_page", 1);
+        $max_page = 10;
+
+        $skip = ($num_page - 1) * $num_row;
+        $domain_logs = DB::table("domain_logs")
+            ->skip($skip)
+            ->take($num_row)
             ->get();
 
-        //print_r($domains);die;
-
-        return view('front.virtualclicks.ip-click-ao');
+        return view('front.virtualclicks.ip-click-ao')
+            ->with(compact('num_row'))
+            ->with(compact('search_text'))
+            ->with(compact('num_page'))
+            ->with(compact('max_page'))
+            ->with(compact('domain_logs'))
+            ;
     }
+
 
     public function ip_khu_vuc(){
         return view('front.virtualclicks.ip-khu-vuc');

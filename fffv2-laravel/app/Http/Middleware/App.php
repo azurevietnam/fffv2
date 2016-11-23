@@ -29,7 +29,7 @@ class App
             $domains = DB::table("domains")
                 ->where('uid', '=', $user->id)
                 ->where('status', '=', 1)
-                ->where('expired_date', '>=', $date)
+                ->where('hethan', '>=', $date)
                 ->orderBy('id', 'asc')
                 ->get();
 

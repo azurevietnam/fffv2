@@ -38,8 +38,8 @@ class RegisterController extends Controller
     {
         $input = $request->all();
         $rules = [
-            'fullname' => 'required|max:30',
-            'email' => 'required|email|max:255',
+            'fullname' => 'required',
+            'email' => 'required|email',
             'phone' => 'required|numeric',
             'password' => 'required|between:6,20',
             'confirm_password' => 'required|between:6,20',
@@ -53,7 +53,7 @@ class RegisterController extends Controller
             'confirm_password.required' => 'Vui lòng điền Mật khẩu nhập lại.',
             'agreement.required' => 'Bạn chưa đồng ý điều khoản và điều lệ của fff.com.vn.',
             'between' => 'Password từ :min đến :max ký tự.',
-            'phone.numeric' => 'SĐT phải là số .',
+            'phone.numeric' => 'SĐT phải là số.',
         ];
 
         $validator = Validator::make($input, $rules, $messages);
@@ -72,12 +72,7 @@ class RegisterController extends Controller
             $phone = trim(strtolower(addslashes($request->input('phone', ''))));
             $password = trim(strtolower(addslashes($request->input('password', ''))));
             $confirm_password = trim(strtolower(addslashes($request->input('confirm_password', ''))));
-            //$website      = trim(strtolower(addslashes($request->input('website', ''))));
 
-
-            $user_skype = trim(strtolower(addslashes($request->input('user_skype', ''))));
-            $user_yahoo = trim(strtolower(addslashes($request->input('user_yahoo', ''))));
-            $user_facebook = trim(strtolower(addslashes($request->input('user_facebook', ''))));
             ////////////////////////////////
             $user = DB::table('users')->where('email', $email)->first();
             if ($user) {
@@ -93,11 +88,8 @@ class RegisterController extends Controller
                 'email' => $email,
                 'password' => bcrypt($password),
                 'phone' => $phone,
-                'user_skype' => $user_skype,
-                'user_facebook' => $user_facebook,
-                'user_yahoo' => $user_yahoo,
                 'fullname' => $fullname,
-                'registed_ip' => $this->getIP(),
+                'registed_ip' => $request->getClientIp(),//$this->getIP(),
                 'confirmation_code' => str_random(10),
                 'utm_source' => $utm_source,
                 'utm_medium' => $utm_medium,

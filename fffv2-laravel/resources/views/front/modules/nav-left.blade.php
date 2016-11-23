@@ -5,20 +5,19 @@
                         <!-- input-group -->
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" placeholder="Search..."> <span class="input-group-btn">
-            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
-            </span> </div>
+                            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+                            </span>
+                        </div>
                         <!-- /input-group -->
                     </li>
                     <li class="user-pro">
                         <a href="#" class="waves-effect">
-                            <img src="{{url('/')}}/plugins/images/users/varun.jpg" alt="user-img" class="img-circle">
+                            <img src="{{url('/')}}/plugins/images/users/agent.jpg" alt="user-img" class="img-circle">
                             <span class="hide-menu">{{ str_limit(auth()->user()->fullname, 16, '...') }}<span class="fa arrow"></span></span>
                         </a>
                         <ul class="nav nav-second-level">
-                            <li><a href="javascript:void(0)"><i class="ti-user"></i> My Profile</a></li>
-                            <li><a href="javascript:void(0)"><i class="ti-wallet"></i> My Balance</a></li>
-                            <li><a href="javascript:void(0)"><i class="ti-email"></i> Inbox</a></li>
-                            <li><a href="javascript:void(0)"><i class="ti-settings"></i> Account Setting</a></li>
+                            <li><a href="/profile"><i class="ti-user"></i> Tài khoản</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-email"></i> Hộp thư</a></li>
                             <li>
                                 <a href="{{ url('/logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" id="logout"><i class="fa fa-power-off"></i> Logout</a>
                                 {!! Form::open(['url' => '/logout', 'id' => 'logout-form']) !!}{!! Form::close() !!}
@@ -27,21 +26,20 @@
                     </li>
                     <li class="nav-small-cap m-t-10">--- CHỨC NĂNG</li>
                     <li> <a href="/" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a></li>
-			<li class="active"> <a href="javascript:void(0);" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="R"></i> <span class="hide-menu"> Chặn click ảo <span class="fa arrow"></span> </span></a>
-                <ul class="nav nav-second-level collapse in">
-                    <li> <a href="/click/ip-click-ao">Ip click ảo</a> </li>
-                    <li> <a href="/click/ip-khu-vuc">Khu Vực</a> </li>
-                    <li> <a href="/click/ip-thiet-bi">Thiết Bị</a> </li>
-                   
-                </ul>
-            </li>
-                <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="E"></i> <span class="hide-menu"> Thu Thập Thông Tin<span class="fa arrow"></span> </span></a>
-                    <ul class="nav nav-second-level">
-                        <li> <a href="thuthapthongtin-baocao.php">Báo cáo thu thập</a> </li>
-                        <li> <a href="thuthapthongtin-cauhinh.php">Cấu hình popup</a> </li>
+                    <li class="active"> <a href="" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe019;"></i> <span class="hide-menu"> Chặn click ảo theo IP<span class="fa arrow"></span> </span></a>
+                        <ul class="nav nav-second-level collapse in">
+                            <li> <a href="/click/ip-click-ao">Báo cáo IP truy cập</a> </li>
+                            <li> <a href="/click/ip-khu-vuc">Báo cáo theo khu vực</a> </li>
+                        </ul>
+                    </li>
 
-                    </ul>
-                </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="E"></i> <span class="hide-menu"> Thu Thập Thông Tin<span class="fa arrow"></span> </span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="thuthapthongtin-baocao.php">Báo cáo thu thập</a> </li>
+                            <li> <a href="thuthapthongtin-cauhinh.php">Cấu hình popup</a> </li>
+
+                        </ul>
+                    </li>
                 <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="B"></i> <span class="hide-menu"> Khách hàng<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
                     <li> <a href="khachhang-chuadinhdanh.php">Chưa định danh</a> </li>
@@ -69,10 +67,9 @@
                            
                         </ul>
                     </li>
-                   
-                    
-                    <li class="nav-small-cap">--- HỖ TRỢ</li>
-                    <li><a href="documentation.html" class="waves-effect"><i class="fa fa-empire"></i> <span class="hide-menu">Hướng dẫn sử dụng</span></a></li>
+
+                    <li class="nav-small-cap">--- QUẢN TRỊ</li>
+                    <li><a href="quantri-quanlykhachhang.php" class="waves-effect"><i class="fa fa-empire"></i> <span class="hide-menu">Quản lý khách hàng</span></a></li>
                     
                 </ul>
             </div>
