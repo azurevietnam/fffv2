@@ -71,6 +71,10 @@ class ConfigurationController extends Controller
             if ($validator->fails()) {
                 return back()->withInput()->withErrors($validator);
             } else {
+                $domain = DB::table("domains")
+                    ->where('id', '=', $request->domain_id)
+                    ->update(['adword_account' => $request->adword_account, 'adword_u' => $request->adword_u, 'adword_c' => $request->adword_c]);
+
                 $dataIns = array(
                     //'domain_code' => $request->domain_code,
                     //'tracking_code' => $request->tracking_code,

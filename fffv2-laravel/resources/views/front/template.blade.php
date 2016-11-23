@@ -71,6 +71,9 @@
         @if(session()->has('ok'))
             @include('partials/error', ['type' => 'success', 'message' => session('ok')])
         @endif
+        @if(session()->has('error'))
+            @include('partials/error', ['type' => 'danger', 'message' => session('error')])
+        @endif
         @if(isset($info))
             @include('partials/error', ['type' => 'info', 'message' => $info])
         @endif
@@ -136,7 +139,7 @@
                     catch(err) {
 
                     }
-                }, 3000);
+                }, 8000);
 
                 $('.input-daterange-datepicker').daterangepicker({
                     buttonClasses: ['btn', 'btn-sm'],

@@ -30,6 +30,35 @@
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <input type="hidden" name="domain_id" value="{{ $domain->id }}">
                                 <input type="hidden" name="domain_key" value="{{ $domain->domain_key }}">
+                                <h3 class="box-title m-b-0">Cấu hình Tài khoản adwords</h3>
+                                <p class="text-muted m-b-30 font-13">Liên kết tài khoản adword để đồng bộ IP chặn click tặc</p>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Tài khoản adwords</label>
+                                    <div class="col-sm-9">
+                                        {!! Form::input("text", "adword_account", $domain->adword_account, ['class' => 'form-control']) !!}
+                                        {!! $errors->first('adword_account', '<small class="help-block">:message</small>') !!}
+                                        <span class="text-danger">Chưa cho phép đồng bộ chặn IP click tặc. Vui lòng xem <a href="http://fff.com.vn/2016/04/01/huong-dan-lien-ket-tai-khoan-adwords-chan-click-tac-dong/" target="_blank">hướng dẫn</a> hoặc liên hệ với hỗ trợ viên</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Mã nhúng Adwords_u</label>
+                                    <div class="col-sm-9">
+                                        {!! Form::input("text", "adword_u", $domain->adword_u, ['class' => 'form-control']) !!}
+                                        {!! $errors->first('adword_u', '<small class="help-block">:message</small>') !!}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Mã nhúng Adwords_c</label>
+                                    <div class="col-sm-9">
+                                        {!! Form::input("text", "adword_c", $domain->adword_c, ['class' => 'form-control']) !!}
+                                        {!! $errors->first('adword_c', '<small class="help-block">:message</small>') !!}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white-box">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <input type="hidden" name="domain_id" value="{{ $domain->id }}">
+                                <input type="hidden" name="domain_key" value="{{ $domain->domain_key }}">
                                 <h3 class="box-title m-b-0">Mã Tracking</h3>
                                 <p class="text-muted m-b-30 font-13">Để có thể tracking và chặn click tặc tốt nhất, bạn vui lòng thực hiện 2 bước gắn mã theo dõi sau.</p>
                                     <div class="form-group">

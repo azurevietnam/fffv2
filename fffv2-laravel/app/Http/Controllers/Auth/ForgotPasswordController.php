@@ -53,12 +53,23 @@ class ForgotPasswordController extends Controller
                 );
                 DB::table('password_resets')->insert($dataIns);
             }
+            $view = view('emails.reset-password',
+                [
+                    'mail_title'=> 'CRM FFF.com.vn hướng dẫn đặt lại mật khẩu',
+                    'mail_dear'=> 'Xin chào Quý khách hàng,',
+                    'mail_desc'=> 'Dưới đây là hướng dẫn đặt lại mật khẩu.',
+                    'mail_body'=> 'Yêu cầu thiết lập lại mật khẩu của bạn đã được thực hiện. Nếu bạn không thực hiện yêu cầu này, chỉ cần bỏ qua email này. Nếu bạn đã thực hiện yêu cầu này, xin vui lòng thiết lập lại mật khẩu của bạn:',
+                    'mail_button_text'=> 'Mật khẩu mới',
+                    'mail_button_link'=> url('/password/reset', $token),
+                    'mail_thanks'=> '- Trân trọng (FFF team)',
+                    'mail_notes'=> 'Nếu nút ở trên không hoạt động, hãy thử sao chép và dán URL vào trình duyệt của bạn. Nếu bạn tiếp tục có vấn đề, xin vui lòng liên hệ với chúng tôi tại crm@fff.com.vn',
+                ]);
             $params = [
                 "method" => "POST",
-                "from" => "FFF.com.vn <noreply@fff.com.vn>",
+                "from" => "FFF.com.vn <crm@fff.com.vn>",
                 "to" => $request->email,
-                "subject" => trans('front/password.title'),
-                "html" => trans('front/password.email-click') . "<br/>" . url('password/reset', $token) . "<br/>" .trans('front/password.email-end')
+                "subject" => 'Lấy lại mật khẩu FFF.com.vn', //trans('front/password.title')
+                "html" => $view
             ];
             $result = Mailjet::sendEmail($params);
             return redirect('/login')->with('ok', trans('front/password.email-send') . $request->email);

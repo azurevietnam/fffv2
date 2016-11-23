@@ -4,7 +4,7 @@
         <div class="login-box login-sidebar">
             <div class="white-box">
                 <form class="form-horizontal form-material" id="resetform" method="post" action="/password/reset" accept-charset="utf-8">
-                    <a href="javascript:void(0)" class="text-center db"><img src=".{{url('/')}}/plugins/images/eliteadmin-logo-dark.png" alt="Home" />
+                    <a href="javascript:void(0)" class="text-center db"><img src="{{url('/')}}/plugins/images/eliteadmin-logo-dark.png" alt="Home" />
                         <br/><img src="{{url('/')}}/plugins/images/eliteadmin-text-dark.png" alt="Home" /></a>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     {!! Form::hidden('token', $token) !!}

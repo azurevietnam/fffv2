@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a3a8099-aa62-4df4-add3-9c68df786c80" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/errors/error.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/configuration/cauhinh-chanclicktac.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/fffv2.iml" afterPath="$PROJECT_DIR$/.idea/fffv2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/account-confirm.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/trial-service.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/VirtualClickController.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/VirtualClickController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Http/Middleware/App.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Http/Middleware/App.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Services/FormBuilder.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Services/FormBuilder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/public/css/fff.css" afterPath="$PROJECT_DIR$/fffv2-laravel/public/css/fff.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-left.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-left.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-top.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-top.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/virtualclicks/ip-click-ao.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/virtualclicks/ip-click-ao.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/routes/web.php" afterPath="$PROJECT_DIR$/fffv2-laravel/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/ForgotPasswordController.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/ForgotPasswordController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/RegisterController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/app/Repositories/UserRepository.php" afterPath="$PROJECT_DIR$/fffv2-laravel/app/Repositories/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/login.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/reset.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/reset.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/configuration/cauhinh-chanclicktac.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/configuration/cauhinh-chanclicktac.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/template.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/front/template.blade.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/resend-active-account.blade.php" afterPath="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/reset-password.blade.php" />
     </list>
     <ignored path="fffv2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,57 +35,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConfigurationController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConfigurationController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="49" column="47" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="47" />
-              <folding>
-                <element signature="e#40#68#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="229">
+              <caret line="78" column="61" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cauhinh-chanclicktac.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav-left.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-left.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="44" column="208" selection-start-line="44" selection-start-column="208" selection-end-line="44" selection-end-column="208" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cauhinh-chanclicktac.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/configuration/cauhinh-chanclicktac.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="60" column="128" selection-start-line="60" selection-start-column="128" selection-end-line="60" selection-end-column="128" />
+            <state relative-caret-position="221">
+              <caret line="37" column="79" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="79" />
               <folding>
-                <element signature="e#2194#2198#0#HTML" expanded="true" />
-                <element signature="e#2203#2207#0#HTML" expanded="true" />
-                <element signature="e#11979#11985#0#HTML" expanded="true" />
+                <element signature="e#5136#5140#0#HTML" expanded="true" />
+                <element signature="e#5145#5149#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fffv2-laravel/routes/web.php">
+      <file leaf-file-name="UserRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Repositories/UserRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="194" column="9" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="control_login.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/components/control_login.blade.php">
+      <file leaf-file-name="account-confirm.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/emails/account-confirm.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="111" selection-start-line="14" selection-start-column="82" selection-end-line="14" selection-end-column="111" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormBuilder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Services/FormBuilder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="425">
+              <caret line="25" column="89" selection-start-line="23" selection-start-column="20" selection-end-line="25" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -95,12 +91,32 @@
       <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="73" selection-end-column="11" />
+            <state relative-caret-position="391">
+              <caret line="23" column="30" selection-start-line="21" selection-start-column="24" selection-end-line="23" selection-end-column="30" />
               <folding>
-                <marker date="1479142249957" expanded="true" signature="3508:3641" ph="..." />
-                <marker date="1479142249957" expanded="true" signature="3557:3640" ph="..." />
+                <marker date="1479871287714" expanded="true" signature="2475:2608" ph="..." />
+                <marker date="1479871287714" expanded="true" signature="2524:2607" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ForgotPasswordController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/ForgotPasswordController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="62" column="61" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="email.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/email.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="122" selection-start-line="18" selection-start-column="122" selection-end-line="18" selection-end-column="122" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,35 +143,43 @@
         <option value="$PROJECT_DIR$/fffv2-laravel/app/Models/User.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/config/mail.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Auth/SendsPasswordResetEmails.php" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/template.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/partials/error.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/lang/en/front/verify.php" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/email.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/lang/en/auth.php" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/reset.blade.php" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/app/Repositories/UserRepository.php" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/index.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/virtualclicks/ipclickao.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/virtualclicks/ip-khu-vuc.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/virtualclicks/ip-thiet-bi.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/public/css/style.css" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/public/css/fff.css" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/virtualclicks/ip-click-ao.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-top.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Requests/Request.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/VirtualClickController.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Middleware/App.php" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-left.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/app/Services/FormBuilder.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/components/control_login.blade.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/routes/web.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/errors/error.blade.php" />
-        <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-left.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/footer.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/public/css/fff.css" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/header.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/header.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/reset.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/resend-active-account.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/account-confirm.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/reset-password.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/ForgotPasswordController.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/template.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/emails/trial-service.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/app/Repositories/UserRepository.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/fffv2-laravel/resources/views/front/configuration/cauhinh-chanclicktac.blade.php" />
+        <option value="$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php" />
       </list>
     </option>
   </component>
@@ -207,7 +231,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -277,6 +300,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fffv2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fffv2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fffv2-laravel" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,6 +493,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="emails" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fffv2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fffv2" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fffv2-laravel" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="components" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -491,6 +566,18 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auth" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="passwords" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -506,7 +593,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -770,6 +857,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -780,15 +868,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/fffv2-laravel/artisan" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="I:\GitHub\fffv2\fffv2-laravel\resources\views\front" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\GitHub\fffv2\fffv2-laravel\resources\views\emails" />
       <recent name="I:\GitHub\fffv2\fffv2-laravel\resources\views\errors" />
       <recent name="I:\GitHub\fffv2\fffv2-laravel\resources\views\front\configuration" />
       <recent name="I:\GitHub\fffv2\fffv2-laravel\app\Http\Controllers" />
       <recent name="I:\GitHub\fffv2\fffv2-laravel\resources\views\front\virtualclicks" />
-      <recent name="I:\GitHub\fffv2\fffv2-laravel\resources\views\auth" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\GitHub\fffv2\fffv2-laravel\resources\views\front" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.fff2v">
@@ -869,22 +957,24 @@
       <workItem from="1479442869675" duration="1027000" />
       <workItem from="1479459802404" duration="6309000" />
       <workItem from="1479692859358" duration="29897000" />
+      <workItem from="1479748442370" duration="12515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89372000" />
+    <option name="totallyTimeSpent" value="101887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1609375" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361522" sideWeight="0.50208336" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23361522" sideWeight="0.50625" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49375" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23361522" sideWeight="0.49791667" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23361522" sideWeight="0.49583334" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -894,7 +984,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.49791667" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -938,81 +1027,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/lang/en/front/password.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/lang/en/auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/reset.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/ResetPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/lang/en/front/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="80" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/lang/en/front/verify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/LanguageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/template.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2669">
-          <caret line="157" column="19" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/virtualclicks/ip-khu-vuc.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1037,14 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Repositories/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Models/Post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1061,26 +1067,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/ForgotPasswordController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="1151" column="1" selection-start-line="1151" selection-start-column="1" selection-end-line="1151" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/public/css/fff.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1093,19 +1083,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-top.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="130" selection-start-line="8" selection-start-column="130" selection-end-line="8" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,7 +1094,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,7 +1117,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
           <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1145,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,16 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/RegisterController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="162" column="80" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="80" />
-          <folding>
-            <element signature="e#45#59#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Requests/Request.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1188,7 +1156,7 @@
         <state relative-caret-position="272">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
-            <element signature="e#33#72#0#PHP" expanded="true" />
+            <element signature="e#33#72#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1198,7 +1166,7 @@
         <state relative-caret-position="357">
           <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1207,26 +1175,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-left.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="60" column="70" selection-start-line="60" selection-start-column="70" selection-end-line="60" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/register.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="103" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="103" />
-          <folding>
-            <marker date="1479137068549" expanded="true" signature="2778:2910" ph="..." />
-            <marker date="1479137068549" expanded="true" signature="2791:2909" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1242,20 +1190,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Services/FormBuilder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="595">
           <caret line="35" column="34" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="73" selection-end-column="11" />
-          <folding>
-            <marker date="1479142249957" expanded="true" signature="3508:3641" ph="..." />
-            <marker date="1479142249957" expanded="true" signature="3557:3640" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1317,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="1326">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1331,16 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="47" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/components/control_login.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1349,15 +1276,178 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-top.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3151">
+          <caret line="8" column="126" selection-start-line="8" selection-start-column="126" selection-end-line="8" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/public/css/fff.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="207" column="1" selection-start-line="207" selection-start-column="1" selection-end-line="207" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="80" column="9" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="94" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="94" />
+          <folding>
+            <marker date="1479835495597" expanded="true" signature="2739:2871" ph="..." />
+            <marker date="1479835495597" expanded="true" signature="2752:2870" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/reset.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="91" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/emails/reset-password.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/emails/resend-active-account.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="78" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/modules/nav-left.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="44" column="208" selection-start-line="44" selection-start-column="208" selection-end-line="44" selection-end-column="208" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/partials/error.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" selection-start-line="21" selection-start-column="24" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <marker date="1479871287714" expanded="true" signature="2475:2608" ph="..." />
+            <marker date="1479871287714" expanded="true" signature="2524:2607" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Repositories/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="194" column="9" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/ForgotPasswordController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="62" column="61" selection-start-line="62" selection-start-column="61" selection-end-line="62" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="150" column="111" selection-start-line="150" selection-start-column="111" selection-end-line="150" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/template.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="74" column="87" selection-start-line="74" selection-start-column="82" selection-end-line="74" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/emails/trial-service.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="79" selection-start-line="36" selection-start-column="79" selection-end-line="36" selection-end-column="79" />
+          <folding>
+            <element signature="n#style#0;n#table#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/auth/passwords/email.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="122" selection-start-line="18" selection-start-column="122" selection-end-line="18" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/emails/account-confirm.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="89" selection-start-line="23" selection-start-column="20" selection-end-line="25" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/fffv2-laravel/resources/views/front/configuration/cauhinh-chanclicktac.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="60" column="128" selection-start-line="60" selection-start-column="128" selection-end-line="60" selection-end-column="128" />
+        <state relative-caret-position="221">
+          <caret line="37" column="79" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="79" />
           <folding>
-            <element signature="e#2194#2198#0#HTML" expanded="true" />
-            <element signature="e#2203#2207#0#HTML" expanded="true" />
-            <element signature="e#11979#11985#0#HTML" expanded="true" />
+            <element signature="e#5136#5140#0#HTML" expanded="true" />
+            <element signature="e#5145#5149#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fffv2-laravel/app/Http/Controllers/ConfigurationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="78" column="61" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+          <folding />
         </state>
       </provider>
     </entry>

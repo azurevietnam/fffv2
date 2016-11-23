@@ -4,7 +4,7 @@
         <div class="login-box login-sidebar">
             <div class="white-box">
                 <form class="form-horizontal form-material" id="loginform" method="post" action="/login" accept-charset="utf-8">
-                    <a href="javascript:void(0)" class="text-center db"><img src=".{{url('/')}}/plugins/images/eliteadmin-logo-dark.png" alt="Home" />
+                    <a href="javascript:void(0)" class="text-center db"><img src="{{url('/')}}/plugins/images/eliteadmin-logo-dark.png" alt="Home" />
                     <br/><img src="{{url('/')}}/plugins/images/eliteadmin-text-dark.png" alt="Home" /></a>
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     {!! Form::controlNoLabel('email', 'email', 1, $errors, "Email", 'm-t-40') !!}

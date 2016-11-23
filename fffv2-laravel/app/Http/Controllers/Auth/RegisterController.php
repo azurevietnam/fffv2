@@ -114,7 +114,7 @@ class RegisterController extends Controller
             //    str_random(10)
             //);
 
-            $this->notifyUser($user);
+            $this->notifyConfirmAccount($user);
 
             return redirect('/login')->with('ok', trans('front/verify.message') . $email);
         }
@@ -143,9 +143,13 @@ class RegisterController extends Controller
      */
     public function confirm(UserRepository $userRepository, $confirmation_code)
     {
-        $userRepository->confirm($confirmation_code);
-
-        return redirect('/')->with('ok', trans('front/verify.success'));
+        $user = $userRepository->confirm($confirmation_code);
+        if ($user) {
+            $this->notifyTrialService($user);
+            return redirect('/login')->with('ok', trans('front/verify.success'));
+        } else {
+            return redirect('/register')->with('error', 'Không tìm thấy mã confirm, Vui lòng kiểm tra lại email.');
+        }
     }
 
     /**
@@ -159,46 +163,69 @@ class RegisterController extends Controller
     {
         if ($request->session()->has('user_id')) {
             $user = $userRepository->getById($request->session()->get('user_id'));
-            $this->notifyUser($user);
+            $this->notifyConfirmAccount($user);
             return redirect('/login')->with('ok', trans('front/verify.resend') . $user->email);
         }
 
         return redirect('/');
     }
 
-    /**
-     * Notify user with email
-     *
-     * @param  \App\Models\User $user
-     * @return void
-     */
-    protected function notifyUser(User $user)
+    protected function notifyConfirmAccount(User $user)
     {
-        //$user->notify(new ConfirmEmail($user->confirmation_code));
-        $view = view('emails.resend-active-account',
-            ['title'=>trans('front/verify.email-title'),
-                'body' => trans('front/verify.email-intro') . ". " . trans('front/verify.email-button') . ". " . url('confirm/' . $user->confirmation_code)
+        $view = view('emails.account-confirm',
+            [
+                'mail_title'=> 'CRM FFF.com.vn hướng dẫn xác nhận tài khoản',
+                'mail_dear'=> 'Xin chào Quý khách hàng,',
+                'mail_welcome'=> 'Chào mừng bạn đến với CRM của FFF.com.vn',
+                'mail_desc'=> 'Hãy xác minh tài khoản của bạn để bắt đầu',
+                'mail_body'=> 'Cảm ơn bạn đã đăng ký dịch vụ của chúng tôi. Để chắc chắn bạn đăng kí đúng email vui lòng xác minh tài khoản và địa chỉ email của bạn. Sau khi xác minh bạn sẽ sẵn sàng để thử nghiệm tất cả các dịch vụ của chúng tôi',
+                'mail_button_text'=> 'Xác minh tài khoản',
+                'mail_button_link'=> url('/confirm' , $user->confirmation_code),
+                'mail_thanks'=> '- Trân trọng (FFF team)',
+                'mail_notes'=> 'Nếu nút ở trên không hoạt động, hãy thử sao chép và dán URL vào trình duyệt của bạn. Nếu bạn tiếp tục có vấn đề, xin vui lòng liên hệ với chúng tôi tại crm@fff.com.vn',
             ]);
         $params = [
             "method" => "POST",
-            "from" => "FFF.com.vn <noreply@fff.com.vn>",
-            "to" => "hiepphatnguyen@gmail.com",
-            "subject" => trans('front/verify.email-title'),
-            //"txt" => trans('front/verify.email-title') . "<br/>" . trans('front/verify.email-intro') . "<br/>" . trans('front/verify.email-button') . "<br/>" . url('confirm/' . $user->confirmation_code)
-            //"html" => $view
-            "html" => trans('front/verify.email-title') . "<br/>" . trans('front/verify.email-intro') . "<br/>" . trans('front/verify.email-button') . "<br/>" . url('confirm/' . $user->confirmation_code)
+            "from" => "FFF.com.vn <crm@fff.com.vn>",
+            "to" => 'hiepphatnguyen@gmail.com',
+            "subject" => 'Xác minh tài khoản FFF.com.vn', //trans('front/password.title')
+            "html" => $view
         ];
-
         $result = Mailjet::sendEmail($params);
 
-
-
-//        return (new MailMessage)
+ //        return (new MailMessage)
 //            ->line([
 //                trans('front/password.email-intro'),
 //                trans('front/password.email-click'),
 //            ])
 //            ->action(trans('front/password.email-button'), url('password/reset', $this->token))
 //            ->line(trans('front/password.email-end'));
+    }
+
+    protected function notifyTrialService(User $user)
+    {
+        $date_expired = date('Y-m-d', strtotime("+7 days"));
+        $view = view('emails.trial-service',
+            [
+                'mail_title'=> 'CRM FFF.com.vn 7 ngày dùng thử dịch vụ',
+                'mail_dear'=> 'Xin chào Quý khách hàng,',
+                'mail_welcome'=> 'Chào mừng bạn đến với CRM của FFF.com.vn',
+                'mail_desc'=> 'Miễn phí sử dụng dịch vụ FFF.com.vn trong 7 ngày',
+                'mail_body'=> 'Cảm ơn bạn đã đăng ký dịch vụ của chúng tôi. Hãy đăng nhập ngay để sử dụng tất cả dịch vụ của FFF.com.vn miễn phí 7 ngày',
+                'mail_expired_text'=> 'Sử dụng thử đến hết ngày',
+                'mail_expired_date'=> $date_expired,
+                'mail_button_text'=> 'Dùng thử ngay',
+                'mail_button_link'=> url('/'),
+                'mail_thanks'=> '- Trân trọng (FFF team)',
+                'mail_notes'=> 'Nếu bạn có bất kỳ câu hỏi nào, xin vui lòng liên hệ với chúng tôi tại crm@fff.com.vn',
+            ]);
+        $params = [
+            "method" => "POST",
+            "from" => "FFF.com.vn <crm@fff.com.vn>",
+            "to" => 'hiepphatnguyen@gmail.com',
+            "subject" => 'Miễn phí dùng thử FFF.com.vn', //trans('front/password.title')
+            "html" => $view
+        ];
+        $result = Mailjet::sendEmail($params);
     }
 }
