@@ -79,18 +79,18 @@
                             <p class="text-muted m-b-20">Danh sách IP click và truy cập website của bạn. Bạn có thể chặn ngay IP click ảo hoặc <a href="">Cấu Hình Chặn Tự Động</a></p>
                             <div class="row padding-bottom-10px">
                                 <div class="col-sm-6" style="padding-top:10px">
-                                    <label class="form-inline">Hiển thị 
-                                        <select id="select_num_row" name="row" class="form-control input-sm">
-                                            <option value="50" {{ $row == 50 ? 'selected' : '' }}>50</option>
-                                            <option value="100" {{ $row == 100 ? 'selected' : '' }}>100</option>
-                                            <option value="150" {{ $row == 150 ? 'selected' : '' }}>150</option>
-                                            <option value="200" {{ $row == 200 ? 'selected' : '' }}>200</option>
-                                        </select> kết quả </label>
+                                    <label class="form-inline">HIỂN THỊ
+                                        <select id="select_num_row" name="num_row" class="form-control input-sm">
+                                            <option value="50" {{ $num_row == 50 ? 'selected' : '' }}>50</option>
+                                            <option value="100" {{ $num_row == 100 ? 'selected' : '' }}>100</option>
+                                            <option value="150" {{ $num_row == 150 ? 'selected' : '' }}>150</option>
+                                            <option value="200" {{ $num_row == 200 ? 'selected' : '' }}>200</option>
+                                        </select> KẾT QUẢ </label>
                                 </div>
                                 <div class="col-sm-6 text-right">
                                     <div class="form-group" style="margin-bottom: 0px;">
                                         <div class="input-group fix-300px pull-right">
-                                            <input type="text" name="search_ip" value="{{$search_ip}}" class="form-control" placeholder="Tìm kiếm ip">
+                                            <input type="text" name="search_ip" value="{{$search_text}}" class="form-control" placeholder="Tìm kiếm ip">
                                             <span class="input-group-btn">
                                                 <button type="submit" id="btn_search" class="btn waves-effect waves-light btn-default"><i class="fa fa-search"></i></button>
                                             </span>
@@ -98,9 +98,17 @@
                                     </div>
                                 </div>
                                 <div class="table-responsive dataTables_wrapper ">
-                                    <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                        {{$domain_logs->render()}}
-                                    </div>
+                                    @if($max_page > 1)
+                                        <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
+                                            <a class="paginate_button previous {{$page == 1 ? "disabled" : ""}}" id="paging_previous">Trước</a>
+                                            <span>
+                                                @for ($x = 1; $x <= $max_page; $x++)
+                                                    <a class="paginate_button {{ $page == $x ? 'current' : '' }}" data-value="{{$x}}">{{$x}}</a>
+                                                @endfor
+                                            </span>
+                                            <a class="paginate_button next {{$page == $max_page ? "disabled" : ""}}" id="paging_next">Sau</a>
+                                        </div>
+                                    @endif
                                     <table class="table table-striped color-table inverse-table ">
                                         <thead>
                                         <tr>
@@ -122,7 +130,7 @@
                                         <tbody>
                                             @foreach ($domain_logs as $log)
                                                 <tr>
-                                                    <td>{{($page - 1) * $row + $loop->index + 1}}</td>
+                                                    <td>{{($page - 1) * $num_row + $loop->index + 1}}</td>
                                                     <td>{{ date('H:i:s d/m/Y', strtotime($log->created))}}</td>
                                                     <td><button class="btn btn-block btn-outline btn-info  btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xem lịch sử IP">{{$log->ip}}</button></td>
                                                     <td><button class="btn btn-block btn-outline btn-success btn-sm " data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn ngay IP này">Chặn Ngay</button></td>
@@ -140,9 +148,7 @@
                                             @endforeach
                                         </tbody>
                                     </table>
-                                    <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                        {{$domain_logs->render()}}
-                                    </div>
+                                        <?php echo $domain_logs->render(); ?>
                                 </div>
 
                             </div>
@@ -176,6 +182,19 @@
         $("#select_num_row").change(function(){
             $("#form_display_ip").submit();
         });
+        $("#paging_previous").click(function(){
+            @if($page - 1 >= 1)
+                $("#num_page").val("{{$page - 1}}");
+                $("#form_display_ip").submit();
+            @endif
+        });
+        $("#paging_next").click(function(){
+            @if($page + 1 <= $max_page)
+                $("#num_page").val("{{$page + 1}}");
+            $("#form_display_ip").submit();
+            @endif
+        });
+
         $("#sort_click").click(function(){
             var sfield = $("#sort_field").val();
             if(sfield == '' || sfield == 'view') {

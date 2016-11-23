@@ -302,3 +302,22 @@
 	margin-bottom: 10px;
 	color: #c7340b;
 }
+
+.sort-caption {
+	cursor: pointer;
+}
+
+#div_paging .pagination {
+	margin: 0 !important;
+}
+#div_paging .pagination .active > span  {
+	color: #fff !important;
+	border: 1px solid #13dafe !important;
+	background-color: #13dafe !important;
+}
+
+#div_paging .pagination > li > a:hover {
+	color: white !important;
+	border: 1px solid #6164c1 !important;
+	background-color: #6164c1 !important;
+}

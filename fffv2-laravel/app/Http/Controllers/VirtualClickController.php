@@ -29,22 +29,29 @@ class VirtualClickController extends Controller
 
     public function ip_click_ao(Request $request)
     {
-        $num_row = $request->get("num_row", 50);
-        $search_text = $request->get("search_text", '');
-        $num_page = $request->get("num_page", 1);
-        $max_page = 10;
+        $row = $request->get("row", 50);
+        $search_ip = $request->get("search_ip", '');
+        $page = $request->get("page", 1);
+        $sfield = $request->get("sfield", "");
+        $sdir = $request->get("sdir", "");
 
-        $skip = ($num_page - 1) * $num_row;
-        $domain_logs = DB::table("domain_logs")
-            ->skip($skip)
-            ->take($num_row)
-            ->get();
+        $domain = DB::table("domains")
+            ->where('id', '=', Session::get('domain_id_choose'))
+            ->first();
+        $query = DB::table("domain_logs")
+            ->where("domain_key", $domain->keycode);
+        if(!empty($search_ip)) {
+            $query = $query->where('ip', 'like', "%" . $search_ip . "%");
+        }
+        $domain_logs = $query->paginate($row);
+        $domain_logs->appends(["row" => $row, "search_ip" => $search_ip, "sfield" => $sfield, "sdir" => $sdir])->links();
 
         return view('front.virtualclicks.ip-click-ao')
-            ->with(compact('num_row'))
-            ->with(compact('search_text'))
-            ->with(compact('num_page'))
-            ->with(compact('max_page'))
+            ->with(compact('row'))
+            ->with(compact('search_ip'))
+            ->with(compact('page'))
+            ->with(compact('sfield'))
+            ->with(compact('sdir'))
             ->with(compact('domain_logs'))
             ;
     }
