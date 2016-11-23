@@ -145,6 +145,7 @@ $(document).ready(function() {
 		var basic_bars = ec.init(document.getElementById('basic_bars'), limitless);
 		var customer_1 = ec.init(document.getElementById('customer_1'), limitless);
 		var customer_2 = ec.init(document.getElementById('customer_2'), limitless);
+		var home_adwords = ec.init(document.getElementById('home_adwords'), limitless);
 		
 		
 		basic_bars_options = {
@@ -153,7 +154,7 @@ $(document).ready(function() {
 					trigger: 'axis'
 				},
 				legend: {
-					data:['ADWORDS','DIRECT']
+					data:['ADWORDS','TRỰC TIẾP']
 				},
 				
 				calculable : true,
@@ -176,27 +177,92 @@ $(document).ready(function() {
 					{
 						name:'ADWORDS',
 						type:'line',
-						data:[1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,1,2,3,4,5,6,7,8,9,10,11],
+						data:[1, 2, 3, 4, 5, 6, 7, 8,9,10,11,12,14,21,32,14,25,16,71,18,19,10,11],
 						
 					},
 					{
-						name:'DIRECT',
+						name:'TRỰC TIẾP',
 						type:'line',
 						data:[11, 12, 13, 14, 15, 16, 17, 18,19,20,21,22,11,12,13,14,15,16,17,18,19,20,21],
 						
 					}
+				
 				]
 			};
-			
+		
+			adwords_option = {
+				title : {
+					text: 'HIỆU XUẤT ADWORDS',
+					subtext: '20/11/2016',
+					x:'left',
+				},
+				tooltip : {
+					trigger: 'item',
+					formatter: "{a} <br/>{b} : {c} ({d}%)"
+				},
+				legend: {
+					y : 'bottom',
+					x : 'center',
+					data:['PC','MOBILE','TABLET']
+				},
+				toolbox: {
+					show : true,
+					feature : {
+						saveAsImage : {show: true}
+					}
+				},
+				calculable : true,
+				series : [
+					{
+						name:'Total Click',
+						type:'pie',
+						radius : ['30%', '70%'],
+						itemStyle : {
+							 normal : {
+									label : {
+										position : 'inner',
+										formatter : function (params) {                         
+										  return (params.percent - 0).toFixed(0) + '%'
+										}
+									},
+								labelLine : {
+									show : false
+								}
+							},
+							emphasis : {
+								label : {
+									show : true,
+									position : 'center',
+									textStyle : {
+										fontSize : '12',
+										fontWeight : 'bold'
+									}
+								}
+							}
+						},
+						data:[
+							{value:335, name:'PC'},
+							{value:310, name:'MOBILE'},
+							{value:234, name:'TABLET'},
+						]
+					}
+				]
+			};
+								
+					
 		customer_1_option = {
-				
+				title : {
+					text: 'CHUYỂN ĐỔI KHÁCH HÀNG',
+					subtext: '20/11/2016',
+					x:'LEFT',
+				},
 				tooltip : {
 					trigger: 'item',
 					formatter: "{a} <br/>{b} : {c}%"
 				},
 				
 				legend: {
-					data : ['Chưa định danh','Định Danh','Quan tâm','Mua hàng'],
+					data : ['Chưa định danh','Định Danh','Quan tâm'],
 					y : 'bottom',
 				},
 				calculable : true,
@@ -211,19 +277,23 @@ $(document).ready(function() {
 							{value:400, name:'Chưa định danh'},
 							{value:80, name:'Định Danh'},
 							{value:40, name:'Quan tâm'},
-							{value:10, name:'Mua hàng'}
 						]
 					},
 					
 				]
 			};
 		customer_2_option = {
-			
+			title : {
+					text: 'THU THẬP KHÁCH HÀNG',
+					subtext: '20/11/2016',
+					x:'left',
+				},
 			tooltip : {
 				trigger: 'axis'
 			},
 			legend: {
-				data:['Khách hàng','Đơn hàng']
+				data:['Chưa định danh','Định Danh'],
+				y : 'bottom',
 			},
 			
 			calculable : true,
@@ -240,7 +310,7 @@ $(document).ready(function() {
 			],
 			series : [
 				{
-					name:'Khách hàng',
+					name:'Chưa định danh',
 					type:'bar',
 					data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3,2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
 					markPoint : {
@@ -256,7 +326,7 @@ $(document).ready(function() {
 					}
 				},
 				{
-					name:'Đơn hàng',
+					name:'Định Danh',
 					type:'bar',
 					data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3,2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
 					markPoint : {
@@ -279,12 +349,14 @@ $(document).ready(function() {
 		 basic_bars.setOption(basic_bars_options);
 		 customer_1.setOption(customer_1_option);
 		 customer_2.setOption(customer_2_option);
+		 home_adwords.setOption(adwords_option);
 		  window.onresize = function () {
                 setTimeout(function (){
                    
                     basic_bars.resize();
                     customer_1.resize();
                     customer_2.resize();
+                    home_adwords.resize();
 					
 
                 }, 200);

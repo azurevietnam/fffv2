@@ -1,0 +1,1094 @@
+[Nov 22 2016 05:56:59.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA_O-ADGHnJRKQRozH28eb6asKNBTqnjD-WNroSonjYIbA0fTUpdqWDSzLPhcrI7o
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 416
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------6806cfcf247d5b80
+
+Parameters:
+__rdquery: SELECT CampaignId, AdGroupId, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED, PAUSED] DURING 20161115,20161121
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 05:57:03.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA-K8zexVK7VDhxXe6OZSQQO-OauZiIZeISYG639ia2UWYHt1GTWcukCl1_9uLGl8
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 416
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------ccdc6adf27622e5f
+
+Parameters:
+__rdquery: SELECT CampaignId, AdGroupId, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED, PAUSED] DURING 20161115,20161121
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 07:04:32.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA0TgNTo-mniDI8oTIkERUSkX5pclFvvcHgfFIhB08IqJ2JG-6M_LgWbo8bVrPWZT
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 416
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7e0a633f3a42086b
+
+Parameters:
+__rdquery: SELECT CampaignId, AdGroupId, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED, PAUSED] DURING 20161115,20161121
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 07:06:08.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAwYD75sHP0HyZEjXGVIQXoCo7cVim4dRb75XxAblK5HjtB0rPN6oJaCt1Tt4-jrq
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 683-135-9948
+Content-Length: 416
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------70f7a80150d4debd
+
+Parameters:
+__rdquery: SELECT CampaignId, AdGroupId, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED, PAUSED] DURING 20161115,20161121
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 07:06:13.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA9ht0C1YH3R6jlJndDJdOE2WJM2-09VzDkxz4z5RVCjqacGFtltnPr4DBgrmvsH8
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 683-135-9948
+Content-Length: 416
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------706b7efad83849e5
+
+Parameters:
+__rdquery: SELECT CampaignId, AdGroupId, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED, PAUSED] DURING 20161115,20161121
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 09:01:08.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAxYvpcCeeS-YGRjfcSJYQg6m30V-FurI9uXMckRsW4W-Yli4-ziyIz8eVT4_IDTu
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 631
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------06f75b6ee3886b5a
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833fb42a3212</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>LAST_7_DAYS</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:01:55.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA3603KKRnT9Pki1zDO87xUxjIQ831QOTFehjBtHDyNJzbtgY-3Xx_5dSEExFwSPR
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 660
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7a6c3702d3b20b9d
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833fb70e412c</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>LAST_7_DAYS</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:02:52.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA1vf7WWpg5JGamUXaVO5e7P06OFOrxzTlopymsD3g7U40TzTPLmmJduKP6ZdXBvw
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 660
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------ad3fae5e3677f410
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833fbaa98080</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>LAST_1_DAYS</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'ReportDownloadError.INVALID_REPORT_DEFINITION_XML', Trigger = 'Invalid ReportDefinition Xml: cvc-enumeration-valid: Value 'LAST_1_DAYS' is not facet-valid with respect to enumeration '[TODAY, YESTERDAY, LAST_7_DAYS, LAST_WEEK, LAST_BUSINESS_WEEK, THIS_MONTH, LAST_MONTH, ALL_TIME, CUSTOM_DATE, LAST_14_DAYS, LAST_30_DAYS, THIS_WEEK_SUN_TODAY, THIS_WEEK_MON_TODAY, LAST_WEEK_SUN_SAT]'. It must be a value from the enumeration.', FieldPath = ''. 
+
+[Nov 22 2016 09:03:27.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA29nRnLrtw-sXY-RhNkWxxC_frDDUs1MBWU1j2YbMWbLTlkWSc8u71hU0kG5m4NP
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 654
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------54ace2827fe7140a
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833fbcd6d735</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>TODAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:04:38.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA0rLs9wxj2Dn-C-8_vEZRCoRlt4awYCq7TIkv7SuybxPWO_Axb_e1jGD_DpJOMxm
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 658
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d7c8edb12cd92e97
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833fc1490776</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:08:58.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA2HfHFXwheO4USaT6r1hSZ6GxCwL8gTLAsXXcrOdhb4vQFds3bcFDhGIVbu4DQkG
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 681
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------430647bf47da55a8
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><fields>Budget</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833fd191ff40</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'ReportDefinitionError.INVALID_FIELD_NAME_FOR_REPORT', Trigger = 'Budget', FieldPath = ''. 
+
+[Nov 22 2016 09:12:01.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA-Z4nY_m_mBTywDMsyX0faQoRt8w_nKYwLrym0CNx5Xz0OyTANr2IKJmltL22Qd3
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 658
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------4a73ccbed8d77d54
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833fdcf5d339</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:19:41.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA657aUxfX0wogDQzusgd-I0HYX_hvVkiMqbHa4j8_bPVReSF67cpJ6_V0joCbTDv
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 658
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f222019ec5b7b35c
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833ff9b389f7</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:21:00.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA1W52Ibhm4nV-tPt6RcJM1g9T4kmtyzIJgcLqDlG9hfAumFdlpQzqBoaAvwv6Ltz
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------8d485e847edb3935
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5833ffeaa3993</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:23:09.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA_466gkJV6rwGiI0vHsU1zCuDZWvPUmN7mo-ft2GhmHoNPGINB5AK7BboSZZrTnU
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d3980c5e4ba5f055
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5834006ba6221</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:24:03.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAwIqKIfo4j5gOXqAoevLMSvyZpfFpXZPzKc3GTLuHC05yz3O1tvgdoxntMkLrOFI
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------06ba19e5dd38957f
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583400a1e41f3</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:26:58.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA1FZtFTAVZZy9aMNsGRSvoELQKKWfMDRj1jBu69woDpvuNTo3gVD9FXh6PsbW_Es
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------467f6792ea33d4bc
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583401509f4d1</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:28:05.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA0X-RNrxbC71rGltLmDcr9aN8r81cXdjALUqYwx5sVe4jEVr1448UiaTLRqXuJV5
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------fe4cf679c801bc98
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #58340193caff8</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:28:23.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA58Gj7Sfk728MmHuaJ-0p2fF6Ov1wTXbLCJ9ScyulEHPdPgrFyctTi4jTHJUlYC7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2a2c5a64931f8d43
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583401a522886</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:28:41.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA3i7vSR7FrgPRXrPy6UzBdH2bmekjQAh9sincoqSWpPEoJIu8_-RKXQUqeTRUhrR
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a9c7a2715d424d33
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583401b7d3eb5</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:28:55.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA1Ei2ZdUjfrrcmKAotY2Nzpr5tVt1PXWZ4wze7OqHtwfVZwomlW7nCSlO0v5WDan
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c2e07234340c4934
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583401c5a3552</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:29:21.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA3JCPH-CCRQNkC1SwOzkzwNEeH-onspOm6aQP-H169P6XIN5wR0sxy9Mcs-GDcT7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 758
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------277c611148df7b96
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583401df50324</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:31:40.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA0LL6fT9W2W1o50bkx1p41Ec-XkFSwKLVockq-neS-TEwS7as5vZw4I1w_ojeryZ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 785
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------6a60c9983337d301
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5834026a587d9</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:32:21.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA5R5t6YTXyBuZSqKfWQCyX6mtusf2AsI2JHV-T6SKV5qHz-NQC6q62qP4pdOGsfB
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 785
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a71e3b1e31513da1
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5834029398fe2</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:32:38.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAyPp2fR-jVZav_NuQzXoy1wKuH4S7ZCVVNFiqw6dxbmi2qqUjCgWCnCtUUBORC-9
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 785
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------383450b8e897add5
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583402a4972ad</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:33:04.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAw_2_b0u-qgfkie_KNOjhVbCmOF6mEXzHj7DChtbigFKa6DvTcL7FOLNTemyPb2H
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 785
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5ef240ab536858fa
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #583402be7114f</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:35:16.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA6vvMrj7WqpG1u5Q4r9fhJawUZKhs8EHnDkH6zrWMo2Hf-OrRaXYCIypm181FB7C
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 785
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d3da698ad0fabdb5
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5834034246ee6</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 09:35:57.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA5ho0B-8KHzdpVookgngCrqxsJs_Mg5HxqtMTT4ES6c3CSV1Ubl1DoiE09x4JkEb
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 785
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d58721436d37b518
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5834036b4c79c</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 10:36:12.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA263An_za4StRaqG_KCObrehVrp6NZcCCDg8bYKtCPzFEnfxiqxCmaAn4aBNvtG0
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 810
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------06521e1225496887
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>Criteria</fields><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #5834118a18980</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 10:36:28.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA0aNfDoglY5D3q2sGSfftxP4mEVlLX5LPpmkqWpcIGGSXMgh3rl6Zy-vdfe1_6U2
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 810
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7da0da979b04762e
+
+Parameters:
+__rdxml: <?xml version="1.0" encoding="UTF-8"?>
+<reportDefinition><selector><fields>Criteria</fields><fields>CampaignId</fields><fields>CampaignName</fields><fields>Impressions</fields><fields>Clicks</fields><fields>AverageCpc</fields><fields>Conversions</fields><fields>Ctr</fields><fields>Device</fields><fields>QualityScore</fields><fields>Cost</fields><predicates><field>Status</field><operator>NOT_IN</operator><values>PAUSED</values></predicates></selector><reportName>Criteria performance report #58341199ee710</reportName><reportType>CRITERIA_PERFORMANCE_REPORT</reportType><dateRangeType>YESTERDAY</dateRangeType><downloadFormat>CSV</downloadFormat></reportDefinition>
+
+Response Code: 200
+
+[Nov 22 2016 10:44:54.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA5eD-bD7JDcdF_m5skW5egcGnRi2a13orwZp6UC3dZPCt8Hjiu8fDmRBz56ukI5H
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 408
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------1c5bdcca349b289e
+
+Parameters:
+__rdquery: SELECT CampaignId, AdGroupId, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED] DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 10:46:01.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA9f5VoLy1YH-WDQYeuujrzfjhlGLI6Jkfr84TOyxL525I3DNxCY4yGiABq2FbcSB
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 421
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b8e12d490f903bc1
+
+Parameters:
+__rdquery: SELECT CampaignId,CampaignName, AdGroupId, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED] DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 10:46:37.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAyrmyNPc29uJfU1XTWqmAQZ8M1j1du_MUChurtJlnWIP01s-RBB5ziHpGU-IsdM1
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 434
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------967afc255e8c38aa
+
+Parameters:
+__rdquery: SELECT CampaignId,CampaignName, AdGroupId, AdGroupName, Id, Criteria, CriteriaType, Impressions, Clicks, Cost FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED] DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 10:48:45.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA79Yu5JO0HkqQl7wwF85hNnA1Ze4RwMBxBUUGj6YXhLdvi6rtiuP-xLVPmjCOt6u
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 454
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7008f415f1b81f58
+
+Parameters:
+__rdquery: SELECT CampaignId,CampaignName, AdGroupId, AdGroupName, Id, Criteria, CriteriaType, Impressions, Clicks, Cost,Device,QualityScore FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED] DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 10:51:32.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA1LgMKymC43E-xrnu_lWRLCmMwj0jA7Yiaxzw8sk-LydKb9d94L23TRyyZ6zTGIK
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 455
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------de02f49e7b56acf0
+
+Parameters:
+__rdquery: SELECT Criteria, CampaignId,CampaignName, AdGroupId, AdGroupName, Id,  CriteriaType, Impressions, Clicks, Cost,Device,QualityScore FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED] DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 10:51:57.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAwEcLt4Z3NdyTHpJmcu2I6M_ohrVXXI8GI9e8OKKp5NOTNfll0Ek9h2TMYd37uvV
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 455
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2a6b768b31d8025f
+
+Parameters:
+__rdquery: SELECT  CriteriaType, Criteria, CampaignId,CampaignName, AdGroupId, AdGroupName, Id, Impressions, Clicks, Cost,Device,QualityScore FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED] DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:07:06.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA-ixmdBFzScta-lvJmqxAkEizR3r_f-JvLasQ4u-gY7HqUO7RDDLLFDEul01OXWw
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 455
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------13a9ac7da9f1bff5
+
+Parameters:
+__rdquery: SELECT  CriteriaType, Criteria, CampaignId,CampaignName, AdGroupId, AdGroupName, Id, Impressions, Clicks, Cost,Device,QualityScore FROM CRITERIA_PERFORMANCE_REPORT WHERE Status IN [ENABLED] DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:09:19.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA69W8UWERoNeFVpJpicgOOqkpd-pdz2bAVFxtA5ZGlHATOn7oSO5IJ7gCEgvXusb
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 457
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------009fb6976665b32c
+
+Parameters:
+__rdquery: SELECT  CriteriaType, Criteria, CampaignId,CampaignName, AdGroupId, AdGroupName, Id, Impressions, Clicks, Cost,Device,QualityScore FROM CRITERIA_PERFORMANCE_REPORT WHERE Campaign ID=624978647 DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.INVALID_WHERE_CLAUSE', Trigger = '', FieldPath = ''. 
+
+[Nov 22 2016 11:09:29.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAyR3m8o97vhGwtTcL0xyQpE3skIOIS3n35FelkrOeDoojMaIcju8OPzgXxOmNW1F
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 456
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------98a7052a49d2f68b
+
+Parameters:
+__rdquery: SELECT  CriteriaType, Criteria, CampaignId,CampaignName, AdGroupId, AdGroupName, Id, Impressions, Clicks, Cost,Device,QualityScore FROM CRITERIA_PERFORMANCE_REPORT WHERE CampaignId=624978647 DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:14:00.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA9ZlcEf6h7DkVu_ZjPzdlZXGhWSehhrEpM1IscUjYvUg5gUBpWsoiwcx_4oLbArd
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 429
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------07a1f88abb5e22ea
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Impressions, Clicks, Cost,Device,QualityScore FROM CAMPAIGN_PERFORMANCE_REPORT WHERE CampaignId=624978647 DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'ReportDefinitionError.INVALID_FIELD_NAME_FOR_REPORT', Trigger = 'QualityScore', FieldPath = ''. 
+
+[Nov 22 2016 11:14:30.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA258AbZIeuHiHog74k34YbrWFzAR5rvts2edK82-79Y50Fj38kvByDT7M4kzmt7L
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 429
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------536e3928de4861d1
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Impressions, Clicks, Cost,Device,QualityScore FROM CAMPAIGN_PERFORMANCE_REPORT WHERE CampaignId=624978647 DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'ReportDefinitionError.INVALID_FIELD_NAME_FOR_REPORT', Trigger = 'QualityScore', FieldPath = ''. 
+
+[Nov 22 2016 11:14:46.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA1VBP9N6Vidzj1rFw6oKbAaB986_k9stDv2afNRNaj1hTxGEOrAYpEsd0r8F8atQ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 456
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c384bab7769efb24
+
+Parameters:
+__rdquery: SELECT  CriteriaType, Criteria, CampaignId,CampaignName, AdGroupId, AdGroupName, Id, Impressions, Clicks, Cost,Device,QualityScore FROM CRITERIA_PERFORMANCE_REPORT WHERE CampaignId=624978647 DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:15:17.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAzBiFLxNYuuqHDM5dhYNQ2wt0fov1mqshCJcc78LIzMhtO33aUsBE3OdfkUaRuj9
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 396
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b3a1609d5398f84f
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE CampaignId=624978647 DURING 20161121,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:15:48.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA8hmvUCuAMOfYgebYHv8PJYoyuelTiUTnjKSn946snqu2OivJiYKiY04cI1qk4ET
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 396
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b1dc5f1caadb84e8
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE CampaignId=624978647 DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:16:34.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA8i7Dd4vPgzHlOV_Krs2kVx79--zJ-Mpgs8yyKeDFp-QJUHFgqVTpJE-J5A9aqF6
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 376
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------cb380c4b48d27ce2
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.INVALID_WHERE_CLAUSE', Trigger = '', FieldPath = ''. 
+
+[Nov 22 2016 11:16:45.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAyA3P1tTbbqWmEFLYXRKMNZdp3kTpCZ_-JCtqrg7lheS0EytqmsvWNFUNFi1_AZR
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 369
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------95ba80abd1aa2217
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:17:03.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA2ISy8LVCtRu1iEY7fsa3Y28KdYAgrI7ikAr6uiOEyNpEKi0zpcFzMAR95u2FiJX
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 384
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------046a72495a157553
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:19:02.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA5tqOUVTl7qbK0T9tCzRAVxVzyDyEp7r6IEOJe9LcUFHXM70SYQZKhjbfX22Xbe7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 416
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b1fa78851ab5ae01
+
+Parameters:
+__rdquery: SELECT  CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost, AdNetworkType1, AdNetworkType2 FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:20:01.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAw_073ebky1_KRblcXIaS6YCF_aFoBg3LGHKJWpcCKMff8Jri3HdDzF6kkk3T1TR
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------69c7631a26e51b64
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:20:57.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA9wWfX4-80LHbiS34RimxMbTd0n-BMIZw9Se1p1b-nHJ_fI9VrAHrGp7UTa2jJBe
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------efa668174fe941ca
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:21:59.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA7lmdmwN54bpISERVExhWshdy0vFZdO4X0zwNdc92IubcBC64D6X2OOlOxq_vDYC
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------32d427092a34b2b9
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:23:11.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAxM_mEx3TN_ggAMUbzcdYHHq-3Hs2_GHjuNhEIFf-FiJQUPryjxZaUdGsEpw0Ld4
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2b759b6f55572f9c
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:23:37.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAyZ41LeOoMfaSQ8e4TNP6Zd6N1Q8uAKz6CIIA6wklRiy5QSmPW9M-XuPUJrIVLfd
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------70615ca6f7ed733e
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:24:22.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA4rsjYCtBL0svTiZm5sZl25jLFdvhvl6f8X4HoMb7fxAeWnOPtwigSePR0p423rb
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------8bdba9a08acae029
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:24:41.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAxeVwIrGw1InW4Gz9Bw5u_8eWy0vI9IOr17WDVYyYraI8ZnrLCuugAcXB3yLoU1Z
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5351d8e1661deaca
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:28:20.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAwrsKeQt5kJOlZl4jlE_3E9zW35rNV-2aVDfDroiPPzqQ8d6YBb1SBYf1VV1UYMO
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 400
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------13f8924b8626f3bf
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:31:34.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA7IjbDurcpJJ1QcVsKkI0TVMV5V5Lyl_V_719TwmRYgFKdOTGNYIeGxheoJ4bT_J
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 469
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2d8c3fe6b1ef31bb
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks,InvalidClicks,InvalidClickRate,SearchImpressionShare,Slot,Conversions,Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'ReportDefinitionError.INVALID_FIELD_NAME_FOR_REPORT', Trigger = 'Cannot select a combination of InvalidClicks and ConversionCategoryName,ConversionTrackerId,ConversionTypeName,ExternalConversionSource,HourOfDay,Slot', FieldPath = 'InvalidClicks'. 
+
+[Nov 22 2016 11:31:59.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA5huqZm0Fp0NGP6Cgm7fok2t5pl5ZCtQ-Re-knZsMMohMBZgs8hrOZkRGrnNgWzP
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 469
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------039af9ca8ebc80b5
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:33:15.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeA1z45sD8SJzLCa60BczrwH8ZwOnsC2D60tctAKngebv7Z3gxlvJZsqC4zWthT8tp
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------e3869a9c361dcfbf
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 22 2016 11:34:31.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGeAzswQP3jpp2sDQ-cNwm9aKTbHT6TrrcBhx9rTnSKZIN_2fSbTHIXYx2h_jKR-wlt
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 897-393-9463
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------e2a4d078287b71c2
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161122,20161122
+__fmt: CSV
+
+Response Code: 200
+

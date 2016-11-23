@@ -1,3 +1,6 @@
+<?
+ $left_menu = "small";//thu nho slidebar
+ ?>
 <!DOCTYPE html>   
 <html lang="en">
 <head>

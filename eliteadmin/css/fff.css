@@ -253,7 +253,23 @@
 }
 .inline-editor:active,
 .inline-editor:focus{
-	border:1px #03a9f3 solid;
-
-	
+	border:1px #03a9f3 solid;	
+}
+.white-box-full {
+	background:#fff!important;
+	margin:0px 0px 15px 0px;
+}
+.white-box-full .box-title {
+	margin: 0px 0px 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+	padding:25px 25px 10px 25px;
+}
+.white-box-full table{
+	background:#fff!important;
+	margin-bottom:0px!important;
+}
+.white-box-full .white-box{
+	padding:0px 25px;
 }
