@@ -37,7 +37,6 @@
                                             <th>#</th>
                                             <th>Ngày Thanh Toán</th>
                                             <th>Ngày Hết Hạn</th>
-                                            <th>Domain</th>
                                             <th>Tình Trạng</th>
                                             <th>Thanh toán qua</th>
                                             <th>Số tiền</th>
@@ -50,7 +49,6 @@
                                             <td>1</td>
                                             <td>20/10/2016</td>
                                             <td>20/11/2016</td>
-                                            <td>toancau.com</td>
                                             <td><button class="fcbtn btn btn-info btn-outline btn-1e btn-sm">Đã Thanh Toán</button></td>
                                             <td>Ngân hàng VCB </td>
                                             <td>2.000.000</td>
@@ -61,7 +59,6 @@
                                             <td>2</td>
                                             <td>20/11/2016</td>
                                             <td>20/12/2016</td>
-                                            <td>toancau.com</td>
                                             <td><button class="fcbtn btn btn-danger btn-outline btn-1e btn-sm">Chưa Thanh Toán</button></td>
                                             <td>Ngân hàng VCB </td>
                                             <td>2.000.000</td>
@@ -72,12 +69,66 @@
                                             <td>3</td>
                                             <td>20/12/2016</td>
                                             <td>20/01/2017</td>
-                                            <td>toancau.com</td>
                                             <td><button class="fcbtn btn btn-warning btn-outline btn-1e btn-sm">Thanh Toán Ngay</button></td>
                                             <td>Ngân hàng VCB </td>
                                             <td>2.000.000</td>
                                             <td>1.500.000</td>
                                             <td>500.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+                <!-- /.row -->
+				 <!-- .row -->
+                <div class="row">
+                    <div class="col-sm-12">
+                         <div class="white-box">
+                            <h3 class="box-title m-b-0">Quản Lý Domain</h3>
+                            <div class="table-responsive">
+                                <table class="table valign-middle">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Ngày thêm</th>
+                                            <th>Domain</th>
+                                            <th>Mã adwords kết nối</th>
+                                            <th>Tác Vụ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>20/10/2016</td>
+                                            <td>phatdeptrai.com</td>
+                                            <td>999-999-9999</td>
+                                            <td class="text-nowrap">
+                                                <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                                <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a>
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>1</td>
+                                            <td>20/10/2016</td>
+                                            <td>phatdeptrai.com</td>
+                                            <td>999-999-9999</td>
+                                            <td class="text-nowrap">
+                                                <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                                <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a>
+                                            </td>
+                                        </tr>
+										 <tr>
+                                            <td>1</td>
+                                            <td>20/10/2016</td>
+                                            <td>phatdeptrai.com</td>
+                                            <td>999-999-9999</td>
+                                            <td class="text-nowrap">
+                                                <a href="#" data-toggle="tooltip" data-original-title="Edit"> <i class="fa fa-pencil text-inverse m-r-10"></i> </a>
+                                                <a href="#" data-toggle="tooltip" data-original-title="Close"> <i class="fa fa-close text-danger"></i> </a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

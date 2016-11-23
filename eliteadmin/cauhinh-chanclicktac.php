@@ -28,10 +28,58 @@
                <!-- .row -->
                 <div class="row">
                     <div class="col-sm-12">
+						<div class="white-box">
+                            <h3 class="box-title m-b-0">Tài khoản adwords</h3>
+                            <p class="text-muted m-b-30 font-13">Để thực hiện chặn click ảo hiệu quả bạn cần liên kết tài khoản adwords với tài khoản của FFF.COM.VN</p>
+                            <form class="form-horizontal">
+									 <div class="form-group">
+									<label class="col-sm-3 " for="example-input-normal">Domain</label>
+									<div class="col-sm-9">
+										<select class="form-control">
+                                            <option>phatdeptrai.com</option>
+                                            <option selected>phatdeptrai1.com</option>
+											<option>phatdeptrai2.com</option>
+                                        </select>
+									</div>
+								</div>
+                               <div class="form-group">
+									<label class="col-sm-3 " for="example-input-normal">Mã tài khoản adwords của bạn</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" placeholder="Mã tài khoản adwords của bạn xxx-xxx-xxxx" >
+										<span class="help-block"><small>Vui lòng xem <a href="http://fff.com.vn/2016/04/01/huong-dan-lien-ket-tai-khoan-adwords-chan-click-tac-dong/">hướng dẫn</a> hoặc liên hệ với hỗ trợ viên</small></span>
+									</div>
+								</div>
+                                 <div class="form-group">
+									<label class="col-sm-3" for="example-input-normal">Mã nhúng Adwords_u</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" placeholder="Mã nhúng Adwords U" >
+									</div>
+								</div>
+								 <div class="form-group">
+									<label class="col-sm-3" for="example-input-normal">Mã nhúng Adwords_c</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" placeholder="Mã nhúng Adwords C" >
+									</div>
+								</div>
+								 <div class="form-group">
+                                    <label class="col-sm-3">Tác Vụ</label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control">
+                                            <option>Không chặn</option>
+                                            <option selected>Cho phép tự động chặn</option>
+                                          
+                                        </select>
+                                    </div>
+                                </div>
+								<button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Lưu & Thực hiện chặn</button>
+                            </form>
+                        </div>
+						
 					 <div class="white-box">
                             <h3 class="box-title m-b-0">Mã Tracking</h3>
                             <p class="text-muted m-b-30 font-13">Để có thể tracking và chặn click tặc tốt nhất, bạn vui lòng thực hiện 2 bước gắn mã theo dõi sau.</p>
                             <form class="form-horizontal">
+								
                                <div class="form-group">
 									<label class="col-sm-3 control-label" for="example-input-normal">Bước 1: Adwords Tracking URL</label>
 									<div class="col-sm-9">
