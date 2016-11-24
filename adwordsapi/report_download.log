@@ -1092,3 +1092,1337 @@ __fmt: CSV
 
 Response Code: 200
 
+[Nov 23 2016 12:16:08.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAyK4SnxQat2PPmNNFjeRTnZEj7JOoCNUchM9v_8mviS2uiI-kShd7FI-jzJq4mL_
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 582-201-7810
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a4b3d218ea2436cf
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 12:25:56.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA_aNUo-hEDSjrwu94Q_C86FFdRX3kJmHcdwwrOHOA2xZat-D27puHGEkdS7Du0Dq
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 824-753-9124
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------4dbd4a031e9b36af
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 12:26:24.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA5LRA1pWNjLZaB187sLGquOLgcaGI5N5BGJtm08gV5In_Cl8wRCFbX_AqOclIYyj
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 824-753-9124
+Content-Length: 477
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------505b0bf8c4193f69
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >=0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 12:26:38.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAzAKmqU2TmTlrVWofyx_rcHjWiXWiV0sA6JG1jymQOZewoEe3r6coS2DX19Adi-N
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 824-753-9124
+Content-Length: 461
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------be9ca98afb12d431
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 12:29:08.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAzjoIMO6xsKJ51CH1fzOyoZEQKLzk8JwGPfVZmVimILNRICT1IwTZd6pdXo4f-oz
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 248-667-0218
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a2a1df430292caca
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 12:30:16.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA6IwXKzFAW3JkWGnGZsgfKOjWEYpscdO0n0nc6Qv3WE4J0ru8xT2AfuBS3sLeROw
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 824-753-9124
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------3fe585b02ed8cf23
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 12:30:25.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA3n8aleQfvTG1ioHjtPhIOCs7g15PLTTRQZwrlis2D6Bavyb32fAtrSwfGPwT-HY
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 248-667-0218
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------6f1fbda00792bdea
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:39:20.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA7VwGxTyNrWacCWn6OPuuZ0gsnpId_AfukB2yIggZsDc5lx6Ew4lucuzxPay_XkO
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------723a79b0cba553d7
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:45:25.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA_36wB-Nmbh6ohmYn4rNpF1q0PV53OiadlwtmvnPdWQVuNkIEiXL56uHXhtQKjd8
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 443
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------8b4a66e4633796e7
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost  Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:45:29.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA49PE0Y1sUNMpM51i7L91ZsOU5QCoqn1PK_E96t0Did0TlsUjwD9B2ERBee_Okxi
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 443
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------4df211516af714ae
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost  Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:45:46.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAzVBp93MCBRjwK1F1GwHffeHU49xvhzTCf_cmGD9SRjdcyAZ0JUDQ0fu8ySe2Aa0
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 355
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------459d8d0222ca334d
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:47:09.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAz0AKiXXmWdOQANtkf1CF-w0b6gL0bokeopdsSKmcqSLKXsEKRWmjmf9MJoJ0mse
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 476
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5289f564352d57a8
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCost, AverageCpc, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, Cost FROM CAMPAIGN_PERFORMANCE_REPORT WHERE Cost >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:47:20.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA6hcZw3PmX9-ZtQb7wZ9DAR02p4NS47a7tM9f0eAycBuuCZobkccF5PV35fpC_qQ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 355
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a17d66bcebd89179
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0  DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:48:23.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA3IFEN52f13QMTNf01_lj1m7fF2JTDZm3IgDV2LHdQQvVUzitmRzmV-NqdoKQahH
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 372
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------fda59e255b3367f3
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161123,20161123 ORDER BY Clicks
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:48:56.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA9XSfpkfdvILCzVLSEoRjdV8_1Y__HkpxjpVUZs-AFfObln9FXQpwWOoYE4vHBEb
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 372
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------aab5d9cb9deba241
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161123,20161123 ORDER BY Clicks
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:49:20.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA18pMiiyqMlxIxA9s-uKGTaRw2AaR4T0PYQ8NM_R-ivCKfKb8qubunpXeZgoBhg7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 356
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------dc7db11596c72a1d
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161123,20161123
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:49:29.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA-mJWf2BTXpPsYUtUoqez8UyPmZjSby-Xpr8hCtHpAfFbCNEpzid948T6ZyukoeT
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 377
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a3eb641be5082b53
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161123,20161123 ORDER BY Clicks DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:50:12.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA_GeR_7VCxRVRVeicaDMtXgV1I1mITomTmbNvgbNN_E5vucl-hWrqayjmU5CTUB7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 377
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7a143338494d24a6
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Clicks DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:50:25.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA-1X0RZEJisQRXl0t9BZww6zzIwL4dE9CUt8SbZF3atNtGGueyR_D9epLDsPAPy5
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 375
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------65fb5eb8d773b8b2
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Cost DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:50:53.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA54t6yGLWgmHWj3Rh9K85v73rwvgR1RupAq7q1uAaaJM5Q0ySNNiIoNwUBjyvKOE
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 377
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------af324ddf4d7e4665
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161122,20161123 ORDER BY "Cost" DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.INVALID_ORDER_BY_CLAUSE', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:51:38.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAxwacjc1O-dipfJ9wPm3hWZwuEskW6OS6XzsiS6oN86__Z5wXqLF2n_tmWc7UMh5
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 366
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------ba681c9c07c14ced
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161122,20161123 Cost DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:52:07.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA3u7TjyziB3beJ36CEmp_Jc1In-msBzrwywV4WQ62EKd-LFy_pjrjoFQagWm7tgE
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 377
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------ee65b5c2b82f53fe
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Cost (DESC)
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:53:02.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAzMjjeX1kbkhA7Xn6pXidRG7KcEFYPwn8wV7WrPHqpuGkbbw4p6s8GKmqJRcT8pj
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 375
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5e688d3e659b3216
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Cost DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:53:14.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA3ZkoakIPCa9GrTRGoZn3G7MhDEmrRhqTatuXucqqsdTaLIkQyZDaG80QZZFHxq9
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 348
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f969b1c7a1fc301c
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0 ORDER BY Cost DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:53:29.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAy15NmjoyEXFUmgMxsLYtuhLhSrJZn5MrQL7JmAzKHb_E9FfZW47dJ2M0gQJdQOl
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 378
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2a26a61f758b2ade
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Clicks DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:53:50.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA7xFYi_oU1T64R26tX80zDR0tSVxuBa8hD6v0PkoR6Jgr-kZVsNQ4zB5OFhLT3BZ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 378
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c5d6e5d827a00d44
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Clicks DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:54:23.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAyfxnvHKA5C6P4OOnNvFKszyqDGfr5xiBSvmbPjlJFejfuI5vgB9MwfPe4GC7h-j
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 390
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c022fb94a2aa6729
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Clicks DESC LIMIT 0,100
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.LIMIT_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:54:32.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAxo-_SfM4zGwokZYofGAE0-CPbetUdAxCzDB9Xwl-t8I9hNhDTpGBTrPJvFmeqv4
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 369
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------1cacb0cb4c929b6e
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123 LIMIT 0,100
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.LIMIT_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:55:06.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAzLbSyPX2vyRyW7BkP_A9gxenirwq3_AG2tPYZ4o8a2sWk24QD2Oz5kIWq_9bKzQ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 372
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c4554f84c682beb5
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING (20161122,20161123)  LIMIT 0,100
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.INVALID_DURING_CLAUSE', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:55:16.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA85iiznzoZ1UEfks0n5EHmFuL4kzBNd1C3VRl3nBlsO1WRe9tsbSPnw8u2SL4qHU
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 360
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------241efb7999e983ef
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING (20161122,20161123) 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.INVALID_DURING_CLAUSE', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:55:23.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA9G5mkVWeuVkPwu1pVz2YOYgZNxx4mrM_4zDTGkEv_CjovbzS4oze6dmlWqic89Y
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 358
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------96d1f5ce3d505ed4
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:56:09.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA_NScJiNp40SyqoYWiEb_C0-oOO14QHy6D7kJOn61ZAkl069yGk3cGTZWBZk7Xul
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 374
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------87356e109470828d
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123 ORDER BY Clicks 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:56:27.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA4BWnlrivQ8XR7-mJxeAEGPok37S4UZL4Kk5sjaOZPWwa0S_bSGfSlDzJJ5RZKEF
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 358
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------18e29f5a97a01aea
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 23 2016 13:56:53.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA-hwHdGiG3KVad87QgCEl7dKnLu50AnooPNQ0RfvWsYHm4vGjLWY-Rf-EAjY8O8Y
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 374
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7894842b0ef58428
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123  ORDER BY Clicks
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:57:59.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA0Oy6QSxR_PBclGABS8VtFucwtTwuxubcayU5fHjvQ3kjPSkHrGkDxk0nfQ6e2Xx
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 375
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------cdd78443e1e14e8d
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123  ORDER BY Clicks 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:58:22.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA-FwoSu5axhTsfJXuuZfKrRtkC4uEwcuu7-_oZY5dZfzgmN3wgNqdswugVKnHLdU
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 375
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------75d1f1f513ddb680
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123  ORDER BY clicks 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 13:59:01.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA8vDzRB9kRHwC-7Np-bHe7j7X9_CMpGw10DGJD27jTvLjrX9YZNEMDYQkGVRGdNt
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 391
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------4dec28169dbc3ed6
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost, CampaignId   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123  ORDER BY CampaignId 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 14:00:27.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfAxh-cPlvMyq4sMriZytNGNVZ_Gv3Ou1XT6Zx1C-nblA1Xk2Eg99NsiIJ82U1kxME
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 395
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------76edcabbcc86ef29
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost, CampaignId   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123  ORDER BY CampaignId  ASC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 14:00:37.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA9PmTugsqY-Ixd1_f-T0a5HwLIofODkbHrm5Je8Pkt7c9asEQ9asHv5VP0XkFGDP
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 392
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2e81fdc8000b9c66
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost, CampaignId   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123  ORDER BY Clicks  DESC
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 23 2016 14:00:50.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGfA-m5lSl8zUrzT0yL4Fcagl_k08fCWbgdrcDpWlQ569t5ZtH7lQX4TV7P1eANYHM5
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 535-641-1630
+Content-Length: 371
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------dc28a9743798142e
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost, CampaignId   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161122,20161123  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:26:49.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA4ra09OXDFxZA4ekbFgheAqNxrKiy42Jf2Dxf-rpWRwvAT_14fqyNbcmENE_UWkT
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 371
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------ca2f569b1c6605ce
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost, CampaignId   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:27:41.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAxn0sJHLH1cgEm2stU-Ug8feXUsPc1vsLSZBd7FJhGI-UZ7B7B73fu8Q9WBQws41
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 371
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------191b3885fb536755
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost, CampaignId   FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:28:03.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA7zM2Jyvl11_4VXJRos-IGDt8BTczmmEYNNWkc7_sOM55tgM6dJmL3UVb63MT8Pa
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 358
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------1bc68c9b7dd837b7
+
+Parameters:
+__rdquery: SELECT Criteria, Device, Clicks, Cost  FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:28:20.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA6RsdOSSKUi4NMd7v76HExcY8UU4PYvHe4QIofYUfkS2MtwDHpJdGzhTzvivKg6Y
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 358
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------65cd52371a1273bf
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:28:27.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA4UeAk8IiZKrHS861lJ28ei2y_wLR4_ew78QbfjvD_XmJ8F8VoEJyxr1ApL8l5M6
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 358
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------9cfa9ad2ab2c56c4
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT  WHERE Clicks >0   DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:28:58.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA8-qSYAYY545WPmVsjVudERxjo2rM4u8hw1F_ooSo8MZQ0ttETq2gWWJZkfsG6i7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 373
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------02a0c9677b5463bd
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT ORDER BY Clicks WHERE Clicks >0   DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:29:08.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAzgVJpI5PeuSN9brXC7xMdvgbn2Zem3EO3dZm4OITrtXVDj9JWd0jthuDt8CIdji
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 374
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------e4c7d7d9bc0b8081
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   ORDER BY Clicks  DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:29:14.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAyCMobbogW7UmDkMCazQOHgyKOF-5blFmkYFqWLvyQHZw6capNfWule3gDKSj4R0
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 378
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2a53a55297460512
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0   ORDER BY Clicks ASC  DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:29:23.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAwYiPQ8Lutyv0wM5FDImGf1EcGntd9xjNuPVmQiywiy2QRqP-xIhaLvsdCQdOWN1
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 379
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------db8c1d4e5da9ed84
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0    DURING 20161123,20161124  ORDER BY Clicks ASC  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:29:30.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAwd_7QJdAVF7q0DYF_KGKZ0x7UaKmMruHxct-wnQ0aO8NONfb08UhzZUbeWxgr2i
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 380
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------73a42943d3a8c725
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0    DURING 20161123,20161124  ORDER BY Clicks DESC  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:30:58.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA-Bcr3j1lGTfsPUa0iMLXtbZTC4-33Elhxd7Psz8u-WAXX5o1YkxiADd-2Xzwovl
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 377
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f769355773c4e68c
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0    DURING 20161123,20161124  CampaignName DESC  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.PARSING_FAILED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:31:51.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA8RiRSXDs03dZdMsqQ8cbwFahGHnhSiIiMLz1RCpQXiOePgFevAvUQzOXgoAb1k2
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 370
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a9673c4d71769d61
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0    DURING 20161123,20161124  LIMIT 0,50  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.LIMIT_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:32:51.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAwuFKOY9S1nYy3IfZAIII2SbjD6Epz52ivTGPCD_Un4FL2iSsGKV6q5CVMTe1bGn
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 370
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------db494e043bd61cca
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT WHERE Clicks >0    DURING 20161123,20161124  LIMIT 0,50  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.LIMIT_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:35:13.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA2kM-tqmgPWHzix6ozebT96x_FwrO1DS77cmxveZQWTWYLo2Y-9HYoCF1D-1nFwc
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 351
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f9eaa4ba53e5ba18
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING 20161123,20161124  LIMIT 0,50  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.LIMIT_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:35:24.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAzKNY6XWn1-ySggjaj9vFPEJkErb7hXtmfSEYySr-I9Xrmss0_WDhLgizmDPdz8C
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 339
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------6f406a7ccc44ae07
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING 20161123,20161124  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:35:42.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAxhpypqf2TpEqDYkDcMA1EembsZBy1VYh5NSMk7K1wb74ypQ5lnICre68ths-HhK
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 360
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------945c6be240e97815
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING 20161123,20161124 ORDER BY Clicks DESC  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:36:17.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAyjRxGGEVuQEZpHg4ZDsEEGlTOcIZS-8PBIWwVaPd4GiRGn24tT62yhVIlo7osSk
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 358
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------6ac368d209e3b11e
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING 20161123,20161124 ORDER BY Cost DESC  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:38:02.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA5xerHbWsL8bl-AZkpPi2GQKEyBX7zSwvEj7QfsChHxygavay3kt2dGM78lJMj-7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 350
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------21f3f2d39d760122
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY ORDER BY Cost DESC  
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.ORDER_BY_CLAUSE_NOT_SUPPORTED', Trigger = '', FieldPath = ''. 
+
+[Nov 24 2016 10:38:13.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAz77O4UtjqwnXEJHKwDrBcAd7g9RKjJZkBcbKaAyRKkbeczaBO1dZYb0oloZPllZ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7bfe3c8aea3fa556
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:43:15.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA-rfRfT2x0WxHCbmVtAA7_5QGuGTATz57S9-MblRXzouc7p2IhWzmoP_DJl6ESEV
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f3b0c3da3f46a2ca
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:43:27.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAza_gHl_9lz9JzTaSLfItWGYuynhFhJcJPxVeA6tu271frbxUJlYLSjVlHhTSUao
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------613398daa506c524
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:44:11.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAw9JCh00A-gF9nP6y34fM8K6cUp_mPqUC-fGJ6U9tORgZsipVozNol5IyM7Y0kiU
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------ed02c4bf26feeb67
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:44:16.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAz5Ogzt0YnbQKVlrnMHrk-MLz66Z1gddoyO-K4dnOBHcXkdoQJUSLxv5EpfQo-Xf
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------ea99228ae79157f8
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:44:39.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA-kWUPcZDgX3CdWx-Vv_QHiuubA-4rNBUUPRfTm4EdLEbboSbRLAOI10orQvzLyZ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------3b5a8390f110b6c5
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:47:52.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA0yYRP-3daxIIoQBNYMJTBuzM5QfH0cSfzaYNufIAjf0iwdKTGsoj-UzU6yvjFHA
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a7c1b7886a2373a7
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:48:47.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA1m3rWvdUQHFIzCZVBI8Jli1zqVZpFXPlfCskblTNbHF0yipyZp86HvhWb4JPncd
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------896b54d0b6a9b1ba
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:49:19.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA1ypu5Eyb0rnyXutmxLEp5sX6UVrGM6OWqrfgiOIcEIQ7d-T-Weo35ePPVUjKSjz
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------9b30f2530f04f9ef
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:51:14.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA0NEa1bgP6FJDMFYhNBYGvCvb3FLkAFAdc_c10RCo83yDWLymuaLnEoxHrIlx2wN
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 422-526-7537
+Content-Length: 330
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------0fba0f5f0cd4a155
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING YESTERDAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:52:02.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgA01N2o4_LogBr6hONMSvADk-yvQ9loXVwGmN44m8tTmLC8B2Zvl8gu6fdc9NbFd7
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 422-526-7537
+Content-Length: 326
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7851d6d64856c266
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING TODAY 
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 24 2016 10:52:29.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGgAy2YFEDRlDC3hCboO0ScaNpA4YDPJ-RLIG5i6CsEq6mLdD-G1MnL6E0vXZadJA8l
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 478-567-3981
+Content-Length: 326
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------932a906a2450feab
+
+Parameters:
+__rdquery: SELECT Clicks, Criteria, Device, Cost  FROM KEYWORDS_PERFORMANCE_REPORT DURING TODAY 
+__fmt: CSV
+
+Response Code: 200
+
