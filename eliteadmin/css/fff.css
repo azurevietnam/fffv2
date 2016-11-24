@@ -280,3 +280,63 @@
 	margin-top:0px!important;
 	width:100%!important;
 }
+.fix-800px{
+	width:1000px;
+	margin:0 auto;
+}
+.report-adwords h2{
+	text-align:center;
+	font-size:30px!important;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300!important;
+}
+.report-adwords .text-h3{
+	font-size:16px;
+	text-align:center;
+	padding:20px 0px;
+}
+.border-danger{
+	border:2px #fb9678 solid;
+}
+.border-inverse{
+	border:2px #4c5667 solid;
+}
+.border-success {
+	border:2px #00bfc7 solid;
+}
+.text-de{
+	color:#fff;
+}
+.text-de a{
+	color:#e4ff00;
+}
+.report-adwords hr{
+	background:#fff;
+}
+.m-hr-30{
+	border-top:1px #ccc solid;
+	margin-top:20px;
+	padding-top:20px;
+}
+.adwords-report-thacmac{
+	padding:20px 0px;
+}
+.full-border-1px-ccc{
+	border:1px #ccc dashed;
+	padding:20px;
+	border-radius: 5px;
+}
+
+.list-stacked {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.list-stacked > li:first-child {
+    border-top: 1px solid #ddd;
+}
+.list-stacked > li {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
