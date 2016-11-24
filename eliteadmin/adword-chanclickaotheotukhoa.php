@@ -87,7 +87,7 @@
 		 <script>
         $(document).ready(function () {
      		$('#myTable').DataTable( {
-				"ajax": 'http://adwords.fff.com.vn/campaing-get-listkeyword.php',
+				"ajax": 'http://adwords.fff.com.vn/campaing-get-listkeyword.php?adword=654-355-9853',
 				"order": [[ 3, "desc" ]]
 			});
         });

@@ -28,81 +28,23 @@
                     <div class="col-md-8 col-sm-12 col-xs-12">
                         <div class="white-box-full">
                             <div class="table-responsive">
-							  <table class="table color-table info-table color-bordered-table info-bordered-table">
+							  <table id="homepage-table-adwords" class="table color-table info-table color-bordered-table info-bordered-table" >
 								<thead>
 								  <tr>
 									<th>Chiến dịch</th>
-									<th>Chi Phí</th>
+									<th>Thiết bị</th>
+									
 									<th>Hiển Thị</th>
 									<th>Click</th>
 									<th>CPC</th>
 									<th>Click/Hiển Thị</th>
 									<th>Click Ảo</th>
 									<th>% Click Ảo</th>
+									<th>Chi Phí</th>
 								  </tr>
 								</thead>
 								<tbody>
-								  <tr>
-									<td><a href="">Quảng cáo trên di động</a></td>
-									<td>3.200.000</td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-									<td><a href="">PC</a></td>
-									<td>3.200.000</td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-									<td><a href="">PC</a></td>
-									<td>3.200.000</td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-									<td><a href="">PC</a></td>
-									<td>3.200.000</td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-									<td><a href="">PC</a></td>
-									<td>3.200.000</td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-									<td><a href="">PC</a></td>
-									<td>3.200.000</td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								 
+								
 								</tbody>
 							  </table>
 							</div>
@@ -200,4 +142,16 @@
         </div>
         <!-- /#wrapper -->
         <!-- jQuery -->
+		<script>
+        $(document).ready(function () {
+     		$('#homepage-table-adwords').DataTable( {
+				"ajax": 'http://adwords.fff.com.vn/campaign-get-listcampaign-homepage.php?adword=422-526-7537',
+				"order": [[ 7, "DESC" ]],
+				"paging": false,
+				"searching": false,
+				"bInfo" : false,
+				"pageLength": 6,
+			});
+        });
+    </script>
   <? include("modules/footer.php");?>

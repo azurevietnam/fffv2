@@ -37,232 +37,25 @@
                            
 							 <div class="table-responsive dataTables_wrapper ">
 							
-							
-                                <table class="table table-striped color-table inverse-table ">
+                                <table   id="myTable" class="table table-striped color-table info-table " data-page-length='50'>
                                     <thead>
 								  <tr>
-									<th>#</th>
 									<th>Chiến dịch</th>
-									<th>Chi Phí</th>
-									<th>Tác Vụ</th>
+									<th>Thiết bị</th>
 									<th>Hiển Thị</th>
 									<th>Click</th>
 									<th>CPC</th>
 									<th>Click/Hiển Thị</th>
 									<th>Click Ảo</th>
 									<th>% Click Ảo</th>
+									<th>Chi Phí</th>
+									<th>Tác Vụ</th>
+									
 								  </tr>
 								</thead>
 								<tbody>
-								<!-- mot chien dich -->
-								  <tr>
-									<td>1</td>
-									<td><a href=""><strong>Quảng cáo trên di động</strong></a></td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-success btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tạm ngừng chiến dịch này">Ngừng Chiến Dịch</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td><div class="label label-table label-danger">50%</div></td>
-								  </tr>
-								   <tr>
-								    <td></td>
-									<td>Thiết bị - PC</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên PC">Ngừng Trên PC</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td><div class="label label-table label-danger">20%</div></td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								   <tr>
-								   <td></td>
-									<td>Thiết bị - Mobile</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên Mobile">Ngừng Trên Mobile</button></td>
-
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-								  <td></td>
-									<td>Thiết bị - Tablet</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên Tablet">Ngừng Trên Tablet</button></td>
-									<td>32.000</td>
-									
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								<!-- mot chien dich --> 
-								<!-- mot chien dich -->
-								  <tr>
-									<td>2</td>
-									<td><a href=""><strong>Quảng cáo trên di động</strong></a></td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-success btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mở lại chiến dịch này">Mở Chiến Dịch</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td><div class="label label-table label-danger">50%</div></td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								   <tr>
-								    <td></td>
-									<td>Thiết bị - PC</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mở chiến dịch trên PC">Mở Trên PC</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								   <tr>
-								   <td></td>
-									<td>Thiết bị - Mobile</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mở chiến dịch trên Mobile">Mở Trên Mobile</button></td>
-
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-								  <td></td>
-									<td>Thiết bị - Tablet</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mở chiến dịch trên Tablet">Mở Trên Tablet</button></td>
-									<td>32.000</td>
-									
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								<!-- mot chien dich --> 
-								<!-- mot chien dich -->
-								  <tr>
-									<td>3</td>
-									<td><a href=""><strong>Quảng cáo trên di động</strong></a></td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-success btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tạm ngừng chiến dịch này">Ngừng Chiến Dịch</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								   <tr>
-								    <td></td>
-									<td>Thiết bị - PC</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên PC">Ngừng Trên PC</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								   <tr>
-								   <td></td>
-									<td>Thiết bị - Mobile</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên Mobile">Ngừng Trên Mobile</button></td>
-
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-								  <td></td>
-									<td>Thiết bị - Tablet</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-outline btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên Tablet">Ngừng Trên Tablet</button></td>
-									<td>32.000</td>
-									
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								<!-- mot chien dich --> 
-								<!-- mot chien dich -->
-								  <tr>
-									<td>4</td>
-									<td><a href=""><strong>Quảng cáo trên di động</strong></a></td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-success btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Mở lại chiến dịch này">Mở Chiến Dịch</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								   <tr>
-								    <td></td>
-									<td>Thiết bị - PC</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên PC">Mở Trên PC</button></td>
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								   <tr>
-								   <td></td>
-									<td>Thiết bị - Mobile</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên Mobile">Mở Trên Mobile</button></td>
-
-									<td>32.000</td>
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								  <tr>
-								  <td></td>
-									<td>Thiết bị - Tablet</td>
-									<td>3.200.000</td>
-									<td><button class="btn btn-info btn-sm adwords-btn-fixwidth" data-toggle="tooltip" data-placement="top" title="" data-original-title="Ngừng chạy chiến dịch trên Tablet">Mở Trên Tablet</button></td>
-									<td>32.000</td>
-									
-									<td><span class="text-muted">1.500</span> </td>
-									<td>1.000.000</td>
-									<td>10%</td>
-									<td>1.000</td>
-									<td>120%</td>
-								  </tr>
-								<!-- mot chien dich --> 
-								</tbody>
+                                       
+                                </tbody>
 							  </table>
                             </div>
 							
@@ -283,4 +76,12 @@
         </div>
         <!-- /#wrapper -->
         <!-- jQuery -->
+		<script>
+        $(document).ready(function () {
+     		$('#myTable').DataTable( {
+				"ajax": 'http://adwords.fff.com.vn/campaign-get-listcampaign.php?adword=422-526-7537',
+				"order": [[ 7, "DESC" ]]
+			});
+        });
+    </script>
   <? include("modules/footer.php");?>

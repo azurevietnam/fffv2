@@ -276,3 +276,7 @@
 .adwords-btn-fixwidth{
 	width:150px!important;
 }
+#homepage-table-adwords{
+	margin-top:0px!important;
+	width:100%!important;
+}
