@@ -33,6 +33,7 @@
 	
 <link href="../plugins/bower_components/summernote/dist/summernote.css" rel="stylesheet" />
 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 
 	<!-- MAP -->
 	<link href="../plugins/bower_components/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
