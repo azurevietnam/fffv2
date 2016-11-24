@@ -45,6 +45,7 @@ class VirtualClickController extends Controller
         }
         $domain_logs = $query->paginate($row);
         $domain_logs->appends(["row" => $row, "search_ip" => $search_ip, "sfield" => $sfield, "sdir" => $sdir])->links();
+        //dd($domain_logs);
 
         return view('front.virtualclicks.ip-click-ao')
             ->with(compact('row'))

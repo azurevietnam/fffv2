@@ -273,6 +273,13 @@
 .white-box-full .white-box{
 	padding:0px 25px;
 }
+.adwords-btn-fixwidth{
+	width:150px!important;
+}
+#homepage-table-adwords{
+	margin-top:0px!important;
+	width:100%!important;
+}
 /********************Phat Add***************/
 .top-select-domain{
 	border:1px #fff solid;
@@ -307,6 +314,9 @@
 }
 #div_paging .pagination {
 	margin: 0 !important;
+}
+#div_paging .paging_total {
+
 }
 #div_paging .pagination > li > span, #div_paging .pagination > li > a{
 	margin-left: 5px;

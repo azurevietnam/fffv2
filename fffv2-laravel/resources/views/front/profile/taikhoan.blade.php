@@ -138,7 +138,7 @@
                                 <div class="form-group">
                                     <label class="col-md-12" for="example-phone">Số điện thoại</label>
                                     <div class="col-md-12">
-                                        {!! Form::input("phone", "phone", $user->phone, ['class' => 'form-control']) !!}
+                                        {!! Form::input("text", "phone", $user->phone, ['class' => 'form-control']) !!}
                                         {!! $errors->first('phone', '<small class="error-message">:message</small>') !!}
                                     </div>
                                 </div>

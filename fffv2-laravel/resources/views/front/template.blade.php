@@ -82,7 +82,7 @@
     </main>
 
     <footer>
-        @yield('footer')
+
         <!-- Bootstrap Core JavaScript -->
             <script src="{{url('/')}}/bootstrap/dist/js/bootstrap.min.js"></script>
             <!-- Menu Plugin JavaScript -->
@@ -172,6 +172,7 @@
 
                 });
             </script>
+        @yield('footer')
     </footer>
 
     @yield('scripts')

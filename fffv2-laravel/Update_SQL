@@ -3,3 +3,27 @@ ALTER TABLE `fff_crm`.`domains`
   ADD COLUMN `device_pc` TINYINT DEFAULT 0  NULL AFTER `config_viewpage`,
   ADD COLUMN `device_tablet` TINYINT DEFAULT 0  NULL AFTER `device_pc`,
   ADD COLUMN `device_phone` TINYINT DEFAULT 0  NULL AFTER `device_tablet`;
+
+ALTER TABLE `fff_crm`.`domains`
+    CHANGE `name` `name` VARCHAR(50) CHARSET utf8 COLLATE utf8_general_ci DEFAULT ''  NOT NULL;
+
+ALTER TABLE `fff_crm`.`domains`
+  CHANGE `name` `name` VARCHAR(50) CHARSET utf8 COLLATE utf8_general_ci DEFAULT ''  NULL,
+  CHANGE `updated` `updated` DATETIME NULL,
+  CHANGE `config_click` `config_click` INT(11) NULL,
+  CHANGE `config_time` `config_time` INT(11) NULL,
+  CHANGE `adword_account` `adword_account` VARCHAR(20) CHARSET utf8 COLLATE utf8_general_ci NULL   COMMENT 'Tài khoản adwords',
+  CHANGE `adword_link` `adword_link` TEXT CHARSET utf8 COLLATE utf8_general_ci NULL   COMMENT 'Link vào home của tài khoản',
+  CHANGE `adword_c` `adword_c` VARCHAR(64) CHARSET utf8 COLLATE utf8_general_ci NULL,
+  CHANGE `adword_u` `adword_u` VARCHAR(64) CHARSET utf8 COLLATE utf8_general_ci NULL,
+  CHANGE `adword_campaign` `adword_campaign` TEXT CHARSET utf8 COLLATE utf8_general_ci NULL   COMMENT 'Danh sách các campaign đã chặn',
+  CHANGE `is_active` `is_active` TINYINT(1) NULL,
+  CHANGE `push_to_adwords` `push_to_adwords` INT(11) NULL,
+  CHANGE `deny_ip` `deny_ip` TEXT CHARSET utf8 COLLATE utf8_general_ci NULL,
+  CHANGE `viettel` `viettel` INT(11) DEFAULT 0  NULL,
+  CHANGE `mobiphone` `mobiphone` INT(11) DEFAULT 0  NULL,
+  CHANGE `vinaphone` `vinaphone` INT(11) DEFAULT 0  NULL,
+  CHANGE `status` `status` INT(11) NULL,
+  CHANGE `hethan` `hethan` DATE NULL,
+  CHANGE `thanhtoan` `thanhtoan` INT(11) DEFAULT 0  NULL,
+  CHANGE `email_report` `email_report` DATE NULL;

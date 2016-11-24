@@ -16,7 +16,7 @@
 									<li><a data-value="{{ $domain->id }}" href="javascript:void(0)">{{ $domain->domain }}</a></li>
 								@endforeach
 							  <li class="divider"></li>
-							  <li><a onclick="return;" href="javascript:void(0)">Thêm mới</a></li>
+							  <li><a id="display_add_domain" data-value="add_domain" href="javascript:void(0)" alt="default" data-toggle="modal" data-target="#AddDomainModal" class="model_img img-responsive">Thêm mới</a></li>
 							</ul>
 						</div>
 					</div>
@@ -191,7 +191,8 @@
 							<li> <a href="flot.html">Flot Charts</a> </li>
 							<li><a href="morris-chart.html">Morris Chart</a></li>
 							<li><a href="chart-js.html">Chart-js</a></li>
-							<li><a href="peity-chart.html">Peity Charts</a></li>                                     <li><a href="knob-chart.html">Knob Charts</a></li>
+							<li><a href="peity-chart.html">Peity Charts</a></li>
+							<li><a href="knob-chart.html">Knob Charts</a></li>
 							<li><a href="sparkline-chart.html">Sparkline charts</a></li>
 							<li><a href="extra-charts.html">Extra Charts</a></li>
 						</ul>
@@ -228,15 +229,55 @@
 	<!-- /.navbar-header -->
 	<!-- /.navbar-top-links -->
 	<!-- /.navbar-static-side -->
+
+
+
 	</nav>
 
 
-<script>
-	$(function () {
-		$("#domain_dropdown li a").click(function(){
-			$("#display_domain").html($(this).html());
-			$("#domain_id_choose").val($(this).attr("data-value"));
-			$("#form_change_domain").submit();
+@section('footer')
+	<div id="AddDomainModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Thêm mới website</h4>
+				</div>
+				<div class="modal-body">
+					<p>Gói dịch vụ của bạn được phép thêm tối da: <b>{{empty($pay_package) ?  "0" : $pay_package->limit_domain}} website</b>. Nếu bạn có số lượng website lớn hơn vui lòng nâng cấp gói dịch vụ</p>
+					<form method="post" action="/add-domain" accept-charset="utf-8">
+						<input type="hidden" name="_token" value="{{ csrf_token() }}">
+						<div class="form-group">
+							<label for="recipient-name" class="control-label">Domain:</label>
+							{!! Form::input("text", "domain", (empty($add_domain) ?  "" :$add_domain) , ['class' => 'form-control', 'placeholder' => (empty($add_domain) ?  "sampledomain.com" : "")]) !!}
+							{!! $errors->first('domain', '<small class="error-message">:message</small>') !!}
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-info waves-effect">Thêm Mới</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+@endsection
+
+@section('scripts')
+	<script>
+		$(function () {
+			@if(session()->has("display_add_domain"))
+				$("#display_add_domain").trigger('click');
+			@endif
+
+			$("#domain_dropdown li a").click(function(){
+				var domain_id = $(this).attr("data-value");
+				if(domain_id != "add_domain") {
+					$("#display_domain").html($(this).html());
+					$("#domain_id_choose").val(domain_id);
+					$("#form_change_domain").submit();
+				}
+			});
 		});
-	});
-</script>
+	</script>
+@endsection

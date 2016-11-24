@@ -92,17 +92,15 @@
                                         <div class="input-group fix-300px pull-right">
                                             <input type="text" name="search_ip" value="{{$search_ip}}" class="form-control" placeholder="Tìm kiếm ip">
                                             <span class="input-group-btn">
-                                                <button type="submit" id="btn_search" class="btn waves-effect waves-light btn-default"><i class="fa fa-search"></i></button>
+                                                <button type="button" id="btn_search" class="btn waves-effect waves-light btn-default"><i class="fa fa-search"></i></button>
                                             </span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="table-responsive dataTables_wrapper ">
-                                    @if($domain_logs->total() > 0)
-                                        <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                            {{$domain_logs->render()}}
-                                        </div>
-                                    @endif
+                                    <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
+                                        <span class="paging_total">Tìm thấy {{ number_format($domain_logs->total())}} kết quả</span> {{$domain_logs->lastPage() > 0 ? $domain_logs->render() : ""}}
+                                    </div>
                                     <table class="table table-striped color-table inverse-table ">
                                         <thead>
                                         <tr>
@@ -142,11 +140,9 @@
                                             @endforeach
                                         </tbody>
                                     </table>
-                                    @if($domain_logs->lastPage() > 0)
-                                        <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                            {{$domain_logs->render()}}
-                                        </div>
-                                    @endif
+                                    <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
+                                        <span class="paging_total">Tìm thấy {{ number_format($domain_logs->total())}} kết quả</span> {{$domain_logs->lastPage() > 0 ? $domain_logs->render() : ""}}
+                                    </div>
                                 </div>
 
                             </div>
@@ -173,11 +169,12 @@
 @section('scripts')
 <script>
     $(function () {
-        $("#div_paging span a").click(function(){
-            $("#num_page").val($(this).attr("data-value"));
+        $("#select_num_row").change(function(){
+            $("#num_page").val("1");
             $("#form_display_ip").submit();
         });
-        $("#select_num_row").change(function(){
+        $("#btn_search").click(function(){
+            $("#num_page").val("1");
             $("#form_display_ip").submit();
         });
         $("#sort_click").click(function(){

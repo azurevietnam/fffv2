@@ -9,6 +9,7 @@ Route::group(['middleware' => 'auth'], function () {
     // Home
     Route::get('/', 'HomeController')->name('home');
     Route::post('/change-domain', 'HomeController@change_domain');
+    Route::post('/add-domain', 'HomeController@add_domain');
     Route::get('/profile', 'ProfileController@profile');
     Route::post('/profile', 'ProfileController@post_profile');
 

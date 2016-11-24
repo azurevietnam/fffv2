@@ -24,12 +24,17 @@ class App
         $date = date('Y-m-d');
         $domains = null;
         $current_domain = null;
+        $pay_package = null;
         if(Auth::check()) {
             $user = Auth::user();
+            $pay_package =  DB::table("pay_package")
+                ->where('id', '=', $user->package_id)
+                ->first();
+
             $domains = DB::table("domains")
                 ->where('uid', '=', $user->id)
-                ->where('status', '=', 1)
-                ->where('hethan', '>=', $date)
+                //->where('status', '=', 1)
+                //->where('hethan', '>=', $date)
                 ->orderBy('id', 'asc')
                 ->get();
 
@@ -46,7 +51,7 @@ class App
                 Session::forget('domain_id_choose');
             }
         }
-        View::share(['domains' => $domains,  'current_domain' => $current_domain]);
+        View::share(['domains' => $domains,  'current_domain' => $current_domain, 'pay_package' => $pay_package]);
 
         event(new UserAccess);
         return $next($request);
