@@ -23,7 +23,7 @@
 			
 			<li> <a href="" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe028;"></i> <span class="hide-menu"> Báo Cáo Adwords <span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
-                    <li> <a href="adword-hieusuatquangcao.php">Hiệu suất quảng cáo</a> </li>
+                    <li> <a href="adword-baocaohieuxuat.php">Hiệu suất quảng cáo</a> </li>
                     <li> <a href="adword-chanclickaotheothietbi.php">Chặn click ảo theo thiết bị</a> </li>
                     <li> <a href="adword-chanclickaotheotukhoa.php">Chặn click ảo theo từ khóa</a> </li>
 

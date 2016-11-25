@@ -105,7 +105,7 @@
 									
 									<ul class="list-stacked">
 										<li>
-											<span id="stats-active-campaigns-title">Số chiến dịch hoạt động</span>
+											<span >Số chiến dịch hoạt động</span>
 											<span id="stats-active-campaigns-value" class="pull-right" data-bind="text: active_campaigns">1</span>
 										</li>
 										<li>
@@ -125,8 +125,8 @@
 								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 									<ul class="list-stacked">
 										<li>
-											<span id="stats-active-campaigns-title">Số bấm quảng cáo</span>
-											<span id="stats-active-campaigns-value" class="pull-right" data-bind="text: active_campaigns">1</span>
+											<span >Số bấm quảng cáo</span>
+											<span class="pull-right" data-bind="text: active_campaigns">1</span>
 										</li>
 										<li>
 											<span id="stats-active-ad-groups-title">Số bấm chuột không hợp lệ</span>
@@ -146,53 +146,76 @@
 						</div>	
 						
 						<div class="row m-t-60" style="padding-top:50px">
-                            <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12 inbox-panel">
+                            <div class="col-lg-4 col-md-4  col-sm-12 col-xs-12 inbox-panel adword-report-left">
                                 <div>
                                     <div class="list-group mail-list m-t-20">
-										<a href="#" class="list-group-item active">Chi phí lãng phí <span class="label label-rouded label-success pull-right">5</span></a>
-										<a href="#" class="list-group-item ">Định dạng quảng cáo mới</a>
-										<a href="#" class="list-group-item">Tối ưu quảng cáo <span class="label label-rouded label-warning pull-right">15</span></a>
-										<a href="#" class="list-group-item">Tối ưu điểm chất lượng</a>
-										<a href="#" class="list-group-item">Tối ưu CTR <span class="label label-rouded label-default pull-right">55</span></a>
-										<a href="#" class="list-group-item">Hiệu suất tổng thể <span class="label label-rouded label-default pull-right">55</span></a>									
-										<a href="#" class="list-group-item">Sử dụng từ khóa dài <span class="label label-rouded label-default pull-right">55</span></a>									
-										<a href="#" class="list-group-item">Tỉ lệ hiển thị chia sẻ <span class="label label-rouded label-default pull-right">55</span></a>									
-										<a href="#" class="list-group-item">Tối ưu hóa trang đích <span class="label label-rouded label-default pull-right">55</span></a>									
-										<a href="#" class="list-group-item">Quảng cáo đi dộng <span class="label label-rouded label-default pull-right">55</span></a>									
+										<ul class="list-stacked">
+											<li><i class="fa fa-money"></i> Chi phí thất thoát <span class="label label-rouded label-success pull-right">15%</span></li>
+											<li><i class="fa fa-arrows-h"></i> Tối ưu định dạng quảng cáo mới <span class="label label-rouded label-danger pull-right">35%</span></li>
+											<li><i class="fa fa-flash"></i> Tối ưu từ khóa <span class="label label-rouded label-info pull-right">85%</span></li>
+											<li><i class="fa fa-arrows-alt"></i> Tối ưu thiết bị quảng cáo <span class="label label-rouded label-success pull-right">15%</span></li>
+											<li><i class="fa fa-trophy"></i> Tối ưu điểm chất lượng <span class="label label-rouded label-danger pull-right">55%</span></li>
+											<li><i class="fa fa-random"></i> Tối ưu tỉ lệ CTR <span class="label label-rouded label-info pull-right">85%</span></li>
+											
+											<li><i class="fa fa-retweet"></i> Tối ưu tỉ lệ chia sẻ quảng cáo <span class="label label-rouded label-danger pull-right">15%</span></li>
+											<li><i class="fa fa-code"></i> Tối ưu trang đích <span class="label label-rouded label-danger pull-right">15%</span></li>
+											<li><i class="fa fa-coffee"></i> Hiệu xuất quảng cáo chung <span class="label label-rouded label-info pull-right">15%</span></li>
+											<li><i class="fa fa-pencil-square"></i> Hiệu xuất quảng cáo di động <span class="label label-rouded label-info pull-right">15%</span></li>
+											
+										</ul>
+																	
 									</div>
                                    
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 mail_listing">
-                                <div class="inbox-center">
-                                    <table class="table table-hover">
-                                        
-                                        <tbody>
-                                            <tr class="unread">
-                                                <td>
-                                                    <div class="checkbox m-t-0 m-b-0">
-                                                        <input type="checkbox">
-                                                        <label for="checkbox0"></label>
-                                                    </div>
-                                                </td>
-                                                <td class="hidden-xs"><i class="fa fa-star-o"></i></td>
-                                                <td class="hidden-xs">Hritik Roshan</td>
-                                                <td class="max-texts"> <a href="inbox-detail.html"><span class="label label-info m-r-10">Work</span> Lorem ipsum perspiciatis unde omnis iste natus error sit voluptatem</a></td>
-                                                
-                                                <td class="hidden-xs"><i class="fa fa-paperclip"></i></td>
-                                                <td class="text-right"> 12:30 PM </td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                </div>
-                               
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 adword-report-detail">
+                                <h3>Chi phí lãng phí 
+								<a class="mytooltip" href="javascript:void(0)"> <i data-icon="7" class="linea-icon linea-basic fa-fw"></i><span class="tooltip-content5"><span class="tooltip-text3"><span class="tooltip-inner2">Chi phí thất thoát do bạn không thiết lập "từ khóa phủ định" hoặc "chặn click ảo".</span></span></span></a></h3>
+								<div class="intro">
+									<p>Bạn đã chi phí: <strong class="text-info">30,221,424.24 VND</strong> trong vòng 90 ngày </p>
+									<p>Ước tính bạn đã thất thoát: <strong class="text-danger">7,555,356.06 VND</strong></p>
+								</div>
+                               <div class="des m-t-40">
+									<h4>Bạn cần làm gì để giảm chi phí thất thoát</h4>
+									<div class="row">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="white-box border-danger">
+												
+												<div class="text-center"> 
+													
+													<p class="text-muted">Thêm từ khóa phủ định vào chiến dịch quảng cáo của bạn để loại trừ các click chuột không chủ đích</p>
+													<button class="btn btn-block btn-info">THÊM TỪ KHÓA PHỦ ĐỊNH</button>
+												</div> 
+												
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<div class="white-box border-danger">
+												
+												<div class="text-center"> 
+													
+													<p class="text-muted">Hạn chế đối thủ click ảo vào quảng cáo của bạn để ngăn chặn hành vi vô tình hoặc cố tình phá hoại quảng cáo</p>
+													<button class="btn btn-block btn-info">CHẶN CLICK ẢO</button>
+												</div> 
+												
+											</div>
+										</div>
+									</div>
+									<h5>Có thể bạn chưa biết</h5>
+									<p class="text-muted">
+										<ul class="ul-adwords-des">
+											<li><strong> Từ khóa phủ dịnh: </strong> Ví dụ bạn bán dịch vụ "sửa điện thoại đi động" và bạn không muốn bất cứ người nào tìm kiếm "mua đồ sửa điện thoại di động". Cụm từ "<strong>mua đồ</strong>" chính là từ khóa phủ định.
+											</li>
+											<li><strong> Chặn click ảo: </strong> Hệ thống FFF có thể giúp bạn chặn click ảo trên "thiết bị quảng cáo", "từ khóa biến động", "tỉ lệ CTR bất thường", "ip click chuột bất hợp lệ". Sử dụng nhuần nhuyễn hệ thống chặn click ảo giúp bạn tiết kiệm tối đa chi phí do hoạt động phá hoại của đối thủ.
+											</li>
+									</p>
+							   </div>
                             </div>
                         </div>
 						
 						
 						
-						<div class="row m-t-60">
+						<div class="row m-t-60 border-top-1px">
 						  <div class="col-md-12 m-t-40">
 							  <div class="fix-width">
 								  <center class="col-md-9 col-md-offset-1">
@@ -228,7 +251,7 @@
 							<!-- /.col -->
 							
 						</div>
-						<div class="row inner-margin m-t-40">
+						<div class="row inner-margin m-t-40 m-b-40">
 							<!-- .col -->
 							<div class="col-md-4 col-sm-4 text-center">
 								<img src="images/report/calendar.png">

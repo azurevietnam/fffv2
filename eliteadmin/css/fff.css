@@ -333,10 +333,63 @@
     padding-left: 0;
 }
 .list-stacked > li:first-child {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #fff;
 }
 .list-stacked > li {
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+.adword-report-detail a.mytooltip i{
+  font-weight: 500;
+  color: #03a9f3!important;
+}
+
+.adword-report-detail .tooltip-text3 {
+  border-bottom: 10px solid #03a9f3;
+ 
+}
+.adword-report-detail .tooltip-content5::after {
+
+  border-top-color: #fb9678;
+
+}
+
+.adword-report-left .list-stacked > li{
+	padding:5px 0px;
+}
+.adword-report-left .list-stacked i{
+	width:20px;
+	
+}
+.adword-report-detail{
+	padding-left:30px;
+}
+.adword-report-detail .des{
+	border-top:1px #f4f4f4 solid;
+	padding-top:20px;
+}
+.adword-report-detail .des h4{
+	padding-bottom:20px;
+}
+.adword-report-detail .des h5{
+	padding-bottom:10px;
+	font-size:14px;
+	border-bottom:1px #f4f4f4 solid;
+	color:#03a9f3;
+}
+.border-top-1px{
+	border-top:1px #eee solid;
+	margin-top:20px;
+}
+.ul-adwords-des{
+	list-style:none;
+	 margin-left: 0;
+    padding-left: 0;
+}
+.ul-adwords-des > li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+	color:#666;
 }
