@@ -12,14 +12,8 @@ require_once ADWORDS_UTIL_VERSION_PATH . '/ReportUtils.php';
  * @param AdWordsUser $user the user to run the example with
  * @param string $filePath the path of the file to download the report to
  */
-function _group_by($array, $key) {
-    $return = array();
-    foreach($array as $val) {
-        $return[$val[$key]][] = $val;
-    }
-    return $return;
-}
-function ListAllKeyWordsInCampaign(AdWordsUser $user) {
+
+function KeywordListSearchTerms(AdWordsUser $user) {
 	// Load the service, so that the required classes are available.
 	$user->LoadService('ReportDefinitionService', ADWORDS_VERSION);
 	$options = array('version' => ADWORDS_VERSION);
@@ -31,50 +25,33 @@ function ListAllKeyWordsInCampaign(AdWordsUser $user) {
 	
 
 	  
-	$reportQuery = 'SELECT Criteria, Device,Impressions, Clicks, Cost , AverageCpc, QualityScore, Ctr, Status, Id, AdGroupId, AdGroupName'
-	  . ' FROM KEYWORDS_PERFORMANCE_REPORT'
+	$reportQuery = 'SELECT Query,KeywordTextMatchingQuery, Device,Impressions, Clicks, Cost , AverageCpc, AveragePosition, Ctr, AdGroupName, CampaignName'
+	  . ' FROM SEARCH_QUERY_PERFORMANCE_REPORT'
 	  . ' WHERE Clicks > 0 DURING YESTERDAY'
 	  . ' ';
 	$stringOfResult =  $reportUtils->DownloadReportWithAwql($reportQuery, $filePath, $user, $reportFormat, $options);
 	$args = explode("\n", $stringOfResult);
+
 	for ($i=2;$i<count($args)-2;$i++){
 		$arg = $args[$i];
 		
 		$tt = explode(",",$arg);
-		$tt[2] = number_format($tt[2]);
 		$tt[3] = number_format($tt[3]);
-		$tt[4] = number_format(round($tt[4]/1000000,2));
+		$tt[4] = number_format($tt[4]);
 		$tt[5] = number_format(round($tt[5]/1000000,2));
+		$tt[6] = number_format(round($tt[6]/1000000,2));
 		
-		$ctr = $tt[7];
+		$ctr = $tt[8];
 		$ctr = str_replace("%","",$ctr);
 		
 		if ($ctr > 50 ){
-			$tt[7] = "<span class='label label-info'>".$tt[7]."</span>";
+			$tt[8] = "<span class='label label-info'>".$tt[8]."</span>";
 		}
-		if ($tt[8] == "paused"){
-			$tt[8] = "<button class='btn btn-info btn-sm adwords-btn-fixwidth'>Chạy Từ Khóa</button>";
-		}else{
-			$tt[8] = "<button class='btn btn-danger btn-sm adwords-btn-fixwidth '>Ngưng Từ Khóa</button>";
-		}
+	
 		$ketqua['data'][] = $tt;
 		
 	}
-	unset($tt[9]);
-	unset($tt[10]);
-	unset($tt[11]);
-	/*
-	for ($i=2;$i<count($args)-1;$i++){
-		$arg = $args[$i];
-		$tt = explode(",",$arg);
-		$tmp[$tt[1]]['device'][] = $tt[2];
-		$tmp[$tt[1]]['click'][] = $tt[0];
-		$tmp[$tt[1]]['cost'][] = $tt[3];
-	}
-
-	var_dump($tmp);
-	exit();
-	*/
+	
 	return $ketqua;
 }
 
@@ -93,7 +70,7 @@ function ListAllKeyWordsInCampaign(AdWordsUser $user) {
   $filePath = dirname(__FILE__) . '/report.csv';
 
   // Run the example.
-  $kq = ListAllKeyWordsInCampaign($user);
+  $kq = KeywordListSearchTerms($user);
   echo json_encode($kq);
 
 ?>

@@ -24,14 +24,15 @@
 			<li> <a href="" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe028;"></i> <span class="hide-menu"> Báo Cáo Adwords <span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
                     <li> <a href="adword-baocaohieuxuat.php">Hiệu suất quảng cáo</a> </li>
+                    <li> <a href="adword-nhucautimkiem.php">Nhu cầu tìm kiếm</a> </li>
                     <li> <a href="adword-chanclickaotheothietbi.php">Chặn click ảo theo thiết bị</a> </li>
-                    <li> <a href="adword-chanclickaotheotukhoa.php">Chặn click ảo theo từ khóa</a> </li>
+                    <li> <a href="adword-chanclickaotheotukhoa.php"  class="active">Chặn click ảo theo từ khóa</a> </li>
 
                 </ul>
             </li>          
-		  <li class="active"> <a href="" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe019;"></i> <span class="hide-menu"> Chặn click ảo theo IP<span class="fa arrow"></span> </span></a>
+		  <li> <a href="" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe019;"></i> <span class="hide-menu"> Chặn click ảo theo IP<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level collapse in">
-                    <li> <a href="ip-click-ao.php" class="active">Báo cáo IP truy cập</a> </li>
+                    <li> <a href="ip-click-ao.php">Báo cáo IP truy cập</a> </li>
                     <li> <a href="cauhinh-chanclicktac.php">Cấu hình chặn click ảo</a> </li>
                 </ul>
             </li>

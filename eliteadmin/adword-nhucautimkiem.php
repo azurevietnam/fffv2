@@ -19,7 +19,7 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">CHẶN CLICK ẢO THEO TỪ KHÓA</h4> </div>
+                        <h4 class="page-title">NHU CẦU TÌM KIẾM</h4> </div>
 						<div class="col-lg-6 col-sm-4 col-md-4 col-xs-12"> </div>
 						<div class="col-lg-3 col-sm-4 col-md-4 col-xs-12"> 
 							<div class="input-group"><input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span> </div>
@@ -32,8 +32,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="white-box">
-                            <h3 class="box-title m-b-0">CHIẾN DỊCH ADWORDS & TỪ KHÓA</h3>
-                            <p class="text-muted m-b-20">Bạn có thể tạm ngưng toàn bộ chiến dịch hoặc các từ khóa cụ thể nếu phát hiện click tặc quá nhiều. Hoăc bạn có thể <a href="">Cấu Hình Chặn Tự Động</a></p>
+                            <h3 class="box-title m-b-0">NHU CẦU TÌM KIẾM & TỪ KHÓA CỦA BẠN</h3>
+                            <p class="text-muted m-b-20">Nhu cầu tìm kiếm là căn cứ tốt nhất khi tiến hành tối ưu hóa chiến dịch quảng cáo Adwords</a></p>
                            
 							 <div class="table-responsive dataTables_wrapper ">
 								<div class="table-responsive">
@@ -42,16 +42,17 @@
                                         <tr>
                                             
                                             
-                                            <th>Từ khóa</th>
-                                            <th>Thiết bị</th>
+                                            <th>Từ khóa tìm kiếm</th>
+                                            <th>Từ khóa của bạn</th>
+											<th>Thiết bị</th>
 											<th>Hiển thị</th>
 											<th>Clicks</th>
                                             <th>Chi phí</th>
                                             <th>CPC</th>
-                                            <th>Điểm chất lượng</th>
+                                            <th>Vị trí</th>
                                             <th>CTR</th>
-                                            <th>Tỉ lệ thất thoát</th>
-											<th>Hành động</th>
+											<th>Nhóm quảng cáo</th>
+											<th>Chiến dịch</th>
                                            
                                             
                                           
@@ -86,8 +87,8 @@
 		 <script>
         $(document).ready(function () {
      		$('#myTable').DataTable( {
-				"ajax": 'http://adwords.fff.com.vn/keywords-list-keywords.php?adword=322-238-9982',
-				"order": [[ 4, "desc" ]]
+				"ajax": 'http://adwords.fff.com.vn/keywords-list-searchterms.php?adword=322-238-9982',
+				"order": [[ 3, "desc" ]]
 			});
         });
 

@@ -62,7 +62,7 @@ function GetAverageCPC(AdWordsUser $user, $filePath) {
 		 $data['cpc'] = round($dulieu[4]/1000000,2);
 	  }
   }
-	var_dump($data);
+	
 }
 
 

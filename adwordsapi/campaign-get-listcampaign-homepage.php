@@ -25,11 +25,11 @@ function ListAllAdwordsCampaign(AdWordsUser $user) {
 	
 	$reportQuery = 'SELECT  CampaignName ,Device, Impressions, Clicks, AverageCpc, Ctr, InvalidClicks, InvalidClickRate, Cost, CampaignId,CampaignStatus, CampaignDesktopBidModifier, CampaignMobileBidModifier, CampaignTabletBidModifier'
 	  . ' FROM CAMPAIGN_PERFORMANCE_REPORT '
-	  . ' DURING ' . $dateRange;
+	  . 'WHERE Cost >0  DURING ' . $dateRange;
 	$stringOfResult =  $reportUtils->DownloadReportWithAwql($reportQuery, $filePath, $user, $reportFormat, $options);
 	$args = explode("\n", $stringOfResult);
-
-	for ($i=2;$i<count($args)-2;$i++){
+	if (count($args)-2 > 6) $limit = 8; else $limit = count($args)-2;
+	for ($i=2;$i<$limit;$i++){
 		$arg = $args[$i];
 		$tt = explode(",",$arg);
 		
@@ -48,7 +48,7 @@ function ListAllAdwordsCampaign(AdWordsUser $user) {
 				$tt[9] = "<button class='btn btn-info btn-sm adwords-btn-fixwidth' data-toggle='tooltip' data-placement='top' title='' data-original-title='Chạy chiến dịch trên Mobile'>Chạy Trên Mobile</button>";
 			}
 		}else if ($device == "Tablets with full browsers"){
-			if ($tt[13] != '"-100%"'){
+			if ($tt[12] != '"-100%"'){
 				$tt[9] = "<button class='btn btn-danger btn-sm adwords-btn-fixwidth' data-toggle='tooltip' data-placement='top' title='' data-original-title='Ngừng chạy chiến dịch trên Tablet'>Ngừng Trên Tablet</button>";
 				
                
@@ -68,6 +68,7 @@ function ListAllAdwordsCampaign(AdWordsUser $user) {
 		$tt[4] = number_format(round($tt[4]/1000000,2));
 		$tt[8] = number_format(round($tt[8]/1000000,2));
 		
+		unset($tt[9]);
 		unset($tt[10]);
 		unset($tt[11]);
 		unset($tt[12]);

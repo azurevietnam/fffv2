@@ -12,14 +12,8 @@ require_once ADWORDS_UTIL_VERSION_PATH . '/ReportUtils.php';
  * @param AdWordsUser $user the user to run the example with
  * @param string $filePath the path of the file to download the report to
  */
-function _group_by($array, $key) {
-    $return = array();
-    foreach($array as $val) {
-        $return[$val[$key]][] = $val;
-    }
-    return $return;
-}
-function ListAllKeyWordsInCampaign(AdWordsUser $user) {
+
+function KeywordsListKeywords(AdWordsUser $user) {
 	// Load the service, so that the required classes are available.
 	$user->LoadService('ReportDefinitionService', ADWORDS_VERSION);
 	$options = array('version' => ADWORDS_VERSION);
@@ -31,7 +25,7 @@ function ListAllKeyWordsInCampaign(AdWordsUser $user) {
 	
 
 	  
-	$reportQuery = 'SELECT Criteria, Device,Impressions, Clicks, Cost , AverageCpc, QualityScore, Ctr, Status, Id, AdGroupId, AdGroupName'
+	$reportQuery = 'SELECT Criteria, Device,Impressions, Clicks, Cost , AverageCpc, QualityScore, Ctr,  SearchRankLostImpressionShare,Status, Id, AdGroupId, AdGroupName'
 	  . ' FROM KEYWORDS_PERFORMANCE_REPORT'
 	  . ' WHERE Clicks > 0 DURING YESTERDAY'
 	  . ' ';
@@ -52,17 +46,17 @@ function ListAllKeyWordsInCampaign(AdWordsUser $user) {
 		if ($ctr > 50 ){
 			$tt[7] = "<span class='label label-info'>".$tt[7]."</span>";
 		}
-		if ($tt[8] == "paused"){
-			$tt[8] = "<button class='btn btn-info btn-sm adwords-btn-fixwidth'>Chạy Từ Khóa</button>";
+		if ($tt[9] == "paused"){
+			$tt[9] = "<button class='btn btn-info btn-sm adwords-btn-fixwidth'>Chạy Từ Khóa</button>";
 		}else{
-			$tt[8] = "<button class='btn btn-danger btn-sm adwords-btn-fixwidth '>Ngưng Từ Khóa</button>";
+			$tt[9] = "<button class='btn btn-danger btn-sm adwords-btn-fixwidth '>Ngưng Từ Khóa</button>";
 		}
 		$ketqua['data'][] = $tt;
 		
 	}
-	unset($tt[9]);
 	unset($tt[10]);
 	unset($tt[11]);
+	unset($tt[12]);
 	/*
 	for ($i=2;$i<count($args)-1;$i++){
 		$arg = $args[$i];
@@ -93,7 +87,7 @@ function ListAllKeyWordsInCampaign(AdWordsUser $user) {
   $filePath = dirname(__FILE__) . '/report.csv';
 
   // Run the example.
-  $kq = ListAllKeyWordsInCampaign($user);
+  $kq = KeywordsListKeywords($user);
   echo json_encode($kq);
 
 ?>
