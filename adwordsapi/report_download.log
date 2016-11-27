@@ -3812,3 +3812,1145 @@ __fmt: CSV
 
 Response Code: 200
 
+[Nov 27 2016 05:40:15.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA06arga3BhB5jQzCsa_l033S7Lsh5a5xzgB2U3p5gLtfRYZT6cJ7kMsLwkUZ565C
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 394
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b7160a9c167ba03b
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING TODAY
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.DURING_CLAUSE_REQUIRES_DATE_COLUMN', Trigger = '', FieldPath = ''. 
+
+[Nov 27 2016 05:41:27.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA0GsRDkZ3eSLqnWgdsWkTHPBjoO-ub91hjmURjlrnkr1gATYHviDjksjU25CakMi
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 322-238-9982
+Content-Length: 643
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b0a75ce85c259cea
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost, Impressions  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 05:41:29.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA0GsRDkZ3eSLqnWgdsWkTHPBjoO-ub91hjmURjlrnkr1gATYHviDjksjU25CakMi
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 322-238-9982
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------9736c8cfcc08edf4
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 05:41:29.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA3aGybenKBhAJkB-GKS2G2E4Uif9mjei_DICpIfLSrF_c2gUhd4RAWqU_vK8LlcC
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 395
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------6fe8e9517a6e47f4
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING TODAY 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.DURING_CLAUSE_REQUIRES_DATE_COLUMN', Trigger = '', FieldPath = ''. 
+
+[Nov 27 2016 05:41:39.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA4vEaNq_C0qsrVfnnWtytMt1_AifRwlFs2tWugxu69BvRDEvLaJ8xX-reH0HaCfg
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 382
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a3741b775e758c23
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'ReportDefinitionError.INVALID_FIELD_NAME_FOR_REPORT', Trigger = '', FieldPath = 'AdNetworkType1'. 
+
+[Nov 27 2016 05:41:54.000000 - ERROR] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA-3mt0V65jIK5ND5UX6FvdxSuwG6TWD3gmftddUm8t1bKVGiAClN1gzBLL0oC9gW
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 347
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------566c603a71fbef15
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  DURING TODAY 
+__fmt: CSV
+
+Response Code: 400
+Error Message: Report download failed. Underlying errors are 
+Type = 'QueryError.DURING_CLAUSE_REQUIRES_DATE_COLUMN', Trigger = '', FieldPath = ''. 
+
+[Nov 27 2016 05:43:12.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA8uGt00kiu1chddZUSLCPZxuQP0gr7f1MU4K2eic43EBMdhgDm5lmtcpZETdKJ1F
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------21fc0c07a944c69d
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 05:47:33.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.Gl2jA1ePXldoU6Zw3QcGOakbDemxWQFANnIQnOfne__hDj2vuNf7SpOZs6i48RTawUjhGVhRVbySZbqUzggQokF2MWiiQwGNUHshqnjUOZI65iPKCBssC9Eui8LamR0
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f925e5d0ea90e72b
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 05:47:42.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA67KShVORqmvjFJOl6ROaA3OKGEbp6J0NNcqaydOx1Nb9WEc730AFiCsMajeakjW
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 881-804-9978
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d2422e9948e905ed
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:34:31.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA602San0ZqcZA0FgoHKkhN_jnQG7lkk4UiftEK12HM6MzXezDWvpsD86TBmO2FJ-
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 322-238-9982
+Content-Length: 643
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------4966b6dcaf67e83d
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost, Impressions  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:34:32.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA602San0ZqcZA0FgoHKkhN_jnQG7lkk4UiftEK12HM6MzXezDWvpsD86TBmO2FJ-
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 322-238-9982
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c49d50fe10dd6e1f
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:35:31.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA858LuPHPBbb81q2xXabxIZLM7Qi4A52s47X8nm_Yle67HhKQ2C-ZtIxmrTWiNF1
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 322-238-9982
+Content-Length: 643
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------08519df50dbaa3fa
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost, Impressions  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:35:32.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA858LuPHPBbb81q2xXabxIZLM7Qi4A52s47X8nm_Yle67HhKQ2C-ZtIxmrTWiNF1
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 322-238-9982
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5e1d6ff77e4629d2
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:54:53.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAxX_ixWWhIwc2T4dzmA0l6Df7tL_h22e2SKp7ptsVR2lBOv6lS7Fb2Eoz4TexS6v
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b90a4a8513f4f34f
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:54:55.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAxX_ixWWhIwc2T4dzmA0l6Df7tL_h22e2SKp7ptsVR2lBOv6lS7Fb2Eoz4TexS6v
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a798585f44741043
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:55:28.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA988mylXl8STlI1nsw54vyLaMsdMJjybuDls0JpD3UpgzeJvzZOE7FCfryBFUSRR
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7815c809fedcf5e2
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:55:30.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA988mylXl8STlI1nsw54vyLaMsdMJjybuDls0JpD3UpgzeJvzZOE7FCfryBFUSRR
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2af01ceea55b9f1b
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:55:44.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA7UGCassWrTNpBt2aT5tbSmBgKdcFERn6Zl9XrpBMOLv6wOL3aCboY_ZDBdqNidO
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------654e2c9c6dd93ede
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:55:45.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA7UGCassWrTNpBt2aT5tbSmBgKdcFERn6Zl9XrpBMOLv6wOL3aCboY_ZDBdqNidO
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d40191ee791bd8ce
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:55:50.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA7UGCassWrTNpBt2aT5tbSmBgKdcFERn6Zl9XrpBMOLv6wOL3aCboY_ZDBdqNidO
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c29055af5bda326b
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 07:56:31.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA8VTUMg5S4VPmRVNGbjcbMZ_6KJcQhgLPkUIqR8lSYs9ApeWCFz4W4ifieoYk8gt
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d980fb143ebf5213
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:06:46.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA5PI0fcgKR42-B7QjeGzNydxNl7Sy5VnR9-4eHAUA9vcFs18j5ErJIOQlmgnZsYw
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2eaba2b9ff19b22e
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:06:48.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA5PI0fcgKR42-B7QjeGzNydxNl7Sy5VnR9-4eHAUA9vcFs18j5ErJIOQlmgnZsYw
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------3d69206e0579568f
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:06:53.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA5PI0fcgKR42-B7QjeGzNydxNl7Sy5VnR9-4eHAUA9vcFs18j5ErJIOQlmgnZsYw
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------cc4cbbdb06aad4f1
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:07:40.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA_zrBgZO4HPYatC_ytQC9wMiURsC_7TyM8pDVEkBgZC34nl5dY0BLz3VCrnaUoes
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------14a976d684be5ce9
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:07:41.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA_zrBgZO4HPYatC_ytQC9wMiURsC_7TyM8pDVEkBgZC34nl5dY0BLz3VCrnaUoes
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------3287e1f86b54b45b
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:07:46.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA_zrBgZO4HPYatC_ytQC9wMiURsC_7TyM8pDVEkBgZC34nl5dY0BLz3VCrnaUoes
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a490f3143a78e236
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:08:01.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA3ZaOPRtsnZEqmObYvfDl8A0LiVvabTvt8E8rAx3xXxMI1_EBqQLtGPUiL-hSs0c
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------73b3c0c01d85134c
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:08:03.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA3ZaOPRtsnZEqmObYvfDl8A0LiVvabTvt8E8rAx3xXxMI1_EBqQLtGPUiL-hSs0c
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------720b18c0d83b3be4
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:08:08.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA3ZaOPRtsnZEqmObYvfDl8A0LiVvabTvt8E8rAx3xXxMI1_EBqQLtGPUiL-hSs0c
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------53ca52be44f517e7
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:08:39.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA-qeqPOw9Fd14WBDSdsKqJf9fMqsX3Un3AAQ61IjHwxZJtIilir4OgiN7Q5fDlHQ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7b049d060059cf0f
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:08:41.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA-qeqPOw9Fd14WBDSdsKqJf9fMqsX3Un3AAQ61IjHwxZJtIilir4OgiN7Q5fDlHQ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------6b79fb1d972cd325
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:08:46.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA-qeqPOw9Fd14WBDSdsKqJf9fMqsX3Un3AAQ61IjHwxZJtIilir4OgiN7Q5fDlHQ
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------201db17771cd0d11
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:09:16.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA6ZGxSyUVKWNBuDAPBsk8i3-uC95pwuvh5cIJ71CfNWM9lMS-X1jiWPPv4QmEPBI
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5e0f232628c5230d
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:09:18.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA6ZGxSyUVKWNBuDAPBsk8i3-uC95pwuvh5cIJ71CfNWM9lMS-X1jiWPPv4QmEPBI
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------b9a0a364931103b2
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:09:22.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA6ZGxSyUVKWNBuDAPBsk8i3-uC95pwuvh5cIJ71CfNWM9lMS-X1jiWPPv4QmEPBI
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------e9fd44c168919b5d
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:09:57.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA2YQxCPmz5cyFiIxMVVy48kT84Ur0Y9LP_ExD899JjAXszU5swGO0f_CdEUgWMVk
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------2028a03213dacb59
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:09:58.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA2YQxCPmz5cyFiIxMVVy48kT84Ur0Y9LP_ExD899JjAXszU5swGO0f_CdEUgWMVk
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------742a740e0b22ab5f
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:10:06.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA2YQxCPmz5cyFiIxMVVy48kT84Ur0Y9LP_ExD899JjAXszU5swGO0f_CdEUgWMVk
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5ec47c602625cdd4
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:10:27.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAzcDAES-4WR87FzhB07HRGnwreXJoKVtlgVzis0JA4-ImVt--ZGsh8pIualDKXW0
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------06ca267c58c1d870
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:10:29.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAzcDAES-4WR87FzhB07HRGnwreXJoKVtlgVzis0JA4-ImVt--ZGsh8pIualDKXW0
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------1ec309e6b6706a9d
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:10:34.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAzcDAES-4WR87FzhB07HRGnwreXJoKVtlgVzis0JA4-ImVt--ZGsh8pIualDKXW0
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a282be1277a8e9ae
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:10:49.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA0mQlSlsS-yM6uH-styUGlFuDTzNVNqTjIJ_l1KSmlp6-Lb_PjJBP2DbD36tIf2B
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------28b84453bd35dec3
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:10:51.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA0mQlSlsS-yM6uH-styUGlFuDTzNVNqTjIJ_l1KSmlp6-Lb_PjJBP2DbD36tIf2B
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f75b4caadda80d2e
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:10:56.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA0mQlSlsS-yM6uH-styUGlFuDTzNVNqTjIJ_l1KSmlp6-Lb_PjJBP2DbD36tIf2B
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------528223451bfb86c9
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:11:46.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA__ey1d2LOO4fMezmpWHBbWigbihrz-TCGel2TQK6upmRp5ybbisQ7p2YptVUoJt
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f27291c68147ac96
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:11:48.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA__ey1d2LOO4fMezmpWHBbWigbihrz-TCGel2TQK6upmRp5ybbisQ7p2YptVUoJt
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------fad29c823f53502f
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:11:54.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA__ey1d2LOO4fMezmpWHBbWigbihrz-TCGel2TQK6upmRp5ybbisQ7p2YptVUoJt
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------bbb3d83f9831ab7a
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:11:58.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAyeRx6EOBBKxPQ7M3dV-22ffqQ3iuI8Rb0OKIImJCVC6XrrLsnBE-vbbLM9ypEl5
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a3d62bbe32531f34
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:11:59.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAyeRx6EOBBKxPQ7M3dV-22ffqQ3iuI8Rb0OKIImJCVC6XrrLsnBE-vbbLM9ypEl5
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d6b42f3192964ad0
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:12:04.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjAyeRx6EOBBKxPQ7M3dV-22ffqQ3iuI8Rb0OKIImJCVC6XrrLsnBE-vbbLM9ypEl5
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------102a43c9c7a96511
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:12:15.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA5sHORTMxaft7O6KnPJN-CGysoSSWlrfxt3qDQv7LjFLCfkL1yJxEVsejeGI12HN
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d85fb7d529a09eec
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:12:17.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA5sHORTMxaft7O6KnPJN-CGysoSSWlrfxt3qDQv7LjFLCfkL1yJxEVsejeGI12HN
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------a6685b049ffd4882
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:12:21.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA5sHORTMxaft7O6KnPJN-CGysoSSWlrfxt3qDQv7LjFLCfkL1yJxEVsejeGI12HN
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d50f4cc83ce5f9c4
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:13:11.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA39Aju7ORwbMaosdlBWeqaG8ZJrzexsO0y1im87oPwD2WbzTFQdGJpKIBmWLEWNi
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------3acf8cd0cd0bc37a
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:13:14.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA39Aju7ORwbMaosdlBWeqaG8ZJrzexsO0y1im87oPwD2WbzTFQdGJpKIBmWLEWNi
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------324cd4ac76b261f0
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:13:19.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA39Aju7ORwbMaosdlBWeqaG8ZJrzexsO0y1im87oPwD2WbzTFQdGJpKIBmWLEWNi
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------d36688153aab8591
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:14:50.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA2VBvQHxFk__xVIp8yvKAiHQhie1JZpMsYWtoAr8IXjgkFodEvdc7nWypg7-P2cv
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------94eadc5dffa4f1d0
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:14:52.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA2VBvQHxFk__xVIp8yvKAiHQhie1JZpMsYWtoAr8IXjgkFodEvdc7nWypg7-P2cv
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------7e918ed5b2243ad5
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:14:56.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA2VBvQHxFk__xVIp8yvKAiHQhie1JZpMsYWtoAr8IXjgkFodEvdc7nWypg7-P2cv
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------fafd410d6aed5b76
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:19:44.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA_B4-LqjnZvBPRnxn_iB_yKXQ3R0V-2bVYdVlI5MHmC4eSfmUiuOFVrDH5fiPhlE
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------5411c4a474a1a58c
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:19:46.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA_B4-LqjnZvBPRnxn_iB_yKXQ3R0V-2bVYdVlI5MHmC4eSfmUiuOFVrDH5fiPhlE
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------c3dd319cb2062924
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:19:51.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA_B4-LqjnZvBPRnxn_iB_yKXQ3R0V-2bVYdVlI5MHmC4eSfmUiuOFVrDH5fiPhlE
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------9049319e0f8d0888
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+

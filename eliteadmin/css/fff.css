@@ -399,3 +399,12 @@
 .p-t-60{
 	padding-top:60px!important;
 }
+.homepage-adword-point-chart {
+	width:250px;
+	height:250px;
+}
+.homepage-adword-point-chart .percent{
+	line-height:250px;
+	font-size:60px;
+	color:#03a9f3;
+}
