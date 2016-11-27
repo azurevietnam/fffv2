@@ -10,7 +10,9 @@
         "laravelcollective/html": "5.3.*",
         "barryvdh/laravel-elfinder": "^0.3.8",
         "magyarjeti/laravel-lipsum": "^1.1",
-        "sboo/laravel5-mailjet": "v1.0.5"
+        "sboo/laravel5-mailjet": "v1.0.5",
+        "ixudra/curl": "6.6.0",
+        "anlutro/curl": "1.4.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

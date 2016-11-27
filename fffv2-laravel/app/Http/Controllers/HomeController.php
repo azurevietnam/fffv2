@@ -41,56 +41,72 @@ class HomeController extends Controller
     }
     public function add_domain(Request $request)
     {
-        $input = $request->all();
-        $rules = [
-            'domain' => 'required',
-        ];
-        $messages = [
-            'domain.required' => 'Vui lòng điền domain muốn thêm.',
-        ];
-
-        $validator = Validator::make($input, $rules, $messages);
-        if ($validator->fails()) {
-            return back()->withInput()->withErrors($validator)->with('display_add_domain', "yes");
-        } else {
-            $website  = trim(addslashes($request->input('domain', '')));
-            if (strpos($website,"ttp://") > 0) $website = str_ireplace('www.', '', parse_url($website, PHP_URL_HOST));
-
-            if (strpos($website, '.') === FALSE) {
-                $validator->getMessageBag()->add('domain', "Website không hợp lệ.Ví dụ: http://vnexpress.net, www.vnexpress.net, vnexpress.net, ... ");
+        $package_id = $request->user()->package_id;
+        $pay_package = DB::table("pay_package")
+            ->where('id', $package_id)
+            ->first();
+        if(!empty($pay_package)){
+            $input = $request->all();
+            $rules = [
+                'domain' => 'required',
+            ];
+            $messages = [
+                'domain.required' => 'Vui lòng điền domain muốn thêm.',
+            ];
+            $validator = Validator::make($input, $rules, $messages);
+            if ($validator->fails()) {
                 return back()->withInput()->withErrors($validator)->with('display_add_domain', "yes");
-            }
-
-            $domain = $domains = DB::table("domains")->where('domain', $website)->first();
-            if(empty($domain)) {
-                $keycode = str_random(13);
-                $tracking  = $this->trackingIP($website, $keycode, $request->user()->id);
-
-                $dataIns = array(
-                    'uid'       => $request->user()->id,
-                    'domain'    => $website,
-                    'keycode'   =>  $keycode,
-                    'tracking'  => $tracking,
-                    'created'   => date( 'Y-m-d H:i:s', time())
-
-                );
-                $id = DB::table('domains')->insertGetId($dataIns);
-                if($id > 0) {
-                    if (Session::has('domain_id_choose')) {
-                        Session::forget('domain_id_choose');
-                    }
-                    Session::put('domain_id_choose', $id);
-
-                    return redirect('/config/cauhinh-chanclicktac')->with('ok', "Đã thêm Website thành công. Hãy tiến hành cài đặt");
-                } else {
-                    $validator->getMessageBag()->add('domain', "Thêm website thất bại. Vui lòng mở lại trình duyệt thử lại");
+            } else {
+                $count_domain = DB::table("domains")->select('id')->where('uid', $request->user()->id)->count();
+                if($count_domain >= $pay_package->limit_domain) {
+                    $validator->getMessageBag()->add('domain', "Bạn đã có " . $count_domain ." website. Đã vượt mức gói dịch vụ đang sử dụng (" . $pay_package->limit_domain . " website). Vui lòng <a href='#'>nâng cấp</a> gói dịch vụ");
                     return back()->withInput()->withErrors($validator)->with('display_add_domain', "yes");
                 }
-            } else {
-                $validator->getMessageBag()->add('domain', "Website này bạn đã thêm vào. Thử thêm vào website khác");
-                return back()->withInput()->withErrors($validator)->with('display_add_domain', "yes");
+
+                $website  = trim(addslashes($request->input('domain', '')));
+                if (strpos($website,"ttp://") > 0) $website = str_ireplace('www.', '', parse_url($website, PHP_URL_HOST));
+
+                if (strpos($website, '.') === FALSE) {
+                    $validator->getMessageBag()->add('domain', "Website không hợp lệ.Ví dụ: http://vnexpress.net, www.vnexpress.net, vnexpress.net, ... ");
+                    return back()->withInput()->withErrors($validator)->with('display_add_domain', "yes");
+                }
+
+                $domain = DB::table("domains")->where('domain', $website)->first();
+                if(empty($domain)) {
+                    $keycode = str_random(13);
+                    $tracking  = $this->trackingIP($website, $keycode, $request->user()->id);
+
+                    $dataIns = array(
+                        'uid'       => $request->user()->id,
+                        'domain'    => $website,
+                        'keycode'   =>  $keycode,
+                        'tracking'  => $tracking,
+                        'created'   => date( 'Y-m-d H:i:s', time())
+
+                    );
+                    $id = DB::table('domains')->insertGetId($dataIns);
+                    if($id > 0) {
+                        if (Session::has('domain_id_choose')) {
+                            Session::forget('domain_id_choose');
+                        }
+                        Session::put('domain_id_choose', $id);
+
+                        return redirect('/click/cauhinh-chanclicktac')->with('ok', "Đã thêm Website thành công. Hãy tiến hành cài đặt");
+                    } else {
+                        $validator->getMessageBag()->add('domain', "Thêm website thất bại. Vui lòng mở lại trình duyệt thử lại");
+                        return back()->withInput()->withErrors($validator)->with('display_add_domain', "yes");
+                    }
+                } else {
+                    $validator->getMessageBag()->add('domain', "Website này bạn đã thêm vào. Thử thêm vào website khác");
+                    return back()->withInput()->withErrors($validator)->with('display_add_domain', "yes");
+                }
             }
+        } else {
+            session()->flash('message', 'Không tìm thấy gói dịch vụ, Vui lòng liên hệ với hỗ trợ viên');
+            return redirect('error-message');
         }
+
+
     }
 
     function trackingIP($domain = '', $keycode = '', $uid = 0){

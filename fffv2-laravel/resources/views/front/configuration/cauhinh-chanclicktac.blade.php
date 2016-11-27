@@ -25,7 +25,7 @@
                 <!-- .row -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <form class="form-horizontal" method="post" action="/config/cauhinh-chanclicktac" accept-charset="utf-8">
+                        <form class="form-horizontal" method="post" action="/click/cauhinh-chanclicktac" accept-charset="utf-8">
                             <div class="white-box">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <input type="hidden" name="domain_id" value="{{ $domain->id }}">
@@ -35,23 +35,33 @@
                                 <div class="form-group">
                                     <label class="col-sm-3">Tài khoản adwords</label>
                                     <div class="col-sm-9">
-                                        {!! Form::input("text", "adword_account", $domain->adword_account, ['class' => 'form-control']) !!}
+                                        {!! Form::input("text", "adword_account", $domain->adword_account, ['class' => 'form-control', 'placeholder' => 'Mã tài khoản adwords của bạn xxx-xxx-xxxx']) !!}
                                         {!! $errors->first('adword_account', '<small class="help-block">:message</small>') !!}
-                                        <span class="text-danger">Chưa cho phép đồng bộ chặn IP click tặc. Vui lòng xem <a href="http://fff.com.vn/2016/04/01/huong-dan-lien-ket-tai-khoan-adwords-chan-click-tac-dong/" target="_blank">hướng dẫn</a> hoặc liên hệ với hỗ trợ viên</span>
+                                        <span class="help-block"><small>Vui lòng xem <a href="http://fff.com.vn/2016/04/01/huong-dan-lien-ket-tai-khoan-adwords-chan-click-tac-dong/">hướng dẫn</a> hoặc liên hệ với hỗ trợ viên</small></span>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3">Mã nhúng Adwords_u</label>
                                     <div class="col-sm-9">
-                                        {!! Form::input("text", "adword_u", $domain->adword_u, ['class' => 'form-control']) !!}
+                                        {!! Form::input("text", "adword_u", $domain->adword_u, ['class' => 'form-control', 'placeholder' => 'Mã nhúng Adwords U']) !!}
                                         {!! $errors->first('adword_u', '<small class="help-block">:message</small>') !!}
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-sm-3">Mã nhúng Adwords_c</label>
                                     <div class="col-sm-9">
-                                        {!! Form::input("text", "adword_c", $domain->adword_c, ['class' => 'form-control']) !!}
+                                        {!! Form::input("text", "adword_c", $domain->adword_c, ['class' => 'form-control', 'placeholder' => 'Mã nhúng Adwords C']) !!}
                                         {!! $errors->first('adword_c', '<small class="help-block">:message</small>') !!}
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">Tác Vụ</label>
+                                    <div class="col-sm-9">
+                                        <select id="auto_block" class="form-control" name="push_to_adwords">
+                                            <option value="0" {{ $domain->push_to_adwords == 0 ? 'selected' : '' }}>Không chặn</option>
+                                            <option value="1" {{ $domain->push_to_adwords == 1 ? 'selected' : '' }}>Cho phép tự động chặn</option>
+
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +182,7 @@
                         <div class="white-box">
                             <h3 class="box-title m-b-0">Loại trừ đặc biệt</h3>
                             <p class="text-muted m-b-30 font-13"> Ngăn quảng cáo hiển thị theo các IP hoặc dãy IP sau</p>
-                            <form class="form-horizontal" method="post" action="/config/cauhinh-chanclicktac" accept-charset="utf-8">
+                            <form class="form-horizontal" method="post" action="/click/cauhinh-chanclicktac" accept-charset="utf-8">
                                 <div class="form-group">
                                     <div class="col-sm-12 col-xs-12">
                                         <div class="col-md-12">

@@ -1,8 +1,8 @@
 ALTER TABLE `fff_crm`.`domains`
   ADD COLUMN `config_viewpage` SMALLINT DEFAULT 3  NULL AFTER `email_report`,
-  ADD COLUMN `device_pc` TINYINT DEFAULT 0  NULL AFTER `config_viewpage`,
-  ADD COLUMN `device_tablet` TINYINT DEFAULT 0  NULL AFTER `device_pc`,
-  ADD COLUMN `device_phone` TINYINT DEFAULT 0  NULL AFTER `device_tablet`;
+  ADD COLUMN `device_pc` TINYINT DEFAULT 1  NULL AFTER `config_viewpage`,
+  ADD COLUMN `device_tablet` TINYINT DEFAULT 1  NULL AFTER `device_pc`,
+  ADD COLUMN `device_phone` TINYINT DEFAULT 1  NULL AFTER `device_tablet`;
 
 ALTER TABLE `fff_crm`.`domains`
     CHANGE `name` `name` VARCHAR(50) CHARSET utf8 COLLATE utf8_general_ci DEFAULT ''  NOT NULL;
@@ -27,3 +27,8 @@ ALTER TABLE `fff_crm`.`domains`
   CHANGE `hethan` `hethan` DATE NULL,
   CHANGE `thanhtoan` `thanhtoan` INT(11) DEFAULT 0  NULL,
   CHANGE `email_report` `email_report` DATE NULL;
+
+ALTER TABLE `fff_crm`.`domains`
+    ADD COLUMN `blocked_ip` TEXT NULL AFTER `deny_ip`;
+ALTER TABLE `fff_crm`.`domains`
+  ADD COLUMN `ignore_ip` TEXT NULL AFTER `blocked_ip`;

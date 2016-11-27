@@ -62,7 +62,8 @@ return [
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix' => '',
-            'strict' => true,
+            //'strict' => true, //MYSQL >= 5.7
+            'strict' => false,
             'engine' => null,
         ],
 

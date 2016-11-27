@@ -14,12 +14,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/profile', 'ProfileController@post_profile');
 
     Route::get('/click/ip-click-ao', 'VirtualClickController@ip_click_ao');
+    Route::get('/click/ajax-block-ip/{id}/{ip}', 'VirtualClickController@ajax_block_ip');
+    Route::get('/click/ajax-unblock-ip/{id}/{ip}', 'VirtualClickController@ajax_unblock_ip');
+    Route::get('/click/ajax-click-ao-header', 'VirtualClickController@ajax_click_ao_header');
     Route::post('/click/ip-click-ao', 'VirtualClickController@ip_click_ao');
 
-    Route::get('/click/ip-khu-vuc', 'VirtualClickController@ip_khu_vuc');
-    Route::get('/click/ip-thiet-bi', 'VirtualClickController@ip_thiet_bi');
-    Route::get('/config/cauhinh-chanclicktac/{domain_id?}', 'ConfigurationController@get_cauhinh_chanclicktac');
-    Route::post('/config/cauhinh-chanclicktac', 'ConfigurationController@post_cauhinh_chanclicktac');
+    Route::get('/click/cauhinh-chanclicktac/{domain_id?}', 'VirtualClickController@get_cauhinh_chanclicktac');
+    Route::post('/click/cauhinh-chanclicktac', 'VirtualClickController@post_cauhinh_chanclicktac');
+
 
 
 

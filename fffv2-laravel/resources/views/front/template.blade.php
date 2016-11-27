@@ -175,6 +175,7 @@
         @yield('footer')
     </footer>
 
+    @yield('scripts_topmenu')
     @yield('scripts')
 
   </body>

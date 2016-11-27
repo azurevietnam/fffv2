@@ -263,7 +263,7 @@
 	</div>
 @endsection
 
-@section('scripts')
+@section('scripts_topmenu')
 	<script>
 		$(function () {
 			@if(session()->has("display_add_domain"))

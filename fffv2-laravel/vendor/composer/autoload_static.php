@@ -28,6 +28,10 @@ class ComposerStaticInit9537873cee2764300e2151647914d6f2
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
+        'a' => 
+        array (
+            'anlutro\\cURL\\' => 13,
+        ),
         'X' => 
         array (
             'XdgBaseDir\\' => 11,
@@ -122,6 +126,10 @@ class ComposerStaticInit9537873cee2764300e2151647914d6f2
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+        ),
+        'anlutro\\cURL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/anlutro/curl/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -335,6 +343,13 @@ class ComposerStaticInit9537873cee2764300e2151647914d6f2
                 0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
             ),
         ),
+        'I' => 
+        array (
+            'Ixudra\\Curl\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/ixudra/curl/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Inflector\\' => 
@@ -366,6 +381,7 @@ class ComposerStaticInit9537873cee2764300e2151647914d6f2
         'App\\Http\\Controllers\\BlogFrontController' => __DIR__ . '/../..' . '/app/Http/Controllers/BlogFrontController.php',
         'App\\Http\\Controllers\\CommentAjaxController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommentAjaxController.php',
         'App\\Http\\Controllers\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommentController.php',
+        'App\\Http\\Controllers\\ConfigurationController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConfigurationController.php',
         'App\\Http\\Controllers\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/ContactController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\ElfinderController' => __DIR__ . '/../..' . '/app/Http/Controllers/ElfinderController.php',
@@ -373,9 +389,11 @@ class ComposerStaticInit9537873cee2764300e2151647914d6f2
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\LanguageController' => __DIR__ . '/../..' . '/app/Http/Controllers/LanguageController.php',
         'App\\Http\\Controllers\\NotificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/NotificationController.php',
+        'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
         'App\\Http\\Controllers\\RoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/RoleController.php',
         'App\\Http\\Controllers\\UserAjaxController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserAjaxController.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
+        'App\\Http\\Controllers\\VirtualClickController' => __DIR__ . '/../..' . '/app/Http/Controllers/VirtualClickController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\App' => __DIR__ . '/../..' . '/app/Http/Middleware/App.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -1787,6 +1805,10 @@ class ComposerStaticInit9537873cee2764300e2151647914d6f2
         'Intervention\\Image\\Point' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Point.php',
         'Intervention\\Image\\Response' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Response.php',
         'Intervention\\Image\\Size' => __DIR__ . '/..' . '/intervention/image/src/Intervention/Image/Size.php',
+        'Ixudra\\Curl\\Builder' => __DIR__ . '/..' . '/ixudra/curl/src/Ixudra/Curl/Builder.php',
+        'Ixudra\\Curl\\CurlService' => __DIR__ . '/..' . '/ixudra/curl/src/Ixudra/Curl/CurlService.php',
+        'Ixudra\\Curl\\CurlServiceProvider' => __DIR__ . '/..' . '/ixudra/curl/src/Ixudra/Curl/CurlServiceProvider.php',
+        'Ixudra\\Curl\\Facades\\Curl' => __DIR__ . '/..' . '/ixudra/curl/src/Ixudra/Curl/Facades/Curl.php',
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
@@ -3449,6 +3471,11 @@ class ComposerStaticInit9537873cee2764300e2151647914d6f2
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'anlutro\\cURL\\Laravel\\cURL' => __DIR__ . '/..' . '/anlutro/curl/src/Laravel/cURL.php',
+        'anlutro\\cURL\\Request' => __DIR__ . '/..' . '/anlutro/curl/src/Request.php',
+        'anlutro\\cURL\\Response' => __DIR__ . '/..' . '/anlutro/curl/src/Response.php',
+        'anlutro\\cURL\\cURL' => __DIR__ . '/..' . '/anlutro/curl/src/cURL.php',
+        'anlutro\\cURL\\cURLException' => __DIR__ . '/..' . '/anlutro/curl/src/cURLException.php',
         'elFinder' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinder.class.php',
         'elFinderConnector' => __DIR__ . '/..' . '/studio-42/elfinder/php/elFinderConnector.class.php',
         'elFinderLibGdBmp' => __DIR__ . '/..' . '/studio-42/elfinder/php/libs/GdBmp.php',

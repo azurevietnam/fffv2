@@ -17,53 +17,14 @@
                     <h4 class="page-title">IP Click Ảo</h4> </div>
                 <div class="col-lg-6 col-sm-4 col-md-4 col-xs-12"> </div>
                 <div class="col-lg-3 col-sm-4 col-md-4 col-xs-12">
-                    <div class="input-group"><input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span> </div>
+                    <div class="input-group"><input value="{{$date_picker}}" class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span> </div>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
 
             <!-- .row -->
-            <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="white-box">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-success"><i class="fa fa-sort-asc"></i> Tăng 18% so với hôm qua</small> WEBSITE TRAFFIC</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>PC</h6> <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Mobile</h6> <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Tablet</h6> <b>5.50%</b></div>
-                        </div>
-                        <div id="sparkline8"></div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="white-box">
-                        <h3 class="box-title"><small class="pull-right m-t-10 text-danger"><i class="fa fa-sort-desc"></i> Giảm 19% so với hôm qua</small>CLICK ẢO</h3>
-                        <div class="stats-row">
-                            <div class="stat-item">
-                                <h6>PC</h6> <b>80.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Mobile</h6> <b>15.40%</b></div>
-                            <div class="stat-item">
-                                <h6>Tablet</h6> <b>5.50%</b></div>
-                        </div>
-                        <div id="sparkline9"></div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="white-box" style="min-height:215px">
-                        <h3 class="box-title"><i class="ti-cut text-danger"></i> TIẾT KIỆM ƯỚC TÍNH</h3>
-                        <div class="text-right"> <span class="text-muted">Tiết kiệm từ đầu tháng</span>
-                            <h1><sup><i class="ti-arrow-down text-danger"></i></sup> $5,000</h1>
-                        </div>
-                        <span class="text-danger">Tiết kiệm 50%</span>
-                        <div class="progress m-b-0">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%;"> <span class="sr-only">230% Complete</span> </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row" id="ajax-ip-click-ao">
+
             </div>
             <!-- /.row -->
             <!-- .row -->
@@ -74,9 +35,11 @@
                         <input type="hidden" id="num_page" name="page" value="{{ $page }}">
                         <input type="hidden" id="sort_field" name="sfield" value="{{ $sfield }}">
                         <input type="hidden" id="sort_direction" name="sdir" value="{{ $sdir }}">
+                        <input type="hidden" id="fromdate" name="from" value="{{ $from }}">
+                        <input type="hidden" id="today" name="to" value="{{ $to }}">
                         <div class="white-box">
                             <h3 class="box-title m-b-0">Danh sách IP</h3>
-                            <p class="text-muted m-b-20">Danh sách IP click và truy cập website của bạn. Bạn có thể chặn ngay IP click ảo hoặc <a href="">Cấu Hình Chặn Tự Động</a></p>
+                            <p class="text-muted m-b-20">Danh sách IP click và truy cập website của bạn. Bạn có thể chặn ngay IP click ảo hoặc <a href="/click/cauhinh-chanclicktac">Cấu Hình Chặn Tự Động</a></p>
                             <div class="row padding-bottom-10px">
                                 <div class="col-sm-6" style="padding-top:10px">
                                     <label class="form-inline">Hiển thị
@@ -105,11 +68,11 @@
                                         <thead>
                                         <tr>
                                             <th>Stt</th>
-                                            <th>Lần click đầu</th>
+                                            <th><span class="sort-caption" id="sort_created">Lần click đầu</span></th>
                                             <th>IP</th>
                                             <th>Action</th>
-                                            <th><span class="sort-caption" id="sort_click" name="sort_click">Số click</span></th>
-                                            <th><span class="sort-caption" id="sort_view" name="sort_view">Xem trang</span></th>
+                                            <th><span class="sort-caption" id="sort_click">Số click</span></th>
+                                            <th><span class="sort-caption" id="sort_view">Xem trang</span></th>
                                             <th>Chi phí</th>
 
                                             <th>Thiết bị</th>
@@ -124,18 +87,35 @@
                                                 <tr>
                                                     <td>{{($page - 1) * $row + $loop->index + 1}}</td>
                                                     <td>{{ date('H:i:s d/m/Y', strtotime($log->created))}}</td>
-                                                    <td><button class="btn btn-block btn-outline btn-info  btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xem lịch sử IP">{{$log->ip}}</button></td>
-                                                    <td><button class="btn btn-block btn-outline btn-success btn-sm " data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn ngay IP này">Chặn Ngay</button></td>
-
-                                                    <td>1</td>
-                                                    <td>3</td>
+                                                    <td>
+                                                        <span class="btn btn-block btn-outline btn-info  btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xem lịch sử IP">{{$log->ip}}</span>
+                                                    </td>
+                                                    <td id="div_block_ip">
+                                                        @if($log->status == -1 || $log->status == 0 || $log->status == 1)
+                                                            <span id="block_ip" data-id="{{$log->id}}" data-value="{{$log->ip}}" class="btn btn-block btn-outline btn-success btn-sm " data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn ngay IP này">Chặn Ngay</span>
+                                                        @elseif($log->status == 2)
+                                                            <span id="unblock_ip" data-id="{{$log->id}}" data-value="{{$log->ip}}" class="btn btn-block btn-outline btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bỏ chặn IP này">Mở khóa</span>
+                                                        @endif
+                                                    </td>
+                                                    <td>{{$log->click}}</td>
+                                                    <td>{{$log->viewpage}}</td>
                                                     <td>310.000 vnd</td>
 
-                                                    <td>{{ $log->device == "Computer" ? "Computer" : $log->device_name}}</td>
+                                                    <td>{{$log->device == "Computer" ? "Computer" : $log->device_name}}</td>
                                                     <td>{{$log->browser}}</td>
                                                     <td>{{$log->city}}</td>
                                                     <td>{{$log->country}}</td>
-                                                    <td><div class="label label-table label-success">Click Ảo</div></td>
+                                                    <td>
+                                                        @if($log->status == -1)
+                                                            <div class="label label-table label-primary">Cho phép</div>
+                                                        @elseif($log->status == 0)
+                                                            <div class="label label-table label-success">Bình thường</div>
+                                                        @elseif($log->status == 1)
+                                                            <div class="label label-table label-warning">Chờ chặn</div>
+                                                        @elseif($log->status == 2)
+                                                            <div class="label label-table label-danger">Đã chặn</div>
+                                                        @endif
+                                                    </td>
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -168,43 +148,107 @@
 
 @section('scripts')
 <script>
+    function submit_form() {
+        var fromdate = $("input[name=daterangepicker_start]").val();
+        var todate = $("input[name=daterangepicker_end]").val();
+        if(fromdate != "") {
+            $("#fromdate").val(fromdate);
+        }
+        if(todate != "") {
+            $("#today").val(todate);
+        }
+        $("#form_display_ip").submit();
+    }
+
+    function ajax_header_report(){
+        var request_url = "/click/ajax-click-ao-header";
+        $.ajax({url: request_url , success: function(result){
+            $("#ajax-ip-click-ao").html(result);
+            setTimeout(ajax_header_report, 10000);
+        }});
+    }
     $(function () {
+        ajax_header_report();
+
+
         $("#select_num_row").change(function(){
             $("#num_page").val("1");
-            $("#form_display_ip").submit();
+            submit_form();
         });
         $("#btn_search").click(function(){
             $("#num_page").val("1");
-            $("#form_display_ip").submit();
+            submit_form();
+        });
+        $("#sort_created").click(function(){
+            if($("#sort_field").val() != "created") {
+                $("#sort_field").val('created');
+                $("#sort_direction").val('asc');
+            } else {
+                if($("#sort_direction").val() == 'asc') {
+                    $("#sort_direction").val('desc');
+                } else {
+                    $("#sort_direction").val('asc');
+                }
+            }
+            submit_form();
         });
         $("#sort_click").click(function(){
-            var sfield = $("#sort_field").val();
-            if(sfield == '' || sfield == 'view') {
+            if($("#sort_field").val() != "click") {
                 $("#sort_field").val('click');
                 $("#sort_direction").val('asc');
-            } else if(sfield == 'click') {
+            } else {
                 if($("#sort_direction").val() == 'asc') {
                     $("#sort_direction").val('desc');
                 } else {
                     $("#sort_direction").val('asc');
                 }
             }
-            $("#form_display_ip").submit();
+            submit_form();
         });
         $("#sort_view").click(function(){
-            var sfield = $("#sort_field").val();
-            if(sfield == '' || sfield == 'click') {
-                $("#sort_field").val('view');
+            if($("#sort_field").val() != "viewpage") {
+                $("#sort_field").val('viewpage');
                 $("#sort_direction").val('asc');
-            } else if(sfield == 'view') {
+            } else {
                 if($("#sort_direction").val() == 'asc') {
                     $("#sort_direction").val('desc');
                 } else {
                     $("#sort_direction").val('asc');
                 }
             }
-            $("#form_display_ip").submit();
+            submit_form();
         });
+
+        $(".daterangepicker .applyBtn").click(function(){
+            $("#num_page").val("1");
+            submit_form();
+        });
+
+        $("#div_block_ip #block_ip").click(function(){
+            var log_id = $(this).attr("data-id");
+            var log_ip = $(this).attr("data-value");
+            $(this).html('Đang chặn ...');
+            var request_url = "/click/ajax-block-ip/" + log_id + "/" + log_ip;
+            $.ajax({url: request_url , success: function(result){
+                //alert(result);
+                location.reload();
+            }});
+        });
+
+        $("#div_block_ip #unblock_ip").click(function(){
+            var log_id = $(this).attr("data-id");
+            var log_ip = $(this).attr("data-value");
+            $(this).html('Đang mở ...');
+            var request_url = "/click/ajax-unblock-ip/" + log_id + "/" + log_ip;
+            $.ajax({url: request_url , success: function(result){
+                //alert(result);
+                location.reload();
+            }});
+        });
+
+
+
+
     });
 </script>
 @endsection

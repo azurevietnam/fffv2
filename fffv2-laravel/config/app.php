@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Ho_Chi_Minh',
 
     /*
     |--------------------------------------------------------------------------
@@ -169,7 +169,6 @@ return [
     */
 
     'providers' => [
-
         /*
          * Laravel Framework Service Providers...
          */
@@ -263,6 +262,7 @@ return [
         'HTML' => Collective\Html\HtmlFacade::class,
         'Lipsum' => Magyarjeti\LaravelLipsum\LipsumFacade::class,
         'Mailjet'   => Sboo\Laravel5Mailjet\Facades\Mailjet::class,
+        'cURL' => anlutro\cURL\Laravel\cURL::class,
     ],
 
 ];

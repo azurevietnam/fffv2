@@ -29,10 +29,16 @@
                     <li class="active"> <a href="" class="waves-effect active"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe019;"></i> <span class="hide-menu"> Chặn click ảo theo IP<span class="fa arrow"></span> </span></a>
                         <ul class="nav nav-second-level collapse in">
                             <li> <a href="/click/ip-click-ao">Báo cáo IP truy cập</a> </li>
-                            <li> <a href="/click/ip-khu-vuc">Báo cáo theo khu vực</a> </li>
+                            <li ><a href="/click/cauhinh-chanclicktac" >Cấu hình chặn click ảo</a></li>
                         </ul>
                     </li>
+                    <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe026;"></i> <span class="hide-menu"> Thu thập khách hàng bằng Popup<span class="fa arrow"></span> </span></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="thuthapthongtin-baocao.php">Báo cáo khách hàng</a> </li>
+                            <li> <a href="thuthapthongtin-cauhinh.php">Cấu hình Popup </a> </li>
 
+                        </ul>
+                    </li>
                     <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="E"></i> <span class="hide-menu"> Thu Thập Thông Tin<span class="fa arrow"></span> </span></a>
                         <ul class="nav nav-second-level">
                             <li> <a href="thuthapthongtin-baocao.php">Báo cáo thu thập</a> </li>
@@ -62,7 +68,6 @@
                         <ul class="nav nav-second-level">
 							<li><a href="cauhinh-matheodoi.php">Mã theo dõi</a></li>
 							<li><a href="cauhinh-chat.php">Cấu hình chat box</a></li>
-                            <li ><a href="/config/cauhinh-chanclicktac" >Chặn click tặc</a></li>
                             <li><a href="panel-ui-block.html">Phản hồi realtime</a></li>
                            
                         </ul>
