@@ -4954,3 +4954,57 @@ __fmt: CSV
 
 Response Code: 200
 
+[Nov 27 2016 08:46:26.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA-rrgkQ1jvoZzojW1C5NC3u3FFGrcRbyp-FYRyckWEUOlj9Kib_Uya4ILwJ-5tel
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 630
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------53cba2a74f4be794
+
+Parameters:
+__rdquery: SELECT  AdNetworkType1, CampaignId,CampaignName, AverageCpc,AveragePosition, Clicks, InvalidClicks, InvalidClickRate, SearchImpressionShare, Conversions,Device, SearchBudgetLostImpressionShare, SearchRankLostImpressionShare, Conversions,  CostPerConversion, CrossDeviceConversions, ConversionRate, Cost  FROM CAMPAIGN_PERFORMANCE_REPORT  WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:46:28.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA-rrgkQ1jvoZzojW1C5NC3u3FFGrcRbyp-FYRyckWEUOlj9Kib_Uya4ILwJ-5tel
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 361
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------8f3f60e3b722b52b
+
+Parameters:
+__rdquery: SELECT AdNetworkType1, QualityScore FROM KEYWORDS_PERFORMANCE_REPORT WHERE AdNetworkType1 = 'SEARCH' DURING LAST_30_DAYS
+__fmt: CSV
+
+Response Code: 200
+
+[Nov 27 2016 08:46:33.000000 - INFO] POST /api/adwords/reportdownload/v201609 HTTP/1.1
+Host: adwords.google.com
+User-Agent: curl, gzip
+Accept: */*
+Accept-Encoding: gzip
+Authorization: Bearer ya29.CjGjA-rrgkQ1jvoZzojW1C5NC3u3FFGrcRbyp-FYRyckWEUOlj9Kib_Uya4ILwJ-5tel
+developerToken: 5segZP-FYvD2Xi_y7qhfQA
+clientCustomerId: 202-295-7084
+Content-Length: 334
+Expect: 100-continue
+Content-Type: multipart/form-data; boundary=------------------------f3217c1eed6e3791
+
+Parameters:
+__rdquery: SELECT  CampaignId, Criteria, IsNegative FROM CAMPAIGN_NEGATIVE_KEYWORDS_PERFORMANCE_REPORT  
+__fmt: CSV
+
+Response Code: 200
+

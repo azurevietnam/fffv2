@@ -60,7 +60,8 @@ function ListAllAdwordsCampaign(AdWordsUser $user) {
 	$ketqua['data']['lost_is_rank'] = $baocao[12];	
 	$ketqua['data']['active_campaign'] = $socampaign;	
 	$ketqua['data']['cost'] = number_format(round($baocao[16]/1000000),0);	
-		
+	
+	$ketqua['data']['ngansachclickao'] = number_format(round($ketqua['data']['invaid_click']*$baocao[3]/1000000,0));
 	
 	
 	return $ketqua;
@@ -145,30 +146,51 @@ function ExpandedTextAdsvsTextAds(AdWordsUser $user) {
 }
 
 
-  $user = new AdWordsUser();
-  $user->SetClientCustomerId($adword_account);
-  // Log every SOAP XML request and response.
-  $user->LogAll();
+ 
+  
+  include("./cache/phpfastcache.php");
+  $cache = phpFastCache();
+  
+  $cache_keyword_home_campaign_report = "cache_keyword_home_campaign_report".$adword_account.date("d-m-Y");
+  $content =  $cache->get($cache_keyword_home_campaign_report);
+  if (empty($content)){
+	  
+	  /* main report function */
+	  
+	  $user = new AdWordsUser();
+	  $user->SetClientCustomerId($adword_account);
+	  // Log every SOAP XML request and response.
+	  $user->LogAll();
 
 
-  // Run the example.
-  $kq1 = ListAllAdwordsCampaign($user);
+	  // Run the example.
+	  $kq1 = ListAllAdwordsCampaign($user);
+	  
+	  $kq2 = GetQualityScore($user);
+	  
+	  $kq['data'] = array_merge($kq1['data'],$kq2['data']);
+	  $tile_extension = CampaignExtensionPercent($user);
+	  $tile_expaned_ads = ExpandedTextAdsvsTextAds($user);
+	  
+	  $socampaign_have_negative = SoCampaignNegativeKeywordsPerformance($user);
+	  $tile_negative = round(100*($socampaign_have_negative/($socampaign_have_negative + $kq['data']['active_campaign'] )),2);
+	  $tile_diemchatluong = $kq['data']['QualityScore']*10;
+	  
+	  $tile_ngansach =  100 - $kq['data']['budget_lost_rate'];
+	  
+	  $diemso = round (($tile_extension + $tile_expaned_ads + $tile_negative + $tile_diemchatluong + $tile_ngansach)/5,0);
+	  $kq['data']['adword_score'] = $diemso;
+	  
+	  $kq['data']['tile_negative'] = $tile_negative;
   
-  $kq2 = GetQualityScore($user);
   
-  $kq['data'] = array_merge($kq1['data'],$kq2['data']);
-  $tile_extension = CampaignExtensionPercent($user);
-  $tile_expaned_ads = ExpandedTextAdsvsTextAds($user);
+	  /* main report function */
+	  
+	  $content = json_encode($kq);
+	  $cache->set($cache_keyword_home_campaign_report, $content, 60*60*30);
+  }else
   
-  $socampaign_have_negative = SoCampaignNegativeKeywordsPerformance($user);
-  $tile_negative = round(100*($socampaign_have_negative/($socampaign_have_negative + $kq['data']['active_campaign'] )),2);
-  $tile_diemchatluong = $kq['data']['QualityScore']*10;
   
-  $tile_ngansach =  100 - $kq['data']['budget_lost_rate'];
-  
-  $diemso = round (($tile_extension + $tile_expaned_ads + $tile_negative + $tile_diemchatluong + $tile_ngansach)/5,0);
-  $kq['data']['adword_score'] = $diemso;
-  
-  echo json_encode($kq);
+  echo $content;
 
 ?>

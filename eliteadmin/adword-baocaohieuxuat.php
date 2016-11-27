@@ -39,8 +39,10 @@
 							 
 						  </center>
                             <div class="text-center m-t-30">
-								<input data-plugin="knob" data-width="200" data-height="200" data-min="0" data-displayPrevious=true data-max="100" data-step="1" value="75" data-fgColor="#03a9f3"  data-readOnly=true  data-thickness=".1"  />
-								<h6 class="text-muted m-t-10">Một kết quả rất ấn tượng</h6> 
+								<div class="homepage-adword-point-chart chart easy-pie-chart-2 adwords-home-chart-value" id="adwords-home-chart-value" data-percent="0"> 
+										<span class="percent adwords-home-chart-value-span" id="adwords-home-chart-value-span">0</span>
+										<h6 class="text-muted">Điểm tối ưu adwords</h6>
+								</div>
 								 <p class="m-t-30">Hiệu xuất quảng cáo của bạn có thể được cải thiện đáng kể bằng việc thực hiện tối ưu hóa chiến dịch quảng cáo. <br>
 								 Hãy cùng FFF tìm hiểu cách giúp bạn tối ưu chiến dịch và tiết kiệm tối đa chi phí quảng cáo của bạn.</a></p>
 							</div>
@@ -52,7 +54,7 @@
 										
 										 <div class="text-center"> 
 											<h3 class="box-title text-white text-info">Bạn đã mất</h3>
-											<h1 class="">78.8%</h1> 
+											<h1 class="" id="thi-phan-quang-cao"><i class="fa fa-spin fa-spinner"></i></h1> 
 										
 											<span class="">THỊ PHẦN QUẢNG CÁO</span>
 											<p class="text-mute m-hr-30">Tỉ lệ chia sẻ quảng cáo thấp dẫn đến bạn mất một lượng lớn khách hàng tiềm năng vào tay đối thủ.</p>
@@ -65,8 +67,9 @@
 									<div class="white-box bg-info">
 										
 										<div class="text-center"> 
-											<h1 class="text-white"><sup><i class="ti-arrow-down text-white"></i></sup> $5,000</h1> 
+											
 											<h3 class="box-title text-white text-center">Bạn đã mất</h3>
+											<h1 class="text-white"><sup><i class="ti-arrow-down text-white"></i></sup> <span id="sotienbiclickao"><i class="fa fa-spin fa-spinner"></i></span></h1> 
 											<span class="text-white">VÌ HOẠT ĐỘNG CLICK ẢO</span>
 											<hr>
 											<p class="text-de">Giảm tỉ lệ click ảo sẽ giúp bạn <a href="">tiết kiệm chi phí</a> quảng cáo và tăng hiệu quả tiếp cận khách hàng</p>
@@ -79,7 +82,7 @@
 									<div class="white-box border-success">
 										 <div class="text-center"> 
 											<h3 class="box-title text-white text-info">ĐIỂM CHẤT LƯỢNG</h3>
-											<h1 class="">4.4</h1> 
+											<h1 class="" id="diem-chat-luong"><i class="fa fa-spin fa-spinner"></i></h1> 
 											
 											<span class="">KHÁ THẤP SO VỚI MẶT BẰNG CHUNG</span>
 											<p class="text-mute m-hr-30">Điểm chất lượng thấp dẫn đến bạn phải chi giá thầu cao hơn đối thủ. Đây là điểm trừ đáng kể với tài khoản của bạn</p>
@@ -96,53 +99,69 @@
 						<hr>
 						 <h2 class="font-500 m-t-30">Chi tiết hiệu xuất quảng cáo của bạn</h2>
 						 <div class="row m-t-30 full-border-1px-ccc">
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center p-t-10">
-									<input data-plugin="knob" data-width="200" data-height="200" data-min="0" data-displayPrevious=true data-max="100" data-step="1" value="75" data-fgColor="#03a9f3"  data-readOnly=true  data-thickness=".1"  />
-								</div>
-								<div class="col-lg-8 col-md-8">
-								<h3>Bạn đã chi <span class="text-info">23,000,000</span> trong 90 ngày</h3>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									
-									<ul class="list-stacked">
-										<li>
-											<span >Số chiến dịch hoạt động</span>
-											<span id="stats-active-campaigns-value" class="pull-right" data-bind="text: active_campaigns">1</span>
-										</li>
-										<li>
-											<span id="stats-active-ad-groups-title">Số nhóm quảng cáo hoạt động</span>
-											<span id="stats-active-ad-groups-value" class="pull-right" data-bind="text: active_adgroups">1</span>
-										</li>
-										<li>
-											<span id="stats-active-text-ads-title">Số quảng cáo hoạt động</span>
-											<span id="stats-active-text-ads-value" class="pull-right" data-bind="text: active_textads">1</span>
-										</li>
-										<li>
-											<span id="stats-active-keywords-title">Số từ khóa hoạt động</span>
-											<span id="stats-active-keywords-value" class="pull-right" data-bind="text: active_keywords">17</span>
-										</li>
-									</ul>
-								</div>
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-									<ul class="list-stacked">
-										<li>
-											<span >Số bấm quảng cáo</span>
-											<span class="pull-right" data-bind="text: active_campaigns">1</span>
-										</li>
-										<li>
-											<span id="stats-active-ad-groups-title">Số bấm chuột không hợp lệ</span>
-											<span id="stats-active-ad-groups-value" class="pull-right" data-bind="text: active_adgroups">1</span>
-										</li>
-										<li>
-											<span id="stats-active-text-ads-title">Điểm chất lượng</span>
-											<span id="stats-active-text-ads-value" class="pull-right" data-bind="text: active_textads">1</span>
-										</li>
-										<li>
-											<span id="stats-active-keywords-title">Tỉ lệ bấm chuột/số hiển thị (CTR)</span>
-											<span id="stats-active-keywords-value" class="pull-right" data-bind="text: active_keywords">17</span>
-										</li>
-									</ul>
-								</div>
-								</div>
+								
+									<h3 class="text-center">Bạn đã chi <span class="text-info" id="total-ads-bugdet"><i class="fa fa-spin fa-spinner"></i></span> trong vòng 30 ngày cho quảng cáo Adwords</h3>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										
+										<ul class="list-stacked">
+											<li>
+												<span id="">Chi phí quảng cáo trung bình mỗi click chuột</span>
+												<span id="chi-phi-quang-cao-trung-binh-cpc" class="pull-right" ><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											
+											<li>
+												<span>Ngân sách còn thiếu</span>
+												<span id="ngan-sach-con-thieu" class="pull-right" ><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											<li>
+												<span>Tỉ lệ quảng cáo không được hiển thị</span>
+												<span id="ti-le-quang-cao-hien-thi" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											
+											<li>
+												<span>Vị trí quảng cáo trung bình</span>
+												<span id="vi-tri-quang-cao-trung-binh" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											<li>
+												<span>Số nhấp chuột vào quảng cáo</span>
+												<span id="so-nhap-chuot" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											<li>
+												<span>Số nhấp chuột ảo</span>
+												<span id="so-nhap-chuot-ao" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+										</ul>
+									</div>
+									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+										<ul class="list-stacked">
+											<li>
+												<span id="">Chi phí quảng cáo trung bình mỗi hiển thị</span>
+												<span id="chi-phi-quang-cao-trung-binh-impression" class="pull-right" ><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											<li>
+												<span >Chi phí cho mỗi chuyển đổi</span>
+												<span id="chi-phi-cho-moi-chuyen-doi" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											<li>
+												<span>Tỉ lệ chuyển đổi</span>
+												<span id="ti-le-chuyen-doi" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											<li>
+												<span>Tỉ lệ chuyển đổi trên các thiết bị</span>
+												<span id="ti-le-chuyen-doi-tren-cac-thiet-bi" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											
+											<li>
+												<span >Điểm chất lượng</span>
+												<span id="diem-chat-luong" class="pull-right"><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											<li>
+												<span>Tỉ lệ quảng cáo không hiển thị do điểm thấp</span>
+												<span id="ti-le-quang-cao-khong-hien-thi-do-dcl" class="pull-right" ><i class="fa fa-spin fa-spinner"></i></span>
+											</li>
+											
+										</ul>
+									</div>
 						</div>	
 						
 						<div class="row m-t-60" style="padding-top:50px">
@@ -150,7 +169,7 @@
                                 <div>
                                     <div class="list-group mail-list m-t-20">
 										<ul class="list-stacked">
-											<li><i class="fa fa-money"></i> Chi phí thất thoát <span class="label label-rouded label-success pull-right">15%</span></li>
+											<li><i class="fa fa-money"></i> Ngân sách thiếu hụt <span class="label label-rouded label-success pull-right" id="ngan-sach-thieu-hut"></span></li>
 											<li><i class="fa fa-arrows-h"></i> Tối ưu định dạng quảng cáo mới <span class="label label-rouded label-danger pull-right">35%</span></li>
 											<li><i class="fa fa-flash"></i> Tối ưu từ khóa <span class="label label-rouded label-info pull-right">85%</span></li>
 											<li><i class="fa fa-arrows-alt"></i> Tối ưu thiết bị quảng cáo <span class="label label-rouded label-success pull-right">15%</span></li>
@@ -290,16 +309,53 @@
         </div>
         <!-- /#wrapper -->
         <!-- jQuery -->
-		<script src="../plugins/bower_components/knob/jquery.knob.js"></script>
-    <script>
-        $(function () {
-			
-			$('[data-plugin="knob"]').knob({
-			  'format' : function (value) {
-				 return value + '%';
-			  }
-			});
 
+	<script>
+        $(document).ready(function () {
+			/*
+     		$('#homepage-table-adwords').DataTable( {
+				"ajax": 'http://adwords.fff.com.vn/campaign-get-listcampaign-homepage.php?adword=322-238-9982',
+				"order": [[ 7, "DESC" ]],
+				"paging": false,
+				"searching": false,
+				"bInfo" : false,
+				"pageLength": 6,
+			});
+			*/
+			//ajax load homepage-campaign-performance-report.php
+			
+			$.getJSON("http://adwords.fff.com.vn/homepage-campaign-performance-report.php?adword=322-238-9982")
+			  .done(function( json ) {
+					
+					$("#chi-phi-quang-cao-trung-binh-cpc").html(json.data.cpc + " VND");
+					$("#chi-phi-quang-cao-trung-binh-impression").html(json.data.cost_per_impression + " VND");
+					$("#ngan-sach-con-thieu").html(json.data.budget_lost + " VND");
+					$("#ti-le-quang-cao-hien-thi").html(json.data.search_impr_share);
+					$("#vi-tri-quang-cao-trung-binh").html(json.data.avg_position);
+					$("#so-nhap-chuot").html(json.data.click);
+					$("#so-nhap-chuot-ao").html(json.data.invaid_click);
+					
+					$("#chi-phi-cho-moi-chuyen-doi").html(json.data.convertion_cost + " VND");
+					$("#ti-le-chuyen-doi").html(json.data.convertion_rate);
+					$("#ti-le-chuyen-doi-tren-cac-thiet-bi").html(json.data.convertion_device_rate);
+					$("#diem-chat-luong").html(json.data.QualityScore);
+					$("#ti-le-quang-cao-khong-hien-thi-do-dcl").html(json.data.lost_is_rank);
+					
+					$("#total-ads-bugdet").html(json.data.cost);
+					
+					var adwords_home_value = json.data.adword_score;
+					$(".homepage-adword-point-chart-span").val(adwords_home_value + "%");
+					$('.homepage-adword-point-chart').data('easyPieChart').update(adwords_home_value);
+					
+					//ngan sach click ao:
+					$("#sotienbiclickao").html(json.data.ngansachclickao + "<span class='text-small text-report-vnd'> VND</span>");
+					$("#thi-phan-quang-cao").html(json.data.budget_lost_rate);
+					$("#diem-chat-luong").html(json.data.QualityScore);
+					
+					$("#budget_lost").html(json.data.budget_lost_rate);
+					
+			  });
+			
         });
     </script>
 		
