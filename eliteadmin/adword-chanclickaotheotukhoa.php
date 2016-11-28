@@ -86,7 +86,7 @@
 		 <script>
         $(document).ready(function () {
      		$('#myTable').DataTable( {
-				"ajax": 'http://adwords.fff.com.vn/keywords-list-keywords.php?adword=322-238-9982',
+				"ajax": 'http://adwords.fff.com.vn/keywords-list-keywords.php?adword=<?=$_GET['adword']?>',
 				"order": [[ 4, "desc" ]]
 			});
         });

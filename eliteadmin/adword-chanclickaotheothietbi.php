@@ -79,7 +79,7 @@
 		<script>
         $(document).ready(function () {
      		$('#myTable').DataTable( {
-				"ajax": 'http://adwords.fff.com.vn/campaign-get-listcampaign.php?adword=322-238-9982',
+				"ajax": 'http://adwords.fff.com.vn/campaign-get-listcampaign.php?adword=<?=$_GET['adword']?>',
 				"order": [[ 7, "DESC" ]]
 			});
         });

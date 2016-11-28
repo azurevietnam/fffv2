@@ -363,12 +363,12 @@
 	width:20px;
 	
 }
-.adword-report-detail{
-	padding-left:30px;
-}
+
 .adword-report-detail .des{
-	border-top:1px #f4f4f4 solid;
 	padding-top:20px;
+}
+.report-adwords .tab-content{
+	margin-top:0px;
 }
 .adword-report-detail .des h4{
 	padding-bottom:20px;
@@ -399,16 +399,50 @@
 .p-t-60{
 	padding-top:60px!important;
 }
+.homepage-adword-point-chart-1,
 .homepage-adword-point-chart {
 	width:250px;
 	height:250px;
+
 }
+
 .homepage-adword-point-chart .percent{
 	line-height:250px;
 	font-size:60px;
 	color:#03a9f3;
+
+}
+.homepage-adword-point-chart-1 .percent{
+	line-height:250px;
+	font-size:60px;
+	color:#03a9f3;
+
 }
 .text-report-vnd{
 	font-size:12px;
 	color:#fffc00;
 }
+
+.vtabs .tabs-vertical{
+	width:350px!important;
+}
+.tabs-vertical li.active a, 
+.tabs-vertical li.active a:hover,
+.tabs-vertical li.active a:focus{
+	 background:none;
+	 color:#2b2b2b;
+	 border-right:none;
+ }
+ .vtabs .tabs-vertical{
+	 border-right:none;
+ }
+.tabs-vertical li.active .fa{
+	color:#03a9f3
+ }
+ .tabs-vertical li{
+	 padding:10px 0px;
+ }
+ .adword-report-detail h3{
+	 border-bottom: 1px #f4f4f4 solid;
+	 
+ }
