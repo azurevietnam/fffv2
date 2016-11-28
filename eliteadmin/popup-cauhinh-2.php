@@ -31,58 +31,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         
-						 <div class="white-box">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="white-box color-blue box-cauhinh-popup">
-											<div class="pull-right"><a href="#" data-perform="panel-dismiss"><i class="ti-close"></i></a> </div>
-											<h3 class="box-title m-b-0 text-center" style="color:#ff0000">Quà tặng miễn phí</h3>
-											<p class="text-muted m-b-30 font-13  text-center"> Vui lòng để lại thông tin để nhận ngay phần quà trị giá 100.000 vnd</p>
-											<form class="form-horizontal">
-												<div class="form-group">
-													<label for="exampleInputuname" class="col-sm-3 control-label">Họ & Tên *</label>
-													<div class="col-sm-9">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="ti-user"></i></div>
-															<input type="text" class="form-control" id="exampleInputuname" placeholder="Họ và Tên"> </div>
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="exampleInputEmail1" class="col-sm-3 control-label">Số điện thoại *</label>
-													<div class="col-sm-9">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="fa fa-phone"></i></div>
-															<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Số điện thoại"> </div>
-													</div>
-												</div>
-												<div class="form-group">
-													<label for="exampleInputEmail1" class="col-sm-3 control-label">Số điện thoại *</label>
-													<div class="col-sm-9">
-														<div class="input-group">
-															<div class="input-group-addon"><i class="ti-email"></i></div>
-															<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> </div>
-													</div>
-												</div>
-												<p class="text-muted font-13 text-center" style="color:#03a9f3"> Nhân viên của chúng tôi sẽ gọi điện cho bạn ngay khi nhận được thông tin này</p>
-
-												<div class="form-group m-b-0">
-													<div class="text-center">
-														<button type="submit" class="btn btn-info waves-effect waves-light m-t-10">Click để được gọi lại!</button>
-													</div>
-												</div>
-											</form>
-										</div>
-									</div>
-									
-									
-									
-								</div>
-								
-                        </div> 
+						
 						
 						<div class="white-box">
-                            <h3 class="box-title m-b-0">Thông tin cần khách hàng cung cấp</h3>
-                            <p class="text-muted m-b-30 font-13"> Thông tin cần thiết để bắt đầu Chat </p>
+                            <h3 class="box-title m-b-0">THÔNG TIN POPUP</h3>
+                            <p class="text-muted m-b-30 font-13"> Các thông tin sẽ hiển thị khi show popup trước khách hàng </p>
                             <form class="form-horizontal">
 								<div class="form-group">
 									<label class="col-md-12">Nội dung & màu chữ dòng header. <span class="help"> Ví dụ: "QUÀ TẶNG MIỄN PHÍ"</span></label>
@@ -105,7 +58,7 @@
                                 <div class="form-group border-1px-ccc">
                                     <div class="col-sm-12">
                                         <div class="checkbox checkbox-info">
-                                            <input id="pop-checkbox-hoten" type="checkbox" checked>
+                                            <input id="pop-checkbox-hoten" name ="pop-checkbox-hoten" type="checkbox" checked>
                                             <label for="pop-checkbox-hoten">Họ & Tên khách hàng</label>
                                         </div>
                                     </div>
@@ -160,12 +113,130 @@
 								
 								<div class="form-group border-top-1px">
 								
-									<button onclick="preview_fff_pop();return false;" class="btn btn-info waves-effect waves-light m-t-10"><i class="fa fa-eye"></i> Kiểm Tra Thử</button>
-								
+									
+									<button onclick="preview_fff_pop();return false;" class="fcbtn btn btn-outline m-t-10  btn-info btn-1b"><i class="fa fa-eye"></i> Kiểm Tra Thử</button>
+									
 								</div>
                             </form>
                         </div>
 						
+						<div class="white-box">
+                            <h3 class="box-title m-b-0">THỰC HIỆN THU THẬP THÔNG TIN KHI</h3>
+                            <p class="text-muted m-b-30 font-13">
+								Tùy chọn vị trí và thời gian xuất hiện popup thu thập thông tin
+																
+							</p>
+							
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-4">Số trang khách hàng đã xem</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Không quan tâm</option>
+                                            <option>Sau khi xem 1 trang</option>
+                                            <option>Sau khi xem 2 trang</option>
+                                            <option>Sau khi xem 3 trang</option>
+                                            <option>Sau khi xem 4 trang</option>
+                                          
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+								<div class="form-group bd_change">
+									<label class="col-lg-4">Thời gian bắt đầu</label>
+									<div class="col-lg-4">
+										<select name="gio_bd" class="form-control">
+																			<option value="01">0h</option>
+																			<option value="01">1h</option>
+																			<option value="02">2h</option>
+																			<option value="03">3h</option>
+																			<option value="04">4h</option>
+																			<option value="05">5h</option>
+																			<option value="06">6h</option>
+																			<option value="07">7h</option>
+																			<option value="08">8h</option>
+																			<option value="09">9h</option>
+																			<option value="10">10h</option>
+																			<option value="11">11h</option>
+																			<option value="12">12h</option>
+																			<option value="13">13h</option>
+																			<option value="14">14h</option>
+																			<option value="15">15h</option>
+																			<option value="16">16h</option>
+																			<option value="17">17h</option>
+																			<option value="18">18h</option>
+																			<option value="19">19h</option>
+																			<option value="20">20h</option>
+																			<option value="21">21h</option>
+																			<option value="22">22h</option>
+																		
+										</select>
+									</div>
+									
+									<div class="col-lg-4">
+										<select name="phut_bd" class="form-control">
+																			<option selected="selected" value="00">0 Phút</option>
+																			<option value="10">10 Phút</option>
+																			<option value="20">20 Phút</option>
+																			<option value="30">30 Phút</option>
+																			<option value="40">40 Phút</option>
+																			<option value="50">50 Phút</option>
+																		   
+										</select>
+									</div>
+								</div>
+								<div class="form-group bd_change">
+									<label class="col-lg-4">Thời gian kết thúc</label>
+									<div class="col-lg-4">
+										<select name="gio_bd" class="form-control">
+																			<option value="01">0h</option>
+																			<option value="01">1h</option>
+																			<option value="02">2h</option>
+																			<option value="03">3h</option>
+																			<option value="04">4h</option>
+																			<option value="05">5h</option>
+																			<option value="06">6h</option>
+																			<option value="07">7h</option>
+																			<option value="08">8h</option>
+																			<option value="09">9h</option>
+																			<option value="10">10h</option>
+																			<option value="11">11h</option>
+																			<option value="12">12h</option>
+																			<option value="13">13h</option>
+																			<option value="14">14h</option>
+																			<option value="15">15h</option>
+																			<option value="16">16h</option>
+																			<option value="17">17h</option>
+																			<option value="18">18h</option>
+																			<option value="19">19h</option>
+																			<option value="20">20h</option>
+																			<option value="21">21h</option>
+																			<option value="22">22h</option>
+																		
+										</select>
+									</div>
+									
+									<div class="col-lg-4">
+										<select name="phut_bd" class="form-control">
+																			<option selected="selected" value="00">0 Phút</option>
+																			<option value="10">10 Phút</option>
+																			<option value="20">20 Phút</option>
+																			<option value="30">30 Phút</option>
+																			<option value="40">40 Phút</option>
+																			<option value="50">50 Phút</option>
+																		   
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+								 <label class="col-sm-12">Hoặc chỉ thu thập khi khách hàng xem các trang sau</label>
+									<div class="col-md-12">
+										<textarea class="form-control" rows="5" placeholder="Lưu mỗi URL trên 1 dòng."></textarea>
+									</div>
+								</div>
+                            </form>
+							<button type="submit" class="btn btn-info waves-effect waves-light m-r-10">Lưu Popup</button>
+                        </div>
 						
                     </div>
 					
