@@ -232,7 +232,7 @@
 			*/
 			//ajax load homepage-campaign-performance-report.php
 			
-			$.getJSON("http://adwords.fff.com.vn/homepage-campaign-performance-report.php?adword=322-238-9982")
+			$.getJSON("http://adwords.fff.com.vn/homepage-campaign-performance-report.php?adword=<?=$_GET['adword']?>")
 			  .done(function( json ) {
 					
 					$("#chi-phi-quang-cao-trung-binh-cpc").html(json.data.cpc + " VND");

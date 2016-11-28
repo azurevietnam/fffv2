@@ -1,5 +1,8 @@
 <?
  $left_menu = "small";//thu nho slidebar
+ if (empty($_GET['adword'])) $_GET['adword'] = "881-804-9978";
+ if (empty($_GET['domain'])) $_GET['domain'] = "mydeal.vn";
+ 
  ?>
 <!DOCTYPE html>   
 <html lang="en">

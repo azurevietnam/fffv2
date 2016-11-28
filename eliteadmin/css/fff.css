@@ -1,4 +1,14 @@
-
+body{
+	font-size:12px;
+	color:#111;
+}
+.text-muted{
+	color:#444;
+}
+.page-title{
+	font-size:14px;
+	font-weight:bold;
+}
 .chat-right-bar{
 	margin-right:300px!important;	
 }
@@ -281,7 +291,7 @@
 	width:100%!important;
 }
 .fix-800px{
-	width:1000px;
+	max-width:1000px;
 	margin:0 auto;
 }
 .report-adwords h2{
@@ -446,3 +456,8 @@
 	 border-bottom: 1px #f4f4f4 solid;
 	 
  }
+ 
+/* data table format */
+.dataTable td{
+	border-right:1px #f4f4f4 solid;
+}
