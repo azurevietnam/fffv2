@@ -23,13 +23,15 @@ if (!empty($adword_account) && !empty($block_ip)){
 			$ipblock = new IpBlock(trim($block_ip));
 			$criterion = new NegativeCampaignCriterion();
 			$criterion->campaignId = $campaign->id;
-			$cam[] = array($campaign->id,$campaign->name);
+			
 			$criterion->criterion = $ipblock;
 			$operation = new CampaignCriterionOperation();
 			$operation->operator = 'ADD';
 			$operation->operand = $criterion;
 			$op[] = $operation;
 			$results = $campaignCriterionService->mutate($op);
+			
+			$cam[] = $campaign->id;
 		  }
 		} 
 		$offset += AdWordsConstants::RECOMMENDED_PAGE_SIZE;

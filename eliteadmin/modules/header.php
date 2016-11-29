@@ -1,5 +1,8 @@
 <?
  $left_menu = "small";//thu nho slidebar
+ if (empty($_GET['adword'])) $_GET['adword'] = "881-804-9978";
+ if (empty($_GET['domain'])) $_GET['domain'] = "mydeal.vn";
+ 
  ?>
 <!DOCTYPE html>   
 <html lang="en">
@@ -10,7 +13,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
-    <title>FFF - This is title</title>
+    <title>FFF - Advertising Performance Platform</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->

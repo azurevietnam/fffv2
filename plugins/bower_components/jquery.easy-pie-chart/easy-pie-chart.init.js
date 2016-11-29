@@ -18,9 +18,11 @@
 		});
 		$('.easy-pie-chart-2').easyPieChart({
 			easing: 'easeOutBounce',
-			barColor : '#99d683',
-			lineWidth: 3,
+			barColor : '#03a9f3',
+			lineWidth: 5,
 			trackColor : false,
+			scaleColor: '#03a9f3',
+			size:250,
 			lineCap : 'butt',
 			onStep: function(from, to, percent) {
 				$(this.el).find('.percent').text(Math.round(percent));

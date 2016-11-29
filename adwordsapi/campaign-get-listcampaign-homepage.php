@@ -31,8 +31,7 @@ function ListAllAdwordsCampaign(AdWordsUser $user) {
 	if (count($args)-2 > 6) $limit = 8; else $limit = count($args)-2;
 	for ($i=2;$i<$limit;$i++){
 		$arg = $args[$i];
-		$tt = explode(",",$arg);
-		
+		$tt = str_getcsv($arg);
 		$device = $tt[1];
 		$CampaignStatus = $tt[10];
 		if ($device == "Computers"){

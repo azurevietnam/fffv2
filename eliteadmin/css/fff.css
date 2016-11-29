@@ -1,4 +1,14 @@
-
+body{
+	font-size:12px;
+	color:#111;
+}
+.text-muted{
+	color:#444;
+}
+.page-title{
+	font-size:14px;
+	font-weight:bold;
+}
 .chat-right-bar{
 	margin-right:300px!important;	
 }
@@ -228,7 +238,13 @@
     width: 100%;
     margin-bottom: -6px;
 }
-.asColorPicker-trigger{display:none;}
+
+.asColorPicker-trigger{
+	border-top:1px #e4e7ea solid;
+	border-right:1px #e4e7ea solid;
+	border-bottom:1px #e4e7ea solid;
+	border-left:1px #e4e7ea solid;
+}
 .change-color{
 	cursor:pointer;
 	border:1px #ccc solid;
@@ -247,6 +263,10 @@
 }
 .color-blue{
 	border:1px #03a9f3 solid;
+}
+.box-cauhinh-popup{
+	max-width:800px;
+	margin:0 auto;
 }
 .box-cauhinh-popup .panel-body{
 	padding:0px!important;
@@ -281,7 +301,7 @@
 	width:100%!important;
 }
 .fix-800px{
-	width:1000px;
+	max-width:1000px;
 	margin:0 auto;
 }
 .report-adwords h2{
@@ -363,12 +383,12 @@
 	width:20px;
 	
 }
-.adword-report-detail{
-	padding-left:30px;
-}
+
 .adword-report-detail .des{
-	border-top:1px #f4f4f4 solid;
 	padding-top:20px;
+}
+.report-adwords .tab-content{
+	margin-top:0px;
 }
 .adword-report-detail .des h4{
 	padding-bottom:20px;
@@ -398,4 +418,56 @@
 }
 .p-t-60{
 	padding-top:60px!important;
+}
+.homepage-adword-point-chart-1,
+.homepage-adword-point-chart {
+	width:250px;
+	height:250px;
+
+}
+
+.homepage-adword-point-chart .percent{
+	line-height:250px;
+	font-size:60px;
+	color:#03a9f3;
+
+}
+.homepage-adword-point-chart-1 .percent{
+	line-height:250px;
+	font-size:60px;
+	color:#03a9f3;
+
+}
+.text-report-vnd{
+	font-size:12px;
+	color:#fffc00;
+}
+
+.vtabs .tabs-vertical{
+	width:350px!important;
+}
+.tabs-vertical li.active a, 
+.tabs-vertical li.active a:hover,
+.tabs-vertical li.active a:focus{
+	 background:none;
+	 color:#2b2b2b;
+	 border-right:none;
+ }
+ .vtabs .tabs-vertical{
+	 border-right:none;
+ }
+.tabs-vertical li.active .fa{
+	color:#03a9f3
+ }
+ .tabs-vertical li{
+	 padding:10px 0px;
+ }
+ .adword-report-detail h3{
+	 border-bottom: 1px #f4f4f4 solid;
+	 
+ }
+ 
+/* data table format */
+.dataTable td{
+	border-right:1px #f4f4f4 solid;
 }

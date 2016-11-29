@@ -6,10 +6,12 @@
 			<li> 
 			<div class="input-group">
 				<div class="top-select-domain">
-					<button type="button" class="btn waves-effect waves-light btn-info">dantri.com.vn</button>
+					<button type="button" class="btn waves-effect waves-light btn-info"><? if (empty($_GET['domain'])) echo "fff.com.vn"; else echo $_GET['domain'];?></button>
 					<button type="button" class="btn waves-effect waves-light btn-inverse dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
 					<ul class="dropdown-menu">
-					  <li><a href="javascript:void(0)">dantri.com.vn</a></li>
+					  <li><a href="?adword=881-804-9978&domain=mydeal.vn">mydeal.vn</a></li>
+					  <li><a href="?adword=307-586-1771&domain=pro-pro.com.vn">pro-pro.com.vn</a></li>
+					  <li><a href="?adword=439-487-0415&domain=tradaybstar.com">tradaybstar.com</a></li>
 					  <li class="divider"></li>
 					  <li><a href="#" alt="default" data-toggle="modal" data-target="#myModal" class="model_img img-responsive">Thêm mới</a></li>
 					</ul>
