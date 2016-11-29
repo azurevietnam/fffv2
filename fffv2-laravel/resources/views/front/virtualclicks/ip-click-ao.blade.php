@@ -72,7 +72,7 @@
                                             <th>IP</th>
                                             <th>Action</th>
                                             <th><span class="sort-caption" id="sort_click">Số click</span></th>
-                                            <th><span class="sort-caption" id="sort_view">Xem trang</span></th>
+                                            <th><span class="sort-caption" id="sort_view">Số trang xem</span></th>
                                             <th>Chi phí</th>
 
                                             <th>Thiết bị</th>
@@ -97,9 +97,9 @@
                                                             <span id="unblock_ip" data-id="{{$log->id}}" data-value="{{$log->ip}}" class="btn btn-block btn-outline btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bỏ chặn IP này">Mở khóa</span>
                                                         @endif
                                                     </td>
-                                                    <td>{{$log->click}}</td>
-                                                    <td>{{$log->viewpage}}</td>
-                                                    <td>310.000 vnd</td>
+                                                    <td>{{number_format($log->click)}}/{{number_format($log->count_ip)}}</td>
+                                                    <td>{{number_format($log->viewpage)}}/{{number_format($log->count_viewpage)}}</td>
+                                                    <td>{{($log->click * $cpc) == 0 ? '' : (number_format($log->click * $cpc) . ' vnd')}}</td>
 
                                                     <td>{{$log->device == "Computer" ? "Computer" : $log->device_name}}</td>
                                                     <td>{{$log->browser}}</td>

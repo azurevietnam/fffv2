@@ -331,3 +331,6 @@
 	border: 1px solid #6164c1 !important;
 	background-color: #6164c1 !important;
 }
+.table>thead:first-child>tr:first-child>th {
+	vertical-align: middle;
+}

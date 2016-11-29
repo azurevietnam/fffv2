@@ -103,8 +103,8 @@ class VirtualClickController extends Controller
         $query->groupBy('ip');
 */
 
-        $str_query = 'select id,ip,device,device_name,browser,city,country,created,click,viewpage,is_virtual_click,status from `domain_virtual_click`
-                    where `domain_key` = "' . $domain->keycode .'" and `created` >= "' . $sfrom .'" and `created` < "' . $sto . '" ::IP_LIKE order by `created` desc';
+        $str_query = 'SELECT id,ip,device,device_name,browser,city,country,created,click,viewpage,is_virtual_click,status,page_url FROM `domain_virtual_click`
+                    WHERE `domain_key` = "' . $domain->keycode .'" AND `created` >= "' . $sfrom .'" AND `created` < "' . $sto . '" ::IP_LIKE ORDER BY `created` desc';
 
         if(!empty($search_ip)) {
             $str_query = str_replace("::IP_LIKE",  " and `ip` like \"%{$search_ip}%\"", $str_query);
@@ -113,7 +113,8 @@ class VirtualClickController extends Controller
         }
         //dd($str_query);
 
-        $query = DB::table(DB::raw("({$str_query}) as sub"));
+        //$query = DB::table(DB::raw("({$str_query}) as sub"));
+        $query = DB::table(DB::raw("({$str_query}) as sub"))->selectRaw("*, COUNT(id) AS count_ip, COUNT(DISTINCT page_url) as count_viewpage");
         $query->groupBy('ip');
 
         //$query->orderBy('created', 'desc');
@@ -127,6 +128,16 @@ class VirtualClickController extends Controller
         $domain_logs = $query->paginate($row);
         $domain_logs->appends(["row" => $row, "search_ip" => $search_ip, "sfield" => $sfield, "sdir" => $sdir, "from" => $from, "to" => $to])->links();
 
+        $cpc = 0;
+        try {
+            $response = cURL::get("http://adwords.fff.com.vn/homepage-campaign-performance-report.php?adword={$domain->adword_account}");
+            if($response->body) {
+                $cpc = json_decode($response->body)->data->cpc;
+            }
+        } catch (Exception $e) {
+
+        }
+
         return view('front.virtualclicks.ip-click-ao')
             ->with(compact('row'))
             ->with(compact('search_ip'))
@@ -137,6 +148,7 @@ class VirtualClickController extends Controller
             ->with(compact('to'))
             ->with(compact('date_picker'))
             ->with(compact('domain_logs'))
+            ->with(compact('cpc'))
             ;
     }
 
@@ -380,27 +392,46 @@ class VirtualClickController extends Controller
             ->where("device", "Phone");
         $result_phone = $query_phone->first();
 
-        $total_traffic = $result_computer->web + $result_tablet->web + $result_phone->web;
-        $total_click = $result_computer->click + $result_tablet->click + $result_phone->click;
-        $today_traffic = [
-            "pc" => round($result_computer->web/$total_traffic * 100, 2),
-            "tablet" => round($result_tablet->web/$total_traffic * 100, 2),
-            "phone" => round($result_phone->web/$total_traffic * 100, 2),
-        ];
-        $today_click = [
-            "pc" => round($result_computer->click/$total_click * 100, 2),
-            "tablet" => round($result_tablet->click/$total_click * 100, 2),
-            "phone" => round($result_phone->click/$total_click * 100, 2),
-        ];
+        $today_traffic = $result_computer->web + $result_tablet->web + $result_phone->web;
+        $today_click = $result_computer->click + $result_tablet->click + $result_phone->click;
+
+        if($today_traffic == 0) {
+            $today_traffic_percent = [
+                "pc" => 0,
+                "tablet" => 0,
+                "phone" => 0,
+            ];
+        } else {
+            $today_traffic_percent = [
+                "pc" => round($result_computer->web/$today_traffic * 100, 2),
+                "tablet" => round($result_tablet->web/$today_traffic * 100, 2),
+                "phone" => round($result_phone->web/$today_traffic * 100, 2),
+            ];
+        }
+
+        if($today_click == 0) {
+            $today_click_percent = [
+                "pc" => 0,
+                "tablet" => 0,
+                "phone" => 0,
+            ];
+        } else {
+            $today_click_percent = [
+                "pc" => round($result_computer->click/$today_click * 100, 2),
+                "tablet" => round($result_tablet->click/$today_click * 100, 2),
+                "phone" => round($result_phone->click/$today_click * 100, 2),
+            ];
+        }
+
         if($yes_traffic == 0) {
             $web_increase_val = 100;
         } else {
-            $web_increase_val = round($total_traffic/$yes_traffic * 100, 2);
+            $web_increase_val = round($today_traffic/$yes_traffic * 100, 2);
         }
         if($yes_click == 0) {
             $click_increase_val = 100;
         } else {
-            $click_increase_val = round($total_click/$yes_click * 100, 2);
+            $click_increase_val = round($today_click/$yes_click * 100, 2);
         }
 
         $web_increase = false;
@@ -414,13 +445,32 @@ class VirtualClickController extends Controller
             $click_increase_val -= 100;
         }
 
+        $cpc = 0;
+        try {
+            $response = cURL::get("http://adwords.fff.com.vn/homepage-campaign-performance-report.php?adword={$domain->adword_account}");
+            if($response->body) {
+                $cpc = json_decode($response->body)->data->cpc;
+            }
+        } catch (Exception $e) {
+
+        }
+        $save_click = $today_click * $cpc;
+        if($today_traffic == 0) {
+            $save_percent = 0;
+        } else {
+            $save_percent = round($today_click / $today_traffic * 100, 2);
+        }
+
+
         return view('front.virtualclicks.ajax-ip-click-ao')
-            ->with('traffic', $today_traffic)
-            ->with('click', $today_click)
+            ->with('traffic', $today_traffic_percent)
+            ->with('click', $today_click_percent)
             ->with('web_increase', $web_increase)
             ->with('web_increase_val', $web_increase_val)
             ->with('click_increase', $click_increase)
             ->with('click_increase_val', $click_increase_val)
+            ->with('save_click', $save_click)
+            ->with('save_percent', $save_percent)
             ;
 
         return json_encode($arr);
