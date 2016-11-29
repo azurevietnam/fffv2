@@ -39,6 +39,7 @@
             <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe026;"></i> <span class="hide-menu"> Thu thập khách hàng bằng Popup<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
 					<li> <a href="popup-cauhinh-1.php">Cấu hình Popup </a> </li>
+					<li> <a href="popup-quanly.php">Quản lý Popup </a> </li>
                     <li> <a href="thuthapthongtin-baocao.php">Báo cáo khách hàng</a> </li>
                     
 

@@ -130,7 +130,7 @@
                             <form class="form-horizontal">
                                 <div class="form-group">
                                     <label class="col-sm-4">Số trang khách hàng đã xem</label>
-                                    <div class="col-sm-8">
+                                    <div class="col-sm-4">
                                         <select class="form-control">
                                             <option>Không quan tâm</option>
                                             <option>Sau khi xem 1 trang</option>
@@ -143,95 +143,26 @@
                                     </div>
                                 </div>
 								<div class="form-group bd_change">
-									<label class="col-lg-4">Thời gian bắt đầu</label>
+									<label class="col-lg-4">Popup sẽ xuất hiện sau</label>
 									<div class="col-lg-4">
 										<select name="gio_bd" class="form-control">
-																			<option value="01">0h</option>
-																			<option value="01">1h</option>
-																			<option value="02">2h</option>
-																			<option value="03">3h</option>
-																			<option value="04">4h</option>
-																			<option value="05">5h</option>
-																			<option value="06">6h</option>
-																			<option value="07">7h</option>
-																			<option value="08">8h</option>
-																			<option value="09">9h</option>
-																			<option value="10">10h</option>
-																			<option value="11">11h</option>
-																			<option value="12">12h</option>
-																			<option value="13">13h</option>
-																			<option value="14">14h</option>
-																			<option value="15">15h</option>
-																			<option value="16">16h</option>
-																			<option value="17">17h</option>
-																			<option value="18">18h</option>
-																			<option value="19">19h</option>
-																			<option value="20">20h</option>
-																			<option value="21">21h</option>
-																			<option value="22">22h</option>
-																		
+																			<option value="01">1 giây</option>
+																			<option value="01">5 giây</option>
+																			<option value="02">10 giây</option>
+																			<option value="02">15 giây</option>
+																			<option value="03">20 giây</option>
+																			<option value="04">25 giây</option>
+																			<option value="04">30 giây</option>
+				
 										</select>
 									</div>
 									
-									<div class="col-lg-4">
-										<select name="phut_bd" class="form-control">
-																			<option selected="selected" value="00">0 Phút</option>
-																			<option value="10">10 Phút</option>
-																			<option value="20">20 Phút</option>
-																			<option value="30">30 Phút</option>
-																			<option value="40">40 Phút</option>
-																			<option value="50">50 Phút</option>
-																		   
-										</select>
-									</div>
 								</div>
-								<div class="form-group bd_change">
-									<label class="col-lg-4">Thời gian kết thúc</label>
-									<div class="col-lg-4">
-										<select name="gio_bd" class="form-control">
-																			<option value="01">0h</option>
-																			<option value="01">1h</option>
-																			<option value="02">2h</option>
-																			<option value="03">3h</option>
-																			<option value="04">4h</option>
-																			<option value="05">5h</option>
-																			<option value="06">6h</option>
-																			<option value="07">7h</option>
-																			<option value="08">8h</option>
-																			<option value="09">9h</option>
-																			<option value="10">10h</option>
-																			<option value="11">11h</option>
-																			<option value="12">12h</option>
-																			<option value="13">13h</option>
-																			<option value="14">14h</option>
-																			<option value="15">15h</option>
-																			<option value="16">16h</option>
-																			<option value="17">17h</option>
-																			<option value="18">18h</option>
-																			<option value="19">19h</option>
-																			<option value="20">20h</option>
-																			<option value="21">21h</option>
-																			<option value="22">22h</option>
-																		
-										</select>
-									</div>
-									
-									<div class="col-lg-4">
-										<select name="phut_bd" class="form-control">
-																			<option selected="selected" value="00">0 Phút</option>
-																			<option value="10">10 Phút</option>
-																			<option value="20">20 Phút</option>
-																			<option value="30">30 Phút</option>
-																			<option value="40">40 Phút</option>
-																			<option value="50">50 Phút</option>
-																		   
-										</select>
-									</div>
-								</div>
+								
 								<div class="form-group">
-								 <label class="col-sm-12">Hoặc chỉ thu thập khi khách hàng xem các trang sau</label>
+								 <label class="col-sm-12">Chỉ xuất hiện trong các trang sau</label>
 									<div class="col-md-12">
-										<textarea class="form-control" rows="5" placeholder="Lưu mỗi URL trên 1 dòng."></textarea>
+										<textarea class="form-control" rows="5" placeholder="Lưu mỗi URL trên 1 dòng. Nếu bạn để trống tất cả các trang sẽ đều xuất hiện popup"></textarea>
 									</div>
 								</div>
                             </form>
