@@ -471,3 +471,6 @@ body{
 .dataTable td{
 	border-right:1px #f4f4f4 solid;
 }
+.table-responsive{
+	padding-bottom:35px;
+}

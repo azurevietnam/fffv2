@@ -19,7 +19,7 @@
             <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">DANH SÁCH POPUP</h4> </div>
+                        <h4 class="page-title">CẤU HÌNH THU THẬP ĐIỆN THOẠI</h4> </div>
 						<div class="col-lg-6 col-sm-4 col-md-4 col-xs-12"> </div>
 						<div class="col-lg-3 col-sm-4 col-md-4 col-xs-12"> 
 							<div class="input-group"><input class="form-control input-daterange-datepicker" placeholder="01/01/2015 - 01/31/2015" type="text"> <span class="input-group-addon"><i class="icon-calender"></i></span> </div>
@@ -38,9 +38,9 @@
                                         <tr>
                                             <th>Stt</th>
                                             <th>Trạng Thái</th>
+                                            
                                             <th>Tiêu đề</th>
                                             <th>Ngày tạo</th>
-                                            
                                             <th>Số khách hàng</th>
                                            
                                         </tr>
@@ -48,7 +48,7 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-											<td><div class="btn-group m-r-10">
+                                            <td><div class="btn-group m-r-10">
 												<button aria-expanded="false" data-toggle="dropdown" class="btn btn-default btn-outline dropdown-toggle waves-effect waves-light" type="button"> <i class="fa fa-pause"></i> <span class="caret"></span></button>
 												<ul role="menu" class="dropdown-menu">
 													<li><a href="#"> <i class="fa fa-pause"></i>  Dừng</a></li>
@@ -57,15 +57,16 @@
 												</ul>
 											</div>
 											</td>
-											 <td><a href="edit.php">TIÊU ĐỀ CỦA POPUP</a></td>
+                                           
+											 <td><a href="edit.php">Cấu hình ngày 20/11/2016</a></td>
 											 <td>10h20 20/10/2016</td>
-                                            <td>30,000</td>
+                                            <td>30</td>
 											
                                             
                                         </tr>
                                          <tr>
                                             <td>1</td>
-											<td><div class="btn-group m-r-10">
+                                            <td><div class="btn-group m-r-10">
 												<button aria-expanded="false" data-toggle="dropdown" class="btn btn-default btn-outline dropdown-toggle waves-effect waves-light" type="button"> <i class="fa fa-circle text-info"></i> <span class="caret"></span></button>
 												<ul role="menu" class="dropdown-menu">
 													<li><a href="#"> <i class="fa fa-pause"></i>  Dừng</a></li>
@@ -73,10 +74,11 @@
 													
 												</ul>
 											</div>
-											</td>
-											 <td><a href="edit.php">TIÊU ĐỀ CỦA POPUP</a></td>
+                                           
+                                           
+											 <td><a href="edit.php">Cấu hình ngày 20/11/2016</a></td>
 											 <td>10h20 20/10/2016</td>
-                                            <td>30,000</td>
+                                            <td>30</td>
 											
                                             
                                         </tr>

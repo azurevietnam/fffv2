@@ -38,6 +38,7 @@
 							</p>
 							
                             <form class="form-horizontal">
+								 
                                 <div class="form-group">
                                     <label class="col-sm-3">Số trang khách hàng đã xem</label>
                                     <div class="col-sm-9">
