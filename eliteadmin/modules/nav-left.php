@@ -21,7 +21,7 @@
             <li class="nav-small-cap m-t-10">--- CHỨC NĂNG</li>
             <li> <a href="index.php" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i> <span class="hide-menu"> Dashboard </span></a></li>
 			
-			<li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe028;"></i> <span class="hide-menu"> Báo Cáo Adwords <span class="fa arrow"></span> </span></a>
+			<li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-google" style="font-size:20px"></i> <span class="hide-menu"> Báo Cáo Adwords <span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
                     <li> <a href="adword-baocaohieuxuat.php?adword=<?=$_GET['adword']?>&domain=<?=$_GET['domain']?>">Hiệu suất quảng cáo</a> </li>
                     <li> <a href="adword-nhucautimkiem.php?adword=<?=$_GET['adword']?>&domain=<?=$_GET['domain']?>">Nhu cầu tìm kiếm</a> </li>
@@ -36,7 +36,7 @@
                     <li> <a href="cauhinh-chanclicktac.php">Cấu hình chặn click ảo</a> </li>
                 </ul>
             </li>
-            <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe026;"></i> <span class="hide-menu"> Thu thập khách hàng bằng Popup<span class="fa arrow"></span> </span></a>
+            <li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon="&#xe026;"></i> <span class="hide-menu"> Popup khách hàng<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
 					<li> <a href="popup-cauhinh-1.php">Cấu hình </a> </li>
 					<li> <a href="popup-quanly.php">Quản lý </a> </li>
@@ -58,14 +58,15 @@
                 <ul class="nav nav-second-level">
                     <li> <a href="khachhang-chuadinhdanh.php">Chưa định danh</a> </li>
                     <li> <a href="khachhang-dinhdanh.php">Định danh</a> </li>
-                    <li> <a href="property-3-column.html">Quan tâm sản phẩm</a> </li>
-                    <li> <a href="property-4-column.html">Mua hàng</a> </li>
+                    <li> <a href="khachhang-dinhdanh.php">Đã liên hệ</a> </li>
+                    <li> <a href="khachhang-dinhdanh.php">Đã mua hàng</a> </li>
                 </ul>
             </li>
 			<li> <a href="javascript:void(0);" class="waves-effect"><i class="linea-icon linea-basic fa-fw" data-icon=")"></i> <span class="hide-menu"> Email Marketing<span class="fa arrow"></span> </span></a>
                 <ul class="nav nav-second-level">
+					<li> <a href="thuthapthongtin-cauhinh.php">Cấu hình email tự động </a> </li>
                     <li> <a href="thuthapthongtin-baocao.php">Gửi Email cho khách hàng</a> </li>
-                    <li> <a href="thuthapthongtin-cauhinh.php">Cấu hình email tự động </a> </li>
+                    
 
                 </ul>
             </li>
