@@ -31,7 +31,8 @@ function ListAllAdwordsCampaign(AdWordsUser $user) {
 
 	for ($i=2;$i<count($args)-2;$i++){
 		$arg = $args[$i];
-		$tt = explode(",",$arg);
+		
+		$tt = str_getcsv ($arg);
 		
 		$device = $tt[1];
 		$CampaignStatus = $tt[10];

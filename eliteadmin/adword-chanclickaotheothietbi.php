@@ -82,6 +82,33 @@
 				"ajax": 'http://adwords.fff.com.vn/campaign-get-listcampaign.php?adword=<?=$_GET['adword']?>',
 				"order": [[ 7, "DESC" ]]
 			});
+			
+			$('#myTable').on('click', '.btn-adword-campain-action', function() {
+				  var device = $(this).data( "device");
+				  var camp_id = $(this).data( "campaign");
+				  var adword = $(this).data( "adword");
+				  var status = $(this).data( "status");
+				  
+				  if (status == "ENABLE"){
+						$(this).removeClass("btn-info");
+						$(this).addClass("btn-danger");
+				  }else{
+					  $(this).removeClass("btn-danger");
+					  $(this).addClass("btn-info");
+				  }
+						
+				  $.ajax({
+						method: "POST",
+						dataType: "json",
+						url: "http://adwords.fff.com.vn/campaign-change-bid.php",
+						data: { device: device, camp_id : camp_id, adword: adword, status:status }
+					}).done(function( data ) {
+						
+					});
+				 
+			});
+	
+			
         });
     </script>
   <? include("modules/footer.php");?>

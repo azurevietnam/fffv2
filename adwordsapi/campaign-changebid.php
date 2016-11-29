@@ -1,9 +1,9 @@
 <?
 require_once dirname(__FILE__) . '/init.php';
 
-$adword_account = "248-667-0218";
-$campaign_id = "662199972";
-$device = "PC";
+$adword_account	 = "248-667-0218";
+$campaign_id 	 = "662199972";
+$device 		 = "PC";
 $bidModifier = 0;
 if (!empty($adword_account) && !empty($campaign_id)){	
 		$user = new AdWordsUser();
