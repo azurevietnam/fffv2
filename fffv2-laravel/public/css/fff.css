@@ -1,4 +1,14 @@
-
+body{
+	font-size:12px;
+	color:#111;
+}
+.text-muted{
+	color:#444;
+}
+.page-title{
+	font-size:14px;
+	font-weight:bold;
+}
 .chat-right-bar{
 	margin-right:300px!important;
 }
@@ -228,7 +238,13 @@
 	width: 100%;
 	margin-bottom: -6px;
 }
-.asColorPicker-trigger{display:none;}
+
+.asColorPicker-trigger{
+	border-top:1px #e4e7ea solid;
+	border-right:1px #e4e7ea solid;
+	border-bottom:1px #e4e7ea solid;
+	border-left:1px #e4e7ea solid;
+}
 .change-color{
 	cursor:pointer;
 	border:1px #ccc solid;
@@ -247,6 +263,10 @@
 }
 .color-blue{
 	border:1px #03a9f3 solid;
+}
+.box-cauhinh-popup{
+	max-width:800px;
+	margin:0 auto;
 }
 .box-cauhinh-popup .panel-body{
 	padding:0px!important;
@@ -279,6 +299,177 @@
 #homepage-table-adwords{
 	margin-top:0px!important;
 	width:100%!important;
+}
+.fix-800px{
+	max-width:1000px;
+	margin:0 auto;
+}
+.report-adwords h2{
+	text-align:center;
+	font-size:30px!important;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300!important;
+}
+.report-adwords .text-h3{
+	font-size:16px;
+	text-align:center;
+	padding:20px 0px;
+}
+.border-danger{
+	border:2px #fb9678 solid;
+}
+.border-inverse{
+	border:2px #4c5667 solid;
+}
+.border-success {
+	border:2px #00bfc7 solid;
+}
+.text-de{
+	color:#fff;
+}
+.text-de a{
+	color:#e4ff00;
+}
+.report-adwords hr{
+	background:#fff;
+}
+.m-hr-30{
+	border-top:1px #ccc solid;
+	margin-top:20px;
+	padding-top:20px;
+}
+.adwords-report-thacmac{
+	padding:20px 0px;
+}
+.full-border-1px-ccc{
+	border:1px #ccc dashed;
+	padding:20px;
+	border-radius: 5px;
+}
+
+.list-stacked {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.list-stacked > li:first-child {
+	border-top: 1px solid #fff;
+}
+.list-stacked > li {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.adword-report-detail a.mytooltip i{
+	font-weight: 500;
+	color: #03a9f3!important;
+}
+
+.adword-report-detail .tooltip-text3 {
+	border-bottom: 10px solid #03a9f3;
+
+}
+.adword-report-detail .tooltip-content5::after {
+
+	border-top-color: #fb9678;
+
+}
+
+.adword-report-left .list-stacked > li{
+	padding:5px 0px;
+}
+.adword-report-left .list-stacked i{
+	width:20px;
+
+}
+
+.adword-report-detail .des{
+	padding-top:20px;
+}
+.report-adwords .tab-content{
+	margin-top:0px;
+}
+.adword-report-detail .des h4{
+	padding-bottom:20px;
+}
+.adword-report-detail .des h5{
+	padding-bottom:10px;
+	font-size:14px;
+	border-bottom:1px #f4f4f4 solid;
+	color:#03a9f3;
+}
+.border-top-1px{
+	border-top:1px #eee solid;
+	margin-top:20px;
+}
+.ul-adwords-des{
+	list-style:none;
+	margin-left: 0;
+	padding-left: 0;
+}
+.ul-adwords-des > li {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color:#666;
+}
+.padding-20px{
+	padding:20px!important;
+}
+.p-t-60{
+	padding-top:60px!important;
+}
+.homepage-adword-point-chart-1,
+.homepage-adword-point-chart {
+	width:250px;
+	height:250px;
+
+}
+
+.homepage-adword-point-chart .percent{
+	line-height:250px;
+	font-size:60px;
+	color:#03a9f3;
+
+}
+.homepage-adword-point-chart-1 .percent{
+	line-height:250px;
+	font-size:60px;
+	color:#03a9f3;
+
+}
+.text-report-vnd{
+	font-size:12px;
+	color:#fffc00;
+}
+
+.vtabs .tabs-vertical{
+	width:350px!important;
+}
+.tabs-vertical li.active a,
+.tabs-vertical li.active a:hover,
+.tabs-vertical li.active a:focus{
+	background:none;
+	color:#2b2b2b;
+	border-right:none;
+}
+.vtabs .tabs-vertical{
+	border-right:none;
+}
+.tabs-vertical li.active .fa{
+	color:#03a9f3
+}
+.tabs-vertical li{
+	padding:10px 0px;
+}
+.adword-report-detail h3{
+	border-bottom: 1px #f4f4f4 solid;
+
+}
+
+/* data table format */
+.dataTable td{
+	border-right:1px #f4f4f4 solid;
 }
 /********************Phat Add***************/
 .top-select-domain{

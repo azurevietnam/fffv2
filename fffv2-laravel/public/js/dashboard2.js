@@ -74,30 +74,7 @@ $(':checkbox:checked').prop('checked',false);
 //sparkline charts
 
 $(document).ready(function() {
-   var sparklineLogin = function() { 
-       
-  
-        $("#sparkline8").sparkline([2,4,4,6,8,5,6,4,8,6,6,2 ], {
-            type: 'line',
-            width: '100%',
-            height: '50',
-            lineColor: '#fb9678',
-            fillColor: '#fb9678',
-            maxSpotColor: '#fb9678',
-            highlightLineColor: 'rgba(0, 0, 0, 0.2)',
-            highlightSpotColor: '#fb9678'
-        });
-        $("#sparkline9").sparkline([0,2,8,6,8,5,6,4,8,6,6,2 ], {
-            type: 'line',
-            width: '100%',
-            height: '50',
-            lineColor: '#01c0c8',
-            fillColor: '#01c0c8',
-            minSpotColor:'#01c0c8',
-            maxSpotColor: '#01c0c8',
-            highlightLineColor: 'rgba(0, 0, 0, 0.2)',
-            highlightSpotColor: '#01c0c8'
-        });
+   var sparklineLogin = function() {
         $("#sparkline10").sparkline([2,4,4,6,8,5,6,4,8,6,6,2], {
             type: 'line',
             width: '100%',

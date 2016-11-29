@@ -19,6 +19,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/click/ajax-click-ao-header', 'VirtualClickController@ajax_click_ao_header');
     Route::post('/click/ip-click-ao', 'VirtualClickController@ip_click_ao');
 
+    Route::get('/customer/phone/thuthapthongtin-baocao', 'CustomerContactController@thuthapthongtin_baocao');
+
     Route::get('/click/cauhinh-chanclicktac/{domain_id?}', 'VirtualClickController@get_cauhinh_chanclicktac');
     Route::post('/click/cauhinh-chanclicktac', 'VirtualClickController@post_cauhinh_chanclicktac');
 

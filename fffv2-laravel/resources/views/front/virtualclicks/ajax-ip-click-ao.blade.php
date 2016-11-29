@@ -52,3 +52,40 @@
         </div>
     </div>
 </div>
+
+<script>
+    var sparklineLogin = function() {
+        //alert("{{$real_data_traffic}}");
+        var real_data_traffic = $.parseJSON("{{$real_data_traffic}}");
+        var real_data_click = $.parseJSON("{{$real_data_click}}");
+
+        $("#sparkline8").sparkline(real_data_traffic, {
+            type: 'line',
+            width: '100%',
+            height: '50',
+            lineColor: '#fb9678',
+            fillColor: '#fb9678',
+            maxSpotColor: '#fb9678',
+            highlightLineColor: 'rgba(0, 0, 0, 0.2)',
+            highlightSpotColor: '#fb9678'
+        });
+        $("#sparkline9").sparkline(real_data_click, {
+            type: 'line',
+            width: '100%',
+            height: '50',
+            lineColor: '#01c0c8',
+            fillColor: '#01c0c8',
+            minSpotColor:'#01c0c8',
+            maxSpotColor: '#01c0c8',
+            highlightLineColor: 'rgba(0, 0, 0, 0.2)',
+            highlightSpotColor: '#01c0c8'
+        });
+    }
+    var sparkResize;
+
+    $(window).resize(function(e) {
+        clearTimeout(sparkResize);
+        sparkResize = setTimeout(sparklineLogin, 500);
+    });
+    sparklineLogin();
+</script>

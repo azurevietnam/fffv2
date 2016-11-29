@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="table-responsive dataTables_wrapper ">
                                     <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                        <span class="paging_total">Tìm thấy {{ number_format($domain_logs->total())}} kết quả</span> {{$domain_logs->lastPage() > 0 ? $domain_logs->render() : ""}}
+                                        <span class="paging_total">Tìm thấy {{ number_format($data_result->total())}} kết quả</span> {{$data_result->lastPage() > 0 ? $data_result->render() : ""}}
                                     </div>
                                     <table class="table table-striped color-table inverse-table ">
                                         <thead>
@@ -83,36 +83,36 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($domain_logs as $log)
+                                            @foreach ($data_result as $element)
                                                 <tr>
                                                     <td>{{($page - 1) * $row + $loop->index + 1}}</td>
-                                                    <td>{{ date('H:i:s d/m/Y', strtotime($log->created))}}</td>
+                                                    <td>{{ date('H:i:s d/m/Y', strtotime($element->created))}}</td>
                                                     <td>
-                                                        <span class="btn btn-block btn-outline btn-info  btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xem lịch sử IP">{{$log->ip}}</span>
+                                                        <span class="btn btn-block btn-outline btn-info  btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Xem lịch sử IP">{{$element->ip}}</span>
                                                     </td>
                                                     <td id="div_block_ip">
-                                                        @if($log->status == -1 || $log->status == 0 || $log->status == 1)
-                                                            <span id="block_ip" data-id="{{$log->id}}" data-value="{{$log->ip}}" class="btn btn-block btn-outline btn-success btn-sm " data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn ngay IP này">Chặn Ngay</span>
-                                                        @elseif($log->status == 2)
-                                                            <span id="unblock_ip" data-id="{{$log->id}}" data-value="{{$log->ip}}" class="btn btn-block btn-outline btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bỏ chặn IP này">Mở khóa</span>
+                                                        @if($element->status == -1 || $element->status == 0 || $element->status == 1)
+                                                            <span id="block_ip" data-id="{{$element->id}}" data-value="{{$element->ip}}" class="btn btn-block btn-outline btn-success btn-sm " data-toggle="tooltip" data-placement="top" title="" data-original-title="Chặn ngay IP này">Chặn Ngay</span>
+                                                        @elseif($element->status == 2)
+                                                            <span id="unblock_ip" data-id="{{$element->id}}" data-value="{{$element->ip}}" class="btn btn-block btn-outline btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="Bỏ chặn IP này">Mở khóa</span>
                                                         @endif
                                                     </td>
-                                                    <td>{{number_format($log->click)}}/{{number_format($log->count_ip)}}</td>
-                                                    <td>{{number_format($log->viewpage)}}/{{number_format($log->count_viewpage)}}</td>
-                                                    <td>{{($log->click * $cpc) == 0 ? '' : (number_format($log->click * $cpc) . ' vnd')}}</td>
+                                                    <td>{{number_format($element->click)}}/{{number_format($element->count_ip)}}</td>
+                                                    <td>{{number_format($element->viewpage)}}/{{number_format($element->count_viewpage)}}</td>
+                                                    <td>{{($element->click * $cpc) == 0 ? '' : (number_format($element->click * $cpc) . ' vnd')}}</td>
 
-                                                    <td>{{$log->device == "Computer" ? "Computer" : $log->device_name}}</td>
-                                                    <td>{{$log->browser}}</td>
-                                                    <td>{{$log->city}}</td>
-                                                    <td>{{$log->country}}</td>
+                                                    <td>{{$element->device == "Computer" ? "Computer" : $element->device_name}}</td>
+                                                    <td>{{$element->browser}}</td>
+                                                    <td>{{$element->city}}</td>
+                                                    <td>{{$element->country}}</td>
                                                     <td>
-                                                        @if($log->status == -1)
+                                                        @if($element->status == -1)
                                                             <div class="label label-table label-primary">Cho phép</div>
-                                                        @elseif($log->status == 0)
+                                                        @elseif($element->status == 0)
                                                             <div class="label label-table label-success">Bình thường</div>
-                                                        @elseif($log->status == 1)
+                                                        @elseif($element->status == 1)
                                                             <div class="label label-table label-warning">Chờ chặn</div>
-                                                        @elseif($log->status == 2)
+                                                        @elseif($element->status == 2)
                                                             <div class="label label-table label-danger">Đã chặn</div>
                                                         @endif
                                                     </td>
@@ -121,7 +121,7 @@
                                         </tbody>
                                     </table>
                                     <div style="margin-bottom: 5px;" class="dataTables_paginate paging_simple_numbers" id="div_paging">
-                                        <span class="paging_total">Tìm thấy {{ number_format($domain_logs->total())}} kết quả</span> {{$domain_logs->lastPage() > 0 ? $domain_logs->render() : ""}}
+                                        <span class="paging_total">Tìm thấy {{ number_format($data_result->total())}} kết quả</span> {{$data_result->lastPage() > 0 ? $data_result->render() : ""}}
                                     </div>
                                 </div>
 
@@ -164,7 +164,7 @@
         var request_url = "/click/ajax-click-ao-header";
         $.ajax({url: request_url , success: function(result){
             $("#ajax-ip-click-ao").html(result);
-            setTimeout(ajax_header_report, 10000);
+            setTimeout(ajax_header_report, 15000);
         }});
     }
     $(function () {

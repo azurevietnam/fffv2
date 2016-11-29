@@ -12,7 +12,7 @@ use Session;
 use cURL;
 
 
-class VirtualClickController extends Controller
+class CustomerContactController extends Controller
 {
     public function __construct()
     {
@@ -28,7 +28,7 @@ class VirtualClickController extends Controller
         //return view('front.virtualclicks.virtualclicks');
     }
 
-    public function ip_click_ao(Request $request)
+    public function thuthapthongtin_baocao(Request $request)
     {
         $row = $request->get("row", 50);
         $search_ip = $request->get("search_ip", '');
@@ -47,98 +47,13 @@ class VirtualClickController extends Controller
         $domain = DB::table("domains")
             ->where('id', '=', Session::get('domain_id_choose'))
             ->first();
-        /*
-        $query = DB::table("domain_virtual_click")
-            //->select(DB::raw('ip, device, device_name, browser, city, country, created, click, viewpage, max(created) as latest_date'))
-            ->selectRaw('ip, device, device_name, browser, city, country, created, click, viewpage')
-            ->where("domain_key", $domain->keycode)
-            ->where('created', '>=', $sfrom)
-            ->where('created', '<', $sto);
-        if(!empty($search_ip)) {
-           $query->where('ip', 'like', "%$search_ip%");
-        }
-        $query->orderBy('created', "desc");
-        //Check config condition
-        $config_click = $domain->config_click;
-        $config_time = $domain->config_time;
-        $config_viewpage = $domain->config_viewpage;
-        $device_pc = $domain->device_pc;
-        $device_tablet = $domain->device_tablet;
-        $device_phone = $domain->device_phone;
 
-
-        //$query->groupBy('ip');
-        //$query->orderBy('latest_date', "desc");
-        //$query->havingRaw("COUNT(ip) > $config_click");
-        //$query->havingRaw("COUNT(page_url) <= $config_viewpage");
-
-
-
-        //$results = DB::select( DB::raw("SELECT * FROM domain_logs WHERE domain_key=:domain_key AND created >= :sfrom AND created < :sto "), array(
-        //    'domain_key' => $domain->keycode, 'sfrom' => $sfrom, 'sto' => $sto
-        //));
-
-        //$query2 = $query->get();
-        //dd($query2);
-        //$query2 = $query;
-        //$query2->selectRaw('ip, device, device_name, browser, city, country, total_click, created, COUNT(`page_url`) as pageview');
-       // $query2->havingRaw("COUNT(page_url) > $config_viewpage");
-
-
-
-        $query_3 = 'SELECT * FROM (select ip, device, device_name, browser, city, country, created, click, viewpage from `domain_virtual_click`
-                    where `domain_key` = "' . $domain->keycode .'" and `created` >= "' . $sfrom .'" and `created` < "' . $sto . '" and `ip` like "113.160.225.109" order by `created` desc) AS tmp GROUP BY `ip`';
-
-
-        $query_2 =  DB::select(DB::raw("{$query_3}"));
-
-        $sub = DB::table("domain_logs")->orderBy('created','DESC');
-        $query = DB::table(DB::raw("({$sub->toSql()}) as sub"))
-            ->where("domain_key", $domain->keycode)
-            ->where('created', '>=', $sfrom)
-            ->where('created', '<', $sto);
-            if(!empty($search_ip)) {
-                $query->where('ip', 'like', "%$search_ip%");
-            }
-        $query->groupBy('ip');
-*/
-
-        $str_query = 'SELECT id,ip,device,device_name,browser,city,country,created,click,viewpage,is_virtual_click,status,page_url FROM `domain_virtual_click`
-                    WHERE `domain_key` = "' . $domain->keycode .'" AND `created` >= "' . $sfrom .'" AND `created` < "' . $sto . '" ::IP_LIKE ORDER BY `created` desc';
-
-        if(!empty($search_ip)) {
-            $str_query = str_replace("::IP_LIKE",  " and `ip` like \"%{$search_ip}%\"", $str_query);
-        } else {
-            $str_query = str_replace("::IP_LIKE",  "", $str_query);
-        }
-        //dd($str_query);
-
-        //$query = DB::table(DB::raw("({$str_query}) as sub"));
-        $query = DB::table(DB::raw("({$str_query}) as sub"))->selectRaw("*, COUNT(id) AS count_ip, COUNT(DISTINCT page_url) as count_viewpage");
-        $query->groupBy('ip');
-
-        //$query->orderBy('created', 'desc');
-        $sfield = $request->get("sfield", "");
-        $sdir = $request->get("sdir", "");
-        if(!empty($sfield) && !empty($sdir)) {
-            $query->orderBy($sfield, $sdir);
-        }
-        //dd($query->toSql());
-
+        $query = DB::table("customer_information");
+        //    ->leftJoin('posts', 'users.id', '=', 'posts.user_id')
         $data_result = $query->paginate($row);
         $data_result->appends(["row" => $row, "search_ip" => $search_ip, "sfield" => $sfield, "sdir" => $sdir, "from" => $from, "to" => $to])->links();
 
-        $cpc = 0;
-        try {
-            $response = cURL::get("http://adwords.fff.com.vn/homepage-campaign-performance-report.php?adword={$domain->adword_account}");
-            if($response->body) {
-                $cpc = json_decode($response->body)->data->cpc;
-            }
-        } catch (Exception $e) {
-
-        }
-
-        return view('front.virtualclicks.ip-click-ao')
+        return view('front.customer.thuthapthongtin-baocao')
             ->with(compact('row'))
             ->with(compact('search_ip'))
             ->with(compact('page'))
@@ -146,9 +61,7 @@ class VirtualClickController extends Controller
             ->with(compact('sdir'))
             ->with(compact('from'))
             ->with(compact('to'))
-            ->with(compact('date_picker'))
             ->with(compact('data_result'))
-            ->with(compact('cpc'))
             ;
     }
 
